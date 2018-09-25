@@ -2,14 +2,18 @@ package com.upc.proyecto.rest;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.upc.proyecto.entidades.Cuenta;
 import com.upc.proyecto.repositorio.ClienteRepositorio;
+import com.upc.proyecto.entidades.Operacion;
 import com.upc.proyecto.entidades.Cliente;
 import com.upc.proyecto.negocio.Negocio;
 
@@ -29,11 +33,10 @@ public class BancoRest {
 	
 	}
 	
-/*	@GetMapping("/cuentas/{idc}")
-	public List<Cuenta> obtenerCuentas(@PathVariable(name="idc") String idc){
-		List<Cuenta> cuentas = clienteRepositorio.findByIdc(idc).getCuentas();
-		return cuentas;
+	@PostMapping("/retiro")
+	public Operacion deposito(@Valid @RequestBody Operacion operacion) {
+		return negocio.retiro(operacion);
 	}
-	*/
+	
 	
 }

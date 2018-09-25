@@ -14,4 +14,11 @@ public interface CuentaRepositorio extends CrudRepository<Cuenta, Long> {
 	 		+ "cta.numeroCuenta=:numeroCuenta ")
 	 Cuenta ObtenerCuentas(@Param("idc") Long idc);	  
 	 */
+	@Query("SELECT c FROM Cuenta c WHERE c.numeroCuenta=:numeroCuenta")
+	 Cuenta verificarNumeroCuenta(@Param("numeroCuenta") Long numeroCuenta);
+	
+	@Query("SELECT c FROM Cuenta c WHERE c.numeroCuenta=:numeroCuenta and c.saldo>=:monto")
+	 Cuenta verificarCuentaSaldo(@Param("numeroCuenta") Long numeroCuenta, @Param("monto") Double monto);
+	 
+	
 }
