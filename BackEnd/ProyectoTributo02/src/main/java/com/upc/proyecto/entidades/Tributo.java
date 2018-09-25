@@ -27,45 +27,60 @@ public class Tributo implements Serializable{
 	@Column(name="ID_TRIBUTO")
 	private Long idTributo;
 	
-	private String Tipo;
-	private Double Monto;
-	private String Estado;
+	private String tipo;
+	private Double monto;
+	private String estado;
+	//private String respuesta;
+	
+
+	
 	
 	@ManyToOne(optional=false)
 	@JoinColumn(name="ID_CONTRIBUYENTE", nullable=false)//no genera
 	@JsonIgnore
 	private Contribuyente contribuyente;
-	
 
 	public Long getIdTributo() {
 		return idTributo;
 	}
+
 	public void setIdTributo(Long idTributo) {
 		this.idTributo = idTributo;
 	}
 
 	public String getTipo() {
-		return Tipo;
+		return tipo;
 	}
+
 	public void setTipo(String tipo) {
-		Tipo = tipo;
+		this.tipo = tipo;
 	}
+
 	public Double getMonto() {
-		return Monto;
+		return monto;
 	}
+
 	public void setMonto(Double monto) {
-		Monto = monto;
+		this.monto = monto;
 	}
+
 	public String getEstado() {
-		return Estado;
+		return estado;
 	}
+
 	public void setEstado(String estado) {
-		Estado = estado;
+		this.estado = estado;
+	}
+
+	public Contribuyente getContribuyente() {
+		return contribuyente;
+	}
+
+	public void setContribuyente(Contribuyente contribuyente) {
+		this.contribuyente = contribuyente;
 	}
 	
-	
 
 
-	
 	
 }
