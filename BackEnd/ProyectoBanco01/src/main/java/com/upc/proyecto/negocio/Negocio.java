@@ -26,8 +26,11 @@ public class Negocio {
 	private CuentaRepositorio cuentaRepositorio;
 	
 	public Cliente obtenerCliente(Long idCliente) {
-		return clienteRepositorio.findByDni(idCliente);
-		
+		return clienteRepositorio.findByDni(idCliente);	
+	}
+	
+	public Cliente obtenerClient(String tarjeta, String idIDC, String clave) {
+		return clienteRepositorio.find(tarjeta, idIDC, clave);		
 	}
 	
 	@Transactional(propagation=Propagation.REQUIRED )

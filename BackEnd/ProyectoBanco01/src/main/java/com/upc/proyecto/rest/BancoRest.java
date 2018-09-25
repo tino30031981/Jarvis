@@ -24,13 +24,9 @@ public class BancoRest {
 	@Autowired
 	private Negocio negocio;
 	
-	@Autowired
-	private ClienteRepositorio clienteRepositorio;
-	
 	@GetMapping("/cliente/{idCliente}")
 	public Cliente obtenerCliente(@PathVariable(value="idCliente") Long idCliente) {
 		return negocio.obtenerCliente(idCliente);
-	
 	}
 	
 	@PostMapping("/retiro")
@@ -38,5 +34,9 @@ public class BancoRest {
 		return negocio.retiro(operacion);
 	}
 	
+	@GetMapping("/cliente/{idtarjeta}/{ididc}/{idclave}")
+	public Cliente obtenerClient(@PathVariable(value="idtarjeta") String tarjeta,@PathVariable(value="ididc") String idIDC,@PathVariable(value="idclave") String idClave ) {
+		return negocio.obtenerClient(tarjeta, idIDC, idClave);
+	}	
 	
 }
