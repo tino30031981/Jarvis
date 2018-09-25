@@ -1,7 +1,0 @@
-{
-  "service": {
-    "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/ServicioRepresentacionTerritorial/MapServer",
-    "layeDataId": 1,
-    "layerId": 0
-  }
-}
