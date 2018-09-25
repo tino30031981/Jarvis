@@ -15,7 +15,7 @@ namespace AppWeb.Controllers
         //protected const String DEFAULTPASSWORD = "propiedades@gmail.com";        
         protected const int DEFAULTAREA = 4;
         protected const bool LOGINCOORPORATE = true;
-        protected const String DEFAULTINDEX = "default/home/index";
+        protected const String DEFAULTINDEX = "user/index";
         protected const String DEFAULTINDEX2 = "service/index";
         protected const String DEFAULTLOGINBYAREA = "admin/user/loginbyarea";
         protected const String LOGINGUEST = "user/loginguest";
@@ -23,6 +23,7 @@ namespace AppWeb.Controllers
         protected const String LOGINAJAX = "admin/user/loginajax";
         protected const String LOGOUT = "user/logout";
         protected const String USERSESSIONNAME = "user";
-        protected const String FORMAT = "dd-MM-yyyy";       
+        protected const String USERSESSION2 = "contribuyente";
+        protected const String FORMAT = "dd-MM-yyyy";
     }
 }

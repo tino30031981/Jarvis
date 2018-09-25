@@ -1,11 +1,8 @@
-﻿@model List<AppServices.Models.CuentaEntity>
-@{
+﻿@{
     Page.Title = "Consulta de pagos";
     Layout = "~/Views/Shared/_LayoutMain.cshtml";
 }
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      
-
+@*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>*@
 @section head{
 
 }
@@ -42,9 +39,6 @@
                         <button class="btn" type="button" id="btnSearch" name="btnSearch" title="Buscar">
                             <i class="glyphicon glyphicon-search"></i> <i class="hidden-xs hidden-sm"></i>
                         </button>
-                        <button class="btn" type="button" id="btnUpdate" name="btnUpdate" title="Editar">
-                            <i class="glyphicon glyphicon-pencil"></i> <i class="hidden-xs hidden-sm"></i>
-                        </button>
                         <button class="btn" type="button" id="btnClean" name="btnClean" title="Limpiar">
                             <i class="glyphicon glyphicon-refresh"></i> <i class="hidden-xs hidden-sm"></i>
                         </button>
@@ -70,23 +64,13 @@
                 <thead>
                     <tr>
                         <th>Código</th>
-                        <th>Nombre</th>
-                        <th>Fecha</th>
+                        <th>Tipo</th>
                         <th>Monto</th>
                         <th>Estado</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var cuenta in Model)
-                    {
-                        <tr id="@cuenta.idCuenta">
-                            <td>@cuenta.numeroCuenta</td>
-                            <td>@cuenta.numeroCuenta</td>
-                            <td>@cuenta.numeroCuenta</td>
-                            <td>@cuenta.saldo</td>
-                            <td>@cuenta.saldo</td>
-                        </tr>
-                    }
                 </tbody>
             </table>
         </div>
