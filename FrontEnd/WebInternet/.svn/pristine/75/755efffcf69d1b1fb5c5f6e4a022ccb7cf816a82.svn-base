@@ -1,0 +1,20 @@
+{
+	"title": "Reporte de análisis de superposición de proyectos de inversión",
+	"defaultInformationSource": "Gobierno regional de Madre de Dios",
+	"tables": 
+	[
+		{
+			"name": "Distritos",
+			"source": "district",
+			"informationSource": "Gobierno regional de Madre de Dios"
+		},
+		{
+			"name": "Catastro Minero",
+			"source": "miningcadaster"
+		},
+		{
+			"name": "Areas Naturales Protegidas",
+			"source": "anp"
+		}
+	]
+}

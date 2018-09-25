@@ -1,0 +1,37 @@
+<form class="form form-horizontal">
+    <div id="fdsCoverageChange" class="form-group">
+        <label for="rdbQuery" class="form-control-label">Consulta:</label>
+        <div class="col-sm-12">
+            <label class="radio-inline ">
+                <input type="radio" id="rdbPoliticalDivision" name="rdbCoverageChange" checked="checked" />Según div. política
+            </label>
+            <label class="radio-inline ">
+                <input type="radio" id="rdbHydrographicBasin" name="rdbCoverageChange" />Según cuenca hidrog.
+            </label>
+            </div>
+            <hr />
+        </div>
+    <div id="fdsForm"  class="form-group">
+        <div id="divPoliticalDivision">
+            <fieldset class="form-group">
+                <label for="ddlDepartamentSearch">Departamento</label>
+                <select id="ddlDepartamentSearch" class="form-control "></select>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="ddlProvinceSearch">Provincia</label>
+                <select id="ddlProvinceSearch" class="form-control"></select>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="ddlDistrictSearch">Distrito</label>
+                <select id="ddlDistrictSearch" class="form-control"></select>
+            </fieldset>
+        </div>
+        <div id="divHydrographicBasin">
+            <fieldset class="form-group">
+                <label for="ddlHydrographicBasinSearch">Cuenca hidrográfica</label>
+                <select id="ddlHydrographicBasinSearch" class="form-control"></select>
+            </fieldset>
+        </div>
+    </div>
+    <!--<div id="divChart" style="min-width: 310px; height: 300px; margin: 0 auto"></div>-->
+</form>

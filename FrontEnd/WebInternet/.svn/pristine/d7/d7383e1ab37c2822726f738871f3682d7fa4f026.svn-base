@@ -1,0 +1,15 @@
+{
+  "url": "http://geoportal.vivienda.gob.pe:6080/arcgis/rest/services/Extraccion/ExtractDataTask/GPServer/Extract%20Data%20Task",
+  "zoomLevel": 5,
+  "defaultRadio": 5,
+  "formats": [
+    {
+      "id": "Shapefile - SHP - .shp",
+      "name": "Shapefile - SHP - .shp"
+    },
+    {
+      "id": "File Geodatabase - GDB - .gdb",
+      "name": "File Geodatabase - GDB - .gdb"
+    }
+  ]
+}

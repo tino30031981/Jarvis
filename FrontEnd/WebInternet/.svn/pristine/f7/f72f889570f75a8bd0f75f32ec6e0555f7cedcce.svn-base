@@ -1,0 +1,25 @@
+{
+  "state": {
+    "Pendiente": {
+      "id": "PENDING",
+      "label": "Pendiente",
+      "color": "#FF0000",
+      "textColor": "#A7A7A7",
+      "icon": "glyphicon-alert"
+    },
+    "Atendido": {
+      "id": "PROCEDURE",
+      "label": "Atentido",
+      "color": "#FFFF00",
+      "textColor": "#DF5944",
+      "icon": "glyphicon-minus"
+    },
+    "Completado": {
+      "id": "COMPLETED",
+      "label": "Completado",
+      "color": "#00FF00",
+      "textColor": "#000000",
+      "icon": "glyphicon-ok"
+    }
+  }
+}

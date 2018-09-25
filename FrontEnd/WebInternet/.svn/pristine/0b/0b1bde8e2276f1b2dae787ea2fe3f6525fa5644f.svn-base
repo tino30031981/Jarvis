@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // Safari iOS apps only -->
+    <!-- Sets whether a web application runs in full-screen mode -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Sets the style of the status bar for a web application -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- // Chrome for Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>..::@(String.IsNullOrWhiteSpace(Page.Title) ? "Página" : Page.Title)</title>
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/html5.min.css" />
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/bootstrapplugin.min.css" />
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/jqueryplugin.min.css" />
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/extra.min.css" />
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/gh.min.css" />
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/jazani.min.css" />
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/lightskyblue/app.min.css" />
+    <script src="@Url.Content("~")assets/js/util.min.js"></script>
+    <script src="@Url.Content("~")assets/js/jquery.min.js"></script>
+    <script src="@Url.Content("~")assets/js/bootstrap.min.js"></script>
+    <script src="@Url.Content("~")assets/js/bootstrapplugin.min.js"></script>
+    <script src="@Url.Content("~")assets/js/jqueryplugin.min.js"></script>
+    <script src="@Url.Content("~")assets/js/jqueryextend.min.js"></script>
+    <script src="@Url.Content("~")assets/js/extra.min.js"></script>
+    <script src="@Url.Content("~")assets/js/spatial.min.js"></script>
+    <script src="@Url.Content("~")assets/js/proj4extend.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="@Url.Content("~")assets/ico/minus.png" />
+    <script>
+    </script>
+    @RenderSection("head", required: false)
+</head>
+<body>
+    <main>
+        @RenderSection("header", required: false)
+        @RenderSection("body", required: true)
+        @RenderSection("footer", required: false)
+    </main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<form>
+    <div class="col-xs-12 col-sm-12 col-md-4">
+        <fieldset class="form-group">
+            <label for="ddlServer">Servidor</label>
+            <select class="form-control" id="ddlServer"></select>
+        </fieldset>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4">
+        <fieldset class="form-group">
+            <label for="ddlLayer">Capas</label>
+            <select class="form-control" id="ddlLayer"></select>
+        </fieldset>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4">
+        <fieldset class="form-group">
+            <label for="ddlFormat">Formato</label>
+            <div class="input-group">
+                <select class="form-control" id="ddlFormat"></select>
+                <span class="input-group-btn">
+                    <button id="btnDownload" class="btn" type="button"><i class="glyphicon glyphicon-download"></i></button>
+                </span>
+            </div>
+        </fieldset>
+    </div>
+</form>
+<div class="panel panel-default" id="divResult">
+    <div class="panel-heading gh-overflow-hidden">
+        <span></span>
+        <div class="btn-group pull-right gh-panel-header">
+            <button type="button" class="btn" id="btnFullExtent" title="Extensión total"><i class="gh gh-full-extent"></i></button>
+        </div>
+    </div>
+    <div class="panel-body">
+
+        <dl class="col-xs-12 col-sm-12 col-md-6 dl-horizontal">
+            <dt>Nombre</dt>
+            <dd id="ddId"></dd>
+            <dt>Título</dt>
+            <dd id="ddName"></dd>
+            <dt>Resumen</dt>
+            <dd id="ddAbstract"></dd>
+        </dl>
+
+        <dl class="col-xs-12 col-sm-12 col-md-6 dl-horizontal">
+            <dt>Palabras claves</dt>
+            <dd id="ddKeywords"></dd>
+            <dt>Sist. Ref. Coordenadas</dt>
+            <dd id="ddCrs"></dd>
+        </dl>
+
+        <dl>
+            <dt>Extensiones</dt>
+            <dd id="ddBoundingBox"></dd>
+            <dt>Campos</dt>
+            <dd id="ddFields"></dd>
+        </dl>
+    </div>
+</div>

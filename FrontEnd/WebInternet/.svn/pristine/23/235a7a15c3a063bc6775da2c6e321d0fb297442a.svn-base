@@ -1,0 +1,52 @@
+.ol-zoom {
+    left: 20px !important;
+    right: auto !important;
+    top: 55px;
+}
+
+.ol-custom-overviewmap, .ol-custom-overviewmap.ol-uncollapsible {
+    bottom: 0;
+    left: auto;
+    right: 0;
+    top: auto;
+}
+
+
+
+    .ol-custom-overviewmap .ol-overviewmap-map {
+        border: none;
+        width: 300px;
+    }
+
+
+
+    .ol-custom-overviewmap:not(.ol-collapsed) button {
+        bottom: 1px;
+        left: auto;
+        right: 1px;
+        top: auto;
+    }
+
+.ol-rotate {
+    top: 170px;
+    right: 0;
+}
+
+.ol-attribution.ol-uncollapsible {
+    right: 60px !important;
+}
+
+.ol-control {
+    background-color: transparent;
+    z-index: 2;
+}
+
+    .ol-control:hover {
+        background-color: transparent;
+    }
+.ol-mouse-position{
+	position:inherit !important;
+}
+.map {
+    overflow: hidden;
+}

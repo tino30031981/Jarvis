@@ -1,0 +1,28 @@
+﻿.modal-dialog{
+	width:auto;
+}
+.modal-body{
+	padding: 5px;
+}
+.modal-content-default {
+    border-color: #ddd;
+}
+
+    .modal-content-default > .modal-header {
+        color: #333;
+        background-color: #f5f5f5;
+        border-color: #ddd;
+    }
+
+    .modal-content-default > .modal-header + .modal-collapse > .modal-body {
+        border-top-color: #ddd;
+    }
+
+    .modal-content-default > .modal-header .badge {
+        color: #f5f5f5;
+        background-color: #333;
+    }
+
+    .modal-content-default > .modal-footer + .modal-collapse > .modal-body {
+        border-bottom-color: #ddd;
+    }

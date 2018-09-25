@@ -1,0 +1,10 @@
+{
+	"showAsTable": true,
+	"zoomLevel": 2,
+	"tolerance": 3,
+	"service": 
+	{
+		"url": "http://54.233.126.219/geoserver/geojaz/wfs",
+		"layerId": "geojaz:catastroforestal"
+	}
+}

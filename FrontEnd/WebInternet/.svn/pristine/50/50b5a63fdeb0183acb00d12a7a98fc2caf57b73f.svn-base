@@ -1,0 +1,30 @@
+{
+  "charts": {
+    "minerals": [
+      {
+        "title": "Oro",
+        "description": "",
+        "url": "http://www.kitco.com/images/live/gold.gif?0.6656622657422763"
+      },
+      {
+        "title": "Plata",
+        "description": "",
+        "url": "http://www.kitco.com/images/live/silver.gif?0.6656622657422763"
+      },
+      {
+        "title": "Platino",
+        "description": "",
+        "url": "http://www.kitco.com/images/live/plati.gif?0.6656622657422763"
+      },
+      {
+        "title": "Paladio",
+        "description": "",
+        "url": "http://www.kitco.com/images/live/plad.gif?0.6656622657422763"
+      }
+    ]
+  },
+  "rest": {
+    "miningCadaster": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CATASTRO_MINERO/MapServer/0",
+    "bulletin": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_BOLETINES_INGEMMET/MapServer/0/"
+  }
+}

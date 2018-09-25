@@ -1,0 +1,18 @@
+{
+  "onlyText": true,
+  "label": "Geoservidor 3.0 - Ministerio del Ambiente",
+  "slides": [
+    "slides/slide1.jpg",
+    "slides/slide2.jpg",
+    "slides/slide3.jpg",
+    "slides/slide4.jpg",
+    "slides/slide5.jpg",
+    "slides/slide6.jpg",
+    "slides/slide7.jpg",
+    "slides/slide8.jpg",
+    "slides/slide9.jpg",
+    "slides/slide10.jpg",
+    "slides/slide11.jpg"
+  ],
+  "text": "<h3 class=\"centro\"><b>Condiciones de uso</b></h3>El uso de la información contenida en este sitio implica la aceptación de las condiciones de uso siguientes:<ol><li>Condición 1</li></ol>"
+}

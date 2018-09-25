@@ -1,0 +1,13 @@
+{
+  "service": {
+    "url": "arcgis/rest/services/ServicioMarcoLegal/MapServer",
+    "layerId": 0,
+    "fields": [ "*" ]
+  },
+  "zoomLevel": 2,
+  "enabledChart3d": true,
+  "title": "Avance de zonificación ecológica económica",
+  "sourceInformation": "Ministerio del ambiente",
+  "decimalNumbers": 3,
+  "chartTypes": [ "column", "line", "area", "pie", "spline", "scatter", "bar" ]
+}

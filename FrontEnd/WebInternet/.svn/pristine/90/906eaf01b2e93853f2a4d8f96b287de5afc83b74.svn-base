@@ -1,0 +1,1535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{175281FB-FB2A-491F-B263-ED246A01E91E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppWeb</RootNamespace>
+    <AssemblyName>AppWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=1.2.3.490, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ServiceController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\allextend.min.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\bootstrapextend.min.css" />
+    <Content Include="assets\css\bootstrapplugin.min.css" />
+    <Content Include="assets\css\esriextend.min.css" />
+    <Content Include="assets\css\extra.min.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\gh.min.css" />
+    <Content Include="assets\css\html5.min.css" />
+    <Content Include="assets\css\jazani.min.css" />
+    <Content Include="assets\css\jqueryplugin.min.css" />
+    <Content Include="assets\css\leafletextend.min.css" />
+    <Content Include="assets\css\lightskyblue\app.min.css" />
+    <Content Include="assets\css\lightskyblue\img\infografia.jpg" />
+    <Content Include="assets\css\mobile.min.css" />
+    <Content Include="assets\css\openlayersextend.min.css" />
+    <Content Include="assets\js\app\admin\login.js" />
+    <Content Include="assets\js\app\admin\menu\main.js" />
+    <Content Include="assets\js\app\admin\office\main.js" />
+    <Content Include="assets\js\app\admin\role\main.js" />
+    <Content Include="assets\js\app\admin\user\index.js" />
+    <Content Include="assets\js\app\admin\user\main.js" />
+    <Content Include="assets\js\app\base.js" />
+    <Content Include="assets\js\app\basealert.js" />
+    <Content Include="assets\js\app\basewidget.js" />
+    <Content Include="assets\js\app\default.js" />
+    <Content Include="assets\js\app\default\help.js" />
+    <Content Include="assets\js\app\default\home.js" />
+    <Content Include="assets\js\app\default\index.js" />
+    <Content Include="assets\js\app\default\index2.js" />
+    <Content Include="assets\js\app\documentlibrary\attachment.js" />
+    <Content Include="assets\js\app\documentlibrary\basefolder.js" />
+    <Content Include="assets\js\app\documentlibrary\basetracing.js" />
+    <Content Include="assets\js\app\documentlibrary\basetracingdocument.js" />
+    <Content Include="assets\js\app\documentlibrary\documenttype\main.js" />
+    <Content Include="assets\js\app\environment\agreement\calendar.js" />
+    <Content Include="assets\js\app\environment\agreement\main.js" />
+    <Content Include="assets\js\app\environment\agreement\monitoring.js" />
+    <Content Include="assets\js\app\environment\agreement\tmpls\day.html" />
+    <Content Include="assets\js\app\environment\agreement\tmpls\events-list.html" />
+    <Content Include="assets\js\app\environment\agreement\tmpls\modal.html" />
+    <Content Include="assets\js\app\environment\agreement\tmpls\month-day.html" />
+    <Content Include="assets\js\app\environment\agreement\tmpls\month.html" />
+    <Content Include="assets\js\app\environment\agreement\tmpls\week-days.html" />
+    <Content Include="assets\js\app\environment\agreement\tmpls\week.html" />
+    <Content Include="assets\js\app\environment\agreement\tmpls\year-month.html" />
+    <Content Include="assets\js\app\environment\agreement\tmpls\year.html" />
+    <Content Include="assets\js\app\environment\calibration\main.js" />
+    <Content Include="assets\js\app\environment\data\main.js" />
+    <Content Include="assets\js\app\environment\documentlibrary\main.js" />
+    <Content Include="assets\js\app\environment\environmentalpassive\main.js" />
+    <Content Include="assets\js\app\environment\environmentalpassive\tracing.js" />
+    <Content Include="assets\js\app\environment\environmentalpassive\tracingdocument.js" />
+    <Content Include="assets\js\app\environment\equipment\main.js" />
+    <Content Include="assets\js\app\environment\fiscalization\main.js" />
+    <Content Include="assets\js\app\environment\fiscalization\tracing.js" />
+    <Content Include="assets\js\app\environment\incidence\main.js" />
+    <Content Include="assets\js\app\environment\legalframe\basemainmap.js" />
+    <Content Include="assets\js\app\environment\legalframe\esri\mainmap.js" />
+    <Content Include="assets\js\app\environment\legalframe\main.js" />
+    <Content Include="assets\js\app\environment\legalframe\procedure.js" />
+    <Content Include="assets\js\app\environment\legalstandard\main.js" />
+    <Content Include="assets\js\app\environment\model\main.js" />
+    <Content Include="assets\js\app\environment\parameter\main.js" />
+    <Content Include="assets\js\app\environment\station\main.js" />
+    <Content Include="assets\js\app\event\event\baseformmap2.js" />
+    <Content Include="assets\js\app\event\event\form2.js" />
+    <Content Include="assets\js\app\event\event\main2.js" />
+    <Content Include="assets\js\app\event\event\openlayers\formmap2.js" />
+    <Content Include="assets\js\app\forestrycadaster\forestrycadaster\main.js" />
+    <Content Include="assets\js\app\general\baseprocedure.js" />
+    <Content Include="assets\js\app\general\currencytype\main.js" />
+    <Content Include="assets\js\app\general\mineralgroup\main.js" />
+    <Content Include="assets\js\app\general\mineral\main.js" />
+    <Content Include="assets\js\app\geology\basemain.js" />
+    <Content Include="assets\js\app\geology\basesector.js" />
+    <Content Include="assets\js\app\geology\diamantinedrilling\main.js" />
+    <Content Include="assets\js\app\geology\surfacesampling\basemainmap.js" />
+    <Content Include="assets\js\app\geology\surfacesampling\esri\mainmap.js" />
+    <Content Include="assets\js\app\geology\surfacesampling\main.js" />
+    <Content Include="assets\js\app\geology\undergroundsampling\basemainmap.js" />
+    <Content Include="assets\js\app\geology\undergroundsampling\esri\mainmap.js" />
+    <Content Include="assets\js\app\geology\undergroundsampling\main.js" />
+    <Content Include="assets\js\app\geometry\basegeometry.js" />
+    <Content Include="assets\js\app\geometry\basemap.js" />
+    <Content Include="assets\js\app\geometry\basemapwidget.js" />
+    <Content Include="assets\js\app\geometry\baseservice.js" />
+    <Content Include="assets\js\app\geometry\basesimplemap.js" />
+    <Content Include="assets\js\app\geometry\catalog\openlayers\main.js" />
+    <Content Include="assets\js\app\geometry\catalog\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\catalog\widgets\basic\basewidget.js" />
+    <Content Include="assets\js\app\geometry\catalog\widgets\basic\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\catalog\widgets\basic\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\catalog\widgets\basic\widget.html" />
+    <Content Include="assets\js\app\geometry\esri\map.js" />
+    <Content Include="assets\js\app\geometry\esri\service.js" />
+    <Content Include="assets\js\app\geometry\esri\simplemap.js" />
+    <Content Include="assets\js\app\geometry\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\geophoto\baseformmap2.js" />
+    <Content Include="assets\js\app\geometry\geophoto\form2.js" />
+    <Content Include="assets\js\app\geometry\geophoto\main.js" />
+    <Content Include="assets\js\app\geometry\geophoto\main2.js" />
+    <Content Include="assets\js\app\geometry\geophoto\openlayers\formmap2.js" />
+    <Content Include="assets\js\app\geometry\layertable\main.js" />
+    <Content Include="assets\js\app\geometry\leaflet\map.js" />
+    <Content Include="assets\js\app\geometry\leaflet\service.js" />
+    <Content Include="assets\js\app\geometry\leaflet\simplemap.js" />
+    <Content Include="assets\js\app\geometry\leaflet\widget.js" />
+    <Content Include="assets\js\app\geometry\openlayers\map.js" />
+    <Content Include="assets\js\app\geometry\openlayers\service.js" />
+    <Content Include="assets\js\app\geometry\openlayers\simplemap.js" />
+    <Content Include="assets\js\app\geometry\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\esri\main.js" />
+    <Content Include="assets\js\app\geometry\viewer\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\leaflet\main.js" />
+    <Content Include="assets\js\app\geometry\viewer\leaflet\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\openlayers\main.js" />
+    <Content Include="assets\js\app\geometry\viewer\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\basemap\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\basemap\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\basemap\leaflet\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\basemap\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\bookmark\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\bookmark\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\bookmark\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\bookmark\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\coverage\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\coverage\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\coverage\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\documentlibrary\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\documentlibrary\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\documentlibrary\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\documentlibrary\_formdocument.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\environment\station\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\environment\station\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\environment\station\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\event\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\event\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\event\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\event\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\event\_report.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\forestrycadaster\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\forestrycadaster\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\forestrycadaster\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\geophoto\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\geophoto\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\geophoto\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\geophoto\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\minedu\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\minedu\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\minedu\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\minedu\_report.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\minedu\_report2.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\miningcadaster\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\miningcadaster\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\miningcadaster\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\miningcadaster\_list.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\miningconcession\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\miningconcession\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\miningconcession\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\miningconcession\_list.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\miningconcession\_pdf.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\miningproject\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\miningproject\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\miningproject\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\miningproject\_list.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\miningproject\_pdf.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\monitoring\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\monitoring\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\monitoring\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\monitoring\_list.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\project\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\project\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\project\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\ruralcadaster\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\ruralcadaster\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\ruralcadaster\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\surfacepropertynational\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\surfacepropertynational\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\surfacepropertynational\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\surfacepropertynational\_list.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\surfaceproperty\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\surfaceproperty\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\surfaceproperty\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\surfaceproperty\_list.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\vip\variable\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\vip\variable\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\custom\vip\variable\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\elevationprofile\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\elevationprofile\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\elevationprofile\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\extractdata2\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\extractdata2\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\extractdata2\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\extractdata2\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\extractdata\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\extractdata\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\extractdata\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\extractdata\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\goto\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\goto\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\goto\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\goto\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\graphic\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\graphic\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\graphic\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\graticule\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\identify\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\identify\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\identify\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\identify\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\indicator\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\indicator\query\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\indicator\query\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\indicator\query\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\indicator\thematicmap\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\indicator\thematicmap\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\indicator\thematicmap\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\measure\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\measure\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\measure\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\measure\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\mouseposition\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\mouseposition\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\mouseposition\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\mouseposition\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\navigation\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\navigation\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\navigation\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\ogc\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\overlappingarea\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\overlappingarea\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\overlappingarea\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\overlap\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\overlap\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\overlap\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\overlap\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\overlap\_list.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\print\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\print\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\print\html5\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\print\html5\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\print\html5\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\print\html5\templates\template1.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\print\html5\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\print\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\print\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\query\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\query\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\query\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\query\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\scale\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\scale\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\scale\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\scale\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\shapefile\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\shapefile\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\shapefile\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\splash\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\splash\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\toc\agsparser.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\toc\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\toc\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\toc\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\toc\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\toc\wmsparser.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\zee\query2\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\zee\query2\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\zee\query2\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\zee\query3\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\zee\query3\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\zee\query3\widget.html" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\zee\query\basewidget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\zee\query\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\viewer\widgets\zee\query\widget.html" />
+    <Content Include="assets\js\app\geometry\webservice\openlayers\main.js" />
+    <Content Include="assets\js\app\geometry\webservice\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\webservice\widgets\wfs\basewidget.js" />
+    <Content Include="assets\js\app\geometry\webservice\widgets\wfs\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\webservice\widgets\wfs\esri\widgetworker.js" />
+    <Content Include="assets\js\app\geometry\webservice\widgets\wfs\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\webservice\widgets\wfs\openlayers\widgetworker.js" />
+    <Content Include="assets\js\app\geometry\webservice\widgets\wfs\widget.html" />
+    <Content Include="assets\js\app\geometry\webservice\widgets\wms\basewidget.js" />
+    <Content Include="assets\js\app\geometry\webservice\widgets\wms\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\webservice\widgets\wms\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\webservice\widgets\wms\widget.html" />
+    <Content Include="assets\js\app\geometry\widgets\basemap\basewidget.js" />
+    <Content Include="assets\js\app\geometry\widgets\basemap\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\widgets\basemap\leaflet\widget.js" />
+    <Content Include="assets\js\app\geometry\widgets\basemap\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\widgets\mouseposition\basewidget.js" />
+    <Content Include="assets\js\app\geometry\widgets\mouseposition\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\widgets\mouseposition\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\widgets\mouseposition\widget.html" />
+    <Content Include="assets\js\app\geometry\widgets\navigation\basewidget.js" />
+    <Content Include="assets\js\app\geometry\widgets\navigation\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\widgets\navigation\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\widgets\scale\basewidget.js" />
+    <Content Include="assets\js\app\geometry\widgets\scale\esri\widget.js" />
+    <Content Include="assets\js\app\geometry\widgets\scale\openlayers\widget.js" />
+    <Content Include="assets\js\app\geometry\widgets\scale\widget.html" />
+    <Content Include="assets\js\app\incidence\incidence\baseformmap2.js" />
+    <Content Include="assets\js\app\incidence\incidence\form2.js" />
+    <Content Include="assets\js\app\incidence\incidence\main2.js" />
+    <Content Include="assets\js\app\incidence\incidence\openlayers\formmap2.js" />
+    <Content Include="assets\js\app\layout.js" />
+    <Content Include="assets\js\app\main.js" />
+    <Content Include="assets\js\app\master.js" />
+    <Content Include="assets\js\app\minedu\edan\baseformmap2.js" />
+    <Content Include="assets\js\app\minedu\edan\form2.js" />
+    <Content Include="assets\js\app\minedu\edan\main2.js" />
+    <Content Include="assets\js\app\minedu\edan\openlayers\formmap2.js" />
+    <Content Include="assets\js\app\miningconcession\basemain.js" />
+    <Content Include="assets\js\app\miningconcession\coordinateconverter.js" />
+    <Content Include="assets\js\app\miningconcession\importingemment\main.js" />
+    <Content Include="assets\js\app\miningconcession\miningcadaster\basemainmap2.js" />
+    <Content Include="assets\js\app\miningconcession\miningcadaster\main.js" />
+    <Content Include="assets\js\app\miningconcession\miningcadaster\main2.js" />
+    <Content Include="assets\js\app\miningconcession\miningcadaster\openlayers\mainmap2.js" />
+    <Content Include="assets\js\app\miningconcession\miningcadaster\record.js" />
+    <Content Include="assets\js\app\miningconcession\miningconcession\alert.js" />
+    <Content Include="assets\js\app\miningconcession\miningconcession\baseoverlapmap.js" />
+    <Content Include="assets\js\app\miningconcession\miningconcession\main.js" />
+    <Content Include="assets\js\app\miningconcession\miningconcession\mineralprice.js" />
+    <Content Include="assets\js\app\miningconcession\miningconcession\openlayers\overlapmap.js" />
+    <Content Include="assets\js\app\miningconcession\miningconcession\overlap.js" />
+    <Content Include="assets\js\app\miningconcession\miningconcession\procedure.js" />
+    <Content Include="assets\js\app\miningconcession\miningconcession\statistics.js" />
+    <Content Include="assets\js\app\miningconcession\miningconcession\tracing.js" />
+    <Content Include="assets\js\app\miningconcession\miningconcession\tracingdocument.js" />
+    <Content Include="assets\js\app\miningconcession\miningrequest\baseformmap2.js" />
+    <Content Include="assets\js\app\miningconcession\miningrequest\basemainmap.js" />
+    <Content Include="assets\js\app\miningconcession\miningrequest\esri\mainmap.js" />
+    <Content Include="assets\js\app\miningconcession\miningrequest\form2.js" />
+    <Content Include="assets\js\app\miningconcession\miningrequest\main.js" />
+    <Content Include="assets\js\app\miningconcession\miningrequest\main2.js" />
+    <Content Include="assets\js\app\miningconcession\miningrequest\openlayers\formmap2.js" />
+    <Content Include="assets\js\app\miningconcession\miningstandard\main.js" />
+    <Content Include="assets\js\app\miningconcession\pay\main.js" />
+    <Content Include="assets\js\app\miningproject\deposittype\main.js" />
+    <Content Include="assets\js\app\miningproject\miningproject2.js" />
+    <Content Include="assets\js\app\miningproject\miningproject\alert.js" />
+    <Content Include="assets\js\app\miningproject\miningproject\folder.js" />
+    <Content Include="assets\js\app\miningproject\miningproject\foldermain.js" />
+    <Content Include="assets\js\app\miningproject\miningproject\main.js" />
+    <Content Include="assets\js\app\miningproject\miningproject\procedure.js" />
+    <Content Include="assets\js\app\miningproject\miningproject\tracing.js" />
+    <Content Include="assets\js\app\miningproject\miningproject\tracingdocument.js" />
+    <Content Include="assets\js\app\miningunit\miningunit\main.js" />
+    <Content Include="assets\js\app\project\project\main.js" />
+    <Content Include="assets\js\app\ruralcadaster\ruralcadaster\main.js" />
+    <Content Include="assets\js\app\socialresponsability\agreementservice\main.js" />
+    <Content Include="assets\js\app\socialresponsability\agreement\main.js" />
+    <Content Include="assets\js\app\socialresponsability\directorate\main.js" />
+    <Content Include="assets\js\app\socialresponsability\entity\basemainmap.js" />
+    <Content Include="assets\js\app\socialresponsability\entity\esri\mainmap.js" />
+    <Content Include="assets\js\app\socialresponsability\entity\main.js" />
+    <Content Include="assets\js\app\socialresponsability\interestgrouptype\main.js" />
+    <Content Include="assets\js\app\socialresponsability\negotiation\main.js" />
+    <Content Include="assets\js\app\socialresponsability\relationship\main.js" />
+    <Content Include="assets\js\app\socialresponsability\requirement\main.js" />
+    <Content Include="assets\js\app\socialresponsability\riskpopulation\main.js" />
+    <Content Include="assets\js\app\socialresponsability\settler\basemainmap.js" />
+    <Content Include="assets\js\app\socialresponsability\settler\esri\mainmap.js" />
+    <Content Include="assets\js\app\socialresponsability\settler\main.js" />
+    <Content Include="assets\js\app\socialresponsability\surfaceright\alert.js" />
+    <Content Include="assets\js\app\socialresponsability\surfaceright\main.js" />
+    <Content Include="assets\js\app\socialresponsability\surfaceright\procedure.js" />
+    <Content Include="assets\js\app\society\holderregime\main.js" />
+    <Content Include="assets\js\app\society\holder\main.js" />
+    <Content Include="assets\js\app\society\holder\tracing.js" />
+    <Content Include="assets\js\app\society\holder\tracingdocument.js" />
+    <Content Include="assets\js\app\society\legalrepresentative\main.js" />
+    <Content Include="assets\js\app\surfaceproperty\surfaceright\alert.js" />
+    <Content Include="assets\js\app\surfaceproperty\surfaceright\main.js" />
+    <Content Include="assets\js\app\surfaceproperty\surfaceright\procedure.js" />
+    <Content Include="assets\js\app\surfaceproperty\surfaceright\tracing.js" />
+    <Content Include="assets\js\app\surfaceproperty\surfaceright\tracingdocument.js" />
+    <Content Include="assets\js\app\uea\uea\alert.js" />
+    <Content Include="assets\js\app\uea\uea\main.js" />
+    <Content Include="assets\js\app\uea\uea\procedure.js" />
+    <Content Include="assets\js\app\uea\uea\tracing.js" />
+    <Content Include="assets\js\app\uea\uea\tracingdocument.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\bootstrapplugin.min.js" />
+    <Content Include="assets\js\esriextend.min.js" />
+    <Content Include="assets\js\extends.min.js" />
+    <Content Include="assets\js\extension.min.js" />
+    <Content Include="assets\js\extra.min.js" />
+    <Content Include="assets\js\helper.min.js" />
+    <Content Include="assets\js\i18next-1.11.1.min.js" />
+    <Content Include="assets\js\jquery.1.x.min.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\jqueryextend.min.js" />
+    <Content Include="assets\js\jqueryplugin.min.js" />
+    <Content Include="assets\js\leafletextend.min.js" />
+    <Content Include="assets\js\modernizr.min.js" />
+    <Content Include="assets\js\openlayersextend.min.js" />
+    <Content Include="assets\js\polyfill.min.js" />
+    <Content Include="assets\js\proj4extend.min.js" />
+    <Content Include="assets\js\spatial.min.js" />
+    <Content Include="assets\js\util.min.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\json\app\admin\menu\menu.json" />
+    <Content Include="assets\json\app\app.json" />
+    <Content Include="assets\json\app\appminvivienda.json" />
+    <Content Include="assets\json\app\baseprocedure.json" />
+    <Content Include="assets\json\app\basetracing.json" />
+    <Content Include="assets\json\app\default\help.json" />
+    <Content Include="assets\json\app\default\home.json" />
+    <Content Include="assets\json\app\documentlibrary\basetracingdocument.json" />
+    <Content Include="assets\json\app\forestrycadaster\forestrycadaster.json" />
+    <Content Include="assets\json\app\geometry\basemap.json" />
+    <Content Include="assets\json\app\geometry\basesimplemap.json" />
+    <Content Include="assets\json\app\geometry\catalog\catalog.json" />
+    <Content Include="assets\json\app\geometry\catalog\widgets\basic\basic.json" />
+    <Content Include="assets\json\app\geometry\converter.json" />
+    <Content Include="assets\json\app\geometry\spatialreferences.json" />
+    <Content Include="assets\json\app\geometry\symbols.json" />
+    <Content Include="assets\json\app\geometry\viewer\viewer.json" />
+    <Content Include="assets\json\app\geometry\viewer\viewermarina.json" />
+    <Content Include="assets\json\app\geometry\viewer\viewerminvivienda.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\bookmark\bookmark.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\coverage\coveragechange.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\documentlibrary\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\environment\station\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\event\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\forestrycadaster\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\geophoto\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\minedu\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\miningconcession\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\miningconcession\querynational.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\miningconcession\simplequery.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\miningproject\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\monitoring\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\project\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\ruralcadaster\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\surfacepropertynational\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\surfaceproperty\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\vip\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\custom\vip\variable.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\elevationprofile\elevationprofile.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\extractdata2\extractdata.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\extractdata\extractdata.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\goto\goto.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\graphic\graphic.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\identify\identify.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\indicator\query2\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\indicator\query\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\indicator\thematicmap\thematicmap.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\measure\measure.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\mouseposition\mouseposition.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\overlappingarea\overlappingarea.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\overlap\overlap.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\print\html5\print.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\print\print.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\query\query.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\scale\scale.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\shapefile\shapefile.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\splash\splash.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\toc\toc.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\zee\query2\queryzee.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\zee\query3\queryzee.json" />
+    <Content Include="assets\json\app\geometry\viewer\widgets\zee\query\queryzee.json" />
+    <Content Include="assets\json\app\geometry\webservice\webservice.json" />
+    <Content Include="assets\json\app\geometry\webservice\widgets\wfs\wfs.json" />
+    <Content Include="assets\json\app\geometry\webservice\widgets\wms\wms.json" />
+    <Content Include="assets\json\app\miningconcession\baseminingconcession.json" />
+    <Content Include="assets\json\app\miningconcession\miningcadaster\mineralprice.json" />
+    <Content Include="assets\json\app\miningconcession\miningcadaster\miningcadaster.json" />
+    <Content Include="assets\json\app\miningconcession\miningcadaster\miningcadaster2.json" />
+    <Content Include="assets\json\app\miningconcession\miningcadaster\record.json" />
+    <Content Include="assets\json\app\miningconcession\miningconcession\coordinateconverter.json" />
+    <Content Include="assets\json\app\miningconcession\miningconcession\miningconcession.json" />
+    <Content Include="assets\json\app\miningconcession\miningconcession\overlap.json" />
+    <Content Include="assets\json\app\miningconcession\miningconcession\procedure.json" />
+    <Content Include="assets\json\app\miningconcession\miningrequest\miningrequest.json" />
+    <Content Include="assets\json\app\miningconcession\miningrequest\miningrequest2.json" />
+    <Content Include="assets\json\app\miningproject\miningproject\miningproject.json" />
+    <Content Include="assets\json\app\miningproject\miningproject\miningproject2.json" />
+    <Content Include="assets\json\app\miningproject\miningproject\procedure.json" />
+    <Content Include="assets\json\app\project\project.json" />
+    <Content Include="assets\json\app\ruralcadaster\ruralcadaster.json" />
+    <Content Include="assets\json\app\surfaceproperty\surfaceright\procedure.json" />
+    <Content Include="assets\json\app\uea\uea\procedure.json" />
+    <Content Include="srcassets\css\bootstrap.css" />
+    <Content Include="srcassets\css\extend\allextend\size.css" />
+    <Content Include="srcassets\css\extend\bootstrapextend\bootstrap-table.css" />
+    <Content Include="srcassets\css\extend\bootstrapextend\bootstrap.css" />
+    <Content Include="srcassets\css\extend\esriextend\esri.css" />
+    <Content Include="srcassets\css\extend\leafletextend\leaflet.css" />
+    <Content Include="srcassets\css\extend\openlayersextend\openlayers.css" />
+    <Content Include="srcassets\css\extra\animation.css" />
+    <Content Include="srcassets\css\extra\gh\app.css" />
+    <Content Include="srcassets\css\extra\gh\box.css" />
+    <Content Include="srcassets\css\extra\gh\button.css" />
+    <Content Include="srcassets\css\extra\gh\cursor.css" />
+    <Content Include="srcassets\css\extra\gh\form.css" />
+    <Content Include="srcassets\css\extra\gh\icon.css" />
+    <Content Include="srcassets\css\extra\gh\img.css" />
+    <Content Include="srcassets\css\extra\gh\menu.css" />
+    <Content Include="srcassets\css\extra\gh\miscelanea.css" />
+    <Content Include="srcassets\css\extra\gh\mouseposition.css" />
+    <Content Include="srcassets\css\extra\gh\row.css" />
+    <Content Include="srcassets\css\extra\gh\scroll.css" />
+    <Content Include="srcassets\css\extra\gh\slide.css" />
+    <Content Include="srcassets\css\extra\gh\social.css" />
+    <Content Include="srcassets\css\extra\gh\table.css" />
+    <Content Include="srcassets\css\extra\html5\html5.css" />
+    <Content Include="srcassets\css\extra\jazani\app.css" />
+    <Content Include="srcassets\css\extra\jazani\button.css" />
+    <Content Include="srcassets\css\extra\jazani\effect.css" />
+    <Content Include="srcassets\css\extra\jazani\file.css" />
+    <Content Include="srcassets\css\extra\jazani\icon.css" />
+    <Content Include="srcassets\css\extra\jazani\menu.css" />
+    <Content Include="srcassets\css\extra\jazani\misceleanea.css" />
+    <Content Include="srcassets\css\extra\jazani\misceleanea2.css" />
+    <Content Include="srcassets\css\extra\jazani\panel.css" />
+    <Content Include="srcassets\css\extra\jazani\toolbar.css" />
+    <Content Include="srcassets\css\font-awesome.css" />
+    <Content Include="srcassets\css\mobile\bootstrap.css" />
+    <Content Include="srcassets\css\templates\lightskyblue\app\app.css" />
+    <Content Include="srcassets\css\templates\lightskyblue\app\button.css" />
+    <Content Include="srcassets\css\templates\lightskyblue\app\color.css" />
+    <Content Include="srcassets\css\templates\lightskyblue\app\dropdown-menu.css" />
+    <Content Include="srcassets\css\templates\lightskyblue\app\esri.css" />
+    <Content Include="srcassets\css\templates\lightskyblue\app\form.css" />
+    <Content Include="srcassets\css\templates\lightskyblue\app\jca-color-blue.css" />
+    <Content Include="srcassets\css\templates\lightskyblue\app\misceleanea.css" />
+    <Content Include="srcassets\css\templates\lightskyblue\app\mouseposition.css" />
+    <Content Include="srcassets\css\templates\lightskyblue\app\notqualified.css" />
+    <Content Include="srcassets\css\templates\lightskyblue\app\ol.css" />
+    <Content Include="srcassets\css\templates\lightskyblue\app\toolbar.css" />
+    <Content Include="srcassets\fonts\fontawesome-webfont.svg" />
+    <Content Include="srcassets\fonts\gh.svg" />
+    <Content Include="srcassets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="srcassets\fonts\jca.svg" />
+    <Content Include="srcassets\ico\minus.png" />
+    <Content Include="srcassets\img\background.jpg" />
+    <Content Include="srcassets\img\background3.jpg" />
+    <Content Include="srcassets\img\cursor.cur" />
+    <Content Include="srcassets\img\cursor.svg" />
+    <Content Include="srcassets\img\formats\agreement.png" />
+    <Content Include="srcassets\img\formats\data.png" />
+    <Content Include="srcassets\img\formats\pay.png" />
+    <Content Include="srcassets\img\geojaz\slides\1.jpg" />
+    <Content Include="srcassets\img\geojaz\slides\2.jpg" />
+    <Content Include="srcassets\img\geojaz\slides\3.jpg" />
+    <Content Include="srcassets\img\geojaz\slides\4.jpg" />
+    <Content Include="srcassets\img\geojaz\slides\5.jpg" />
+    <Content Include="srcassets\img\goremdd\slides\1.jpg" />
+    <Content Include="srcassets\img\goremdd\slides\2.jpg" />
+    <Content Include="srcassets\img\goremdd\slides\3.jpg" />
+    <Content Include="srcassets\img\goremdd\slides\4.jpg" />
+    <Content Include="srcassets\img\goremdd\slides\5.jpg" />
+    <Content Include="srcassets\img\infografia.jpg" />
+    <Content Include="srcassets\img\logos\casapalca.jpg" />
+    <Content Include="srcassets\img\logos\goremdd.png" />
+    <Content Include="srcassets\img\logos\jazani.png" />
+    <Content Include="srcassets\img\logos\jazani2.png" />
+    <Content Include="srcassets\img\logos\logo.png" />
+    <Content Include="srcassets\img\logos\minedu.png" />
+    <Content Include="srcassets\img\logos\minvivienda.png" />
+    <Content Include="srcassets\img\logos\sigemin.png" />
+    <Content Include="srcassets\img\logos\sigemin2.png" />
+    <Content Include="srcassets\img\logos\sigrid.png" />
+    <Content Include="srcassets\img\logos\sigrid.svg" />
+    <Content Include="srcassets\img\logos\volcan.png" />
+    <Content Include="srcassets\img\logos\volcan.svg" />
+    <Content Include="srcassets\img\north-arrow-2.svg" />
+    <Content Include="srcassets\img\north-arrow.svg" />
+    <Content Include="srcassets\img\portal\banner\customer.jpg" />
+    <Content Include="srcassets\img\portal\banner\novelty.png" />
+    <Content Include="srcassets\img\portal\banner\sigemin.jpg" />
+    <Content Include="srcassets\img\portal\banner\sigma.png" />
+    <Content Include="srcassets\img\portal\banner\solution.jpg" />
+    <Content Include="srcassets\img\portal\banner\training.jpg" />
+    <Content Include="srcassets\img\portal\customer\antapacay.png" />
+    <Content Include="srcassets\img\portal\customer\bosques.png" />
+    <Content Include="srcassets\img\portal\customer\casapalca.png" />
+    <Content Include="srcassets\img\portal\customer\cedimin.png" />
+    <Content Include="srcassets\img\portal\customer\cementoandino.png" />
+    <Content Include="srcassets\img\portal\customer\cementolima.png" />
+    <Content Include="srcassets\img\portal\customer\cementosol.png" />
+    <Content Include="srcassets\img\portal\customer\cenepred.png" />
+    <Content Include="srcassets\img\portal\customer\century.png" />
+    <Content Include="srcassets\img\portal\customer\coga.png" />
+    <Content Include="srcassets\img\portal\customer\comarsa.png" />
+    <Content Include="srcassets\img\portal\customer\cooperacionalemanagiz.png" />
+    <Content Include="srcassets\img\portal\customer\dipecho.png" />
+    <Content Include="srcassets\img\portal\customer\earthinstitute.jpg" />
+    <Content Include="srcassets\img\portal\customer\euroecotrade.png" />
+    <Content Include="srcassets\img\portal\customer\giz.png" />
+    <Content Include="srcassets\img\portal\customer\gobiernoregionalmadrededios.png" />
+    <Content Include="srcassets\img\portal\customer\gobiernoregionalsanmartin.png" />
+    <Content Include="srcassets\img\portal\customer\gobiernoregionalucayali.png" />
+    <Content Include="srcassets\img\portal\customer\marsa.png" />
+    <Content Include="srcassets\img\portal\customer\milpo.png" />
+    <Content Include="srcassets\img\portal\customer\ministerioagricultura.png" />
+    <Content Include="srcassets\img\portal\customer\ministerioambiente.png" />
+    <Content Include="srcassets\img\portal\customer\ministeriovivienda.png" />
+    <Content Include="srcassets\img\portal\customer\minsur.png" />
+    <Content Include="srcassets\img\portal\customer\mrc1explotaciones.png" />
+    <Content Include="srcassets\img\portal\customer\mwh.jpg" />
+    <Content Include="srcassets\img\portal\customer\panamericansilver.png" />
+    <Content Include="srcassets\img\portal\customer\sedamhuancayo.png" />
+    <Content Include="srcassets\img\portal\customer\sernanp.png" />
+    <Content Include="srcassets\img\portal\customer\transportadegasperu.jpg" />
+    <Content Include="srcassets\img\portal\customer\unacem.jpg" />
+    <Content Include="srcassets\img\portal\customer\unfpa.png" />
+    <Content Include="srcassets\img\portal\customer\uppercanyonminerals.png" />
+    <Content Include="srcassets\img\portal\customer\volcan.png" />
+    <Content Include="srcassets\img\portal\customer\xstrata.png" />
+    <Content Include="srcassets\img\portal\customer\yura.png" />
+    <Content Include="srcassets\img\portal\home\check.svg" />
+    <Content Include="srcassets\img\portal\home\circle1.png" />
+    <Content Include="srcassets\img\portal\home\circle2.png" />
+    <Content Include="srcassets\img\portal\home\circle3.png" />
+    <Content Include="srcassets\img\portal\home\circle4.png" />
+    <Content Include="srcassets\img\portal\products\appmovil1.jpg" />
+    <Content Include="srcassets\img\portal\products\appmovil2.jpg" />
+    <Content Include="srcassets\img\portal\products\appmovil3.png" />
+    <Content Include="srcassets\img\portal\products\appstore.svg" />
+    <Content Include="srcassets\img\portal\products\check-negro.svg" />
+    <Content Include="srcassets\img\portal\products\download-blue.svg" />
+    <Content Include="srcassets\img\portal\products\googleplay.svg" />
+    <Content Include="srcassets\img\portal\products\imagecourse1.png" />
+    <Content Include="srcassets\img\portal\products\imagecourse2.jpg" />
+    <Content Include="srcassets\img\portal\products\imagecourse3.png" />
+    <Content Include="srcassets\img\portal\products\imagecourse4.png" />
+    <Content Include="srcassets\img\portal\products\imagecourse5.png" />
+    <Content Include="srcassets\img\portal\products\imagecourse6.png" />
+    <Content Include="srcassets\img\portal\products\imagecourse7.jpg" />
+    <Content Include="srcassets\img\portal\products\imagecourse8.png" />
+    <Content Include="srcassets\img\portal\products\imagecourse9.jpg" />
+    <Content Include="srcassets\img\portal\products\imageservice1.jpeg" />
+    <Content Include="srcassets\img\portal\products\imageservice2.jpeg" />
+    <Content Include="srcassets\img\portal\products\imageservice3.jpeg" />
+    <Content Include="srcassets\img\portal\products\imageservice4.jpeg" />
+    <Content Include="srcassets\img\portal\products\imageservice5.jpg" />
+    <Content Include="srcassets\img\portal\products\imageservice6.jpg" />
+    <Content Include="srcassets\img\portal\products\imgmovil1.png" />
+    <Content Include="srcassets\img\portal\products\imgmovil2.png" />
+    <Content Include="srcassets\img\portal\products\novedadcurso1.jpg" />
+    <Content Include="srcassets\img\portal\products\novedadcurso2.png" />
+    <Content Include="srcassets\img\portal\products\novedadenterprise1.png" />
+    <Content Include="srcassets\img\portal\products\novedadenterprise2.png" />
+    <Content Include="srcassets\img\portal\sliders\slider1.jpg" />
+    <Content Include="srcassets\img\portal\sliders\slider2.jpg" />
+    <Content Include="srcassets\img\portal\sliders\slider3.jpg" />
+    <Content Include="srcassets\img\tmpls\dark_wood.png" />
+    <Content Include="srcassets\img\tmpls\tick.png" />
+    <Content Include="srcassets\img\tree\32px.png" />
+    <Content Include="srcassets\img\tree\icons.png" />
+    <Content Include="srcassets\js\app\admin\Login.js" />
+    <Content Include="srcassets\js\app\admin\menu\Main.js" />
+    <Content Include="srcassets\js\app\admin\office\Main.js" />
+    <Content Include="srcassets\js\app\admin\role\Main.js" />
+    <Content Include="srcassets\js\app\admin\user\Index.js" />
+    <Content Include="srcassets\js\app\admin\user\Main.js" />
+    <Content Include="srcassets\js\app\Base.js" />
+    <Content Include="srcassets\js\app\BaseAlert.js" />
+    <Content Include="srcassets\js\app\BaseWidget.js" />
+    <Content Include="srcassets\js\app\Default.js" />
+    <Content Include="srcassets\js\app\default\Help.js" />
+    <Content Include="srcassets\js\app\default\Home.js" />
+    <Content Include="srcassets\js\app\default\Index.js" />
+    <Content Include="srcassets\js\app\default\Index2.js" />
+    <Content Include="srcassets\js\app\documentlibrary\Attachment.js" />
+    <Content Include="srcassets\js\app\documentlibrary\BaseFolder.js" />
+    <Content Include="srcassets\js\app\documentlibrary\BaseTracing.js" />
+    <Content Include="srcassets\js\app\documentlibrary\BaseTracingDocument.js" />
+    <Content Include="srcassets\js\app\documentlibrary\documenttype\Main.js" />
+    <Content Include="srcassets\js\app\environment\agreement\Calendar.js" />
+    <Content Include="srcassets\js\app\environment\agreement\Main.js" />
+    <Content Include="srcassets\js\app\environment\agreement\Monitoring.js" />
+    <Content Include="srcassets\js\app\environment\agreement\tmpls\day.html" />
+    <Content Include="srcassets\js\app\environment\agreement\tmpls\events-list.html" />
+    <Content Include="srcassets\js\app\environment\agreement\tmpls\modal.html" />
+    <Content Include="srcassets\js\app\environment\agreement\tmpls\month-day.html" />
+    <Content Include="srcassets\js\app\environment\agreement\tmpls\month.html" />
+    <Content Include="srcassets\js\app\environment\agreement\tmpls\week-days.html" />
+    <Content Include="srcassets\js\app\environment\agreement\tmpls\week.html" />
+    <Content Include="srcassets\js\app\environment\agreement\tmpls\year-month.html" />
+    <Content Include="srcassets\js\app\environment\agreement\tmpls\year.html" />
+    <Content Include="srcassets\js\app\environment\calibration\Main.js" />
+    <Content Include="srcassets\js\app\environment\data\Main.js" />
+    <Content Include="srcassets\js\app\environment\documentlibrary\Main.js" />
+    <Content Include="srcassets\js\app\environment\environmentalpassive\Main.js" />
+    <Content Include="srcassets\js\app\environment\environmentalpassive\Tracing.js" />
+    <Content Include="srcassets\js\app\environment\environmentalpassive\TracingDocument.js" />
+    <Content Include="srcassets\js\app\environment\equipment\Main.js" />
+    <Content Include="srcassets\js\app\environment\fiscalization\Main.js" />
+    <Content Include="srcassets\js\app\environment\fiscalization\Tracing.js" />
+    <Content Include="srcassets\js\app\environment\incidence\Main.js" />
+    <Content Include="srcassets\js\app\environment\legalframe\BaseMainMap.js" />
+    <Content Include="srcassets\js\app\environment\legalframe\esri\MainMap.js" />
+    <Content Include="srcassets\js\app\environment\legalframe\Main.js" />
+    <Content Include="srcassets\js\app\environment\legalframe\Procedure.js" />
+    <Content Include="srcassets\js\app\environment\legalstandard\Main.js" />
+    <Content Include="srcassets\js\app\environment\model\Main.js" />
+    <Content Include="srcassets\js\app\environment\parameter\Main.js" />
+    <Content Include="srcassets\js\app\environment\station\Main.js" />
+    <Content Include="srcassets\js\app\event\event\BaseFormMap2.js" />
+    <Content Include="srcassets\js\app\event\event\Form2.js" />
+    <Content Include="srcassets\js\app\event\event\Main2.js" />
+    <Content Include="srcassets\js\app\event\event\openlayers\FormMap2.js" />
+    <Content Include="srcassets\js\app\forestrycadaster\forestrycadaster\Main.js" />
+    <Content Include="srcassets\js\app\general\BaseProcedure.js" />
+    <Content Include="srcassets\js\app\general\currencytype\Main.js" />
+    <Content Include="srcassets\js\app\general\mineralgroup\Main.js" />
+    <Content Include="srcassets\js\app\general\mineral\Main.js" />
+    <Content Include="srcassets\js\app\geology\BaseMain.js" />
+    <Content Include="srcassets\js\app\geology\BaseSector.js" />
+    <Content Include="srcassets\js\app\geology\diamantinedrilling\Main.js" />
+    <Content Include="srcassets\js\app\geology\surfacesampling\BaseMainMap.js" />
+    <Content Include="srcassets\js\app\geology\surfacesampling\esri\MainMap.js" />
+    <Content Include="srcassets\js\app\geology\surfacesampling\Main.js" />
+    <Content Include="srcassets\js\app\geology\undergroundsampling\BaseMainMap.js" />
+    <Content Include="srcassets\js\app\geology\undergroundsampling\esri\MainMap.js" />
+    <Content Include="srcassets\js\app\geology\undergroundsampling\Main.js" />
+    <Content Include="srcassets\js\app\geometry\BaseGeometry.js" />
+    <Content Include="srcassets\js\app\geometry\BaseMap.js" />
+    <Content Include="srcassets\js\app\geometry\BaseMapWidget.js" />
+    <Content Include="srcassets\js\app\geometry\BaseService.js" />
+    <Content Include="srcassets\js\app\geometry\BaseSimpleMap.js" />
+    <Content Include="srcassets\js\app\geometry\catalog\openlayers\Main.js" />
+    <Content Include="srcassets\js\app\geometry\catalog\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\catalog\widgets\basic\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\catalog\widgets\basic\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\catalog\widgets\basic\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\catalog\widgets\basic\widget.html" />
+    <Content Include="srcassets\js\app\geometry\esri\Map.js" />
+    <Content Include="srcassets\js\app\geometry\esri\Service.js" />
+    <Content Include="srcassets\js\app\geometry\esri\SimpleMap.js" />
+    <Content Include="srcassets\js\app\geometry\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\geophoto\BaseFormMap2.js" />
+    <Content Include="srcassets\js\app\geometry\geophoto\Form2.js" />
+    <Content Include="srcassets\js\app\geometry\geophoto\Main.js" />
+    <Content Include="srcassets\js\app\geometry\geophoto\Main2.js" />
+    <Content Include="srcassets\js\app\geometry\geophoto\openlayers\FormMap2.js" />
+    <Content Include="srcassets\js\app\geometry\layertable\Main.js" />
+    <Content Include="srcassets\js\app\geometry\leaflet\Map.js" />
+    <Content Include="srcassets\js\app\geometry\leaflet\Service.js" />
+    <Content Include="srcassets\js\app\geometry\leaflet\SimpleMap.js" />
+    <Content Include="srcassets\js\app\geometry\leaflet\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\openlayers\Map.js" />
+    <Content Include="srcassets\js\app\geometry\openlayers\Service.js" />
+    <Content Include="srcassets\js\app\geometry\openlayers\SimpleMap.js" />
+    <Content Include="srcassets\js\app\geometry\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\esri\Main.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\leaflet\Main.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\leaflet\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\openlayers\Main.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\basemap\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\basemap\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\basemap\leaflet\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\basemap\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\bookmark\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\bookmark\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\bookmark\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\bookmark\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\coverage\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\coverage\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\coverage\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\documentlibrary\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\documentlibrary\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\documentlibrary\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\documentlibrary\_formDocument.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\environment\station\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\environment\station\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\environment\station\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\event\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\event\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\event\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\event\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\event\_report.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\forestrycadaster\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\forestrycadaster\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\forestrycadaster\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\geophoto\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\geophoto\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\geophoto\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\geophoto\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\photographics\graphics.png" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\photographics\map.png" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\photographics\school_01.jpg" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\photographics\school_02.jpg" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\photographics\school_03.jpg" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\photographics\school_04.jpg" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\photographics\school_05.jpg" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\photographics\school_06.jpg" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\photographics\video_01.mp4" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\photographics\video_02.mp4" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\photographics\video_03.mp4" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\photographics\video_04.mp4" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\_report.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\_report2.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\miningcadaster\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\miningcadaster\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\miningcadaster\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\miningcadaster\_list.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\miningconcession\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\miningconcession\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\miningconcession\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\miningconcession\_list.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\miningconcession\_pdf.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\miningproject\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\miningproject\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\miningproject\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\miningproject\_list.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\miningproject\_pdf.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\monitoring\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\monitoring\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\monitoring\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\monitoring\_list.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\project\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\project\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\project\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\ruralcadaster\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\ruralcadaster\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\ruralcadaster\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\surfacepropertynational\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\surfacepropertynational\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\surfacepropertynational\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\surfacepropertynational\_list.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\surfaceproperty\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\surfaceproperty\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\surfaceproperty\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\surfaceproperty\_list.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\vip\variable\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\vip\variable\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\vip\variable\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\elevationprofile\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\elevationprofile\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\elevationprofile\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\extractdata2\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\extractdata2\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\extractdata2\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\extractdata2\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\extractdata\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\extractdata\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\extractdata\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\extractdata\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\goto\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\goto\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\goto\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\goto\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\graphic\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\graphic\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\graphic\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\graticule\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\identify\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\identify\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\identify\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\identify\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\indicator\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\indicator\query\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\indicator\query\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\indicator\query\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\indicator\thematicmap\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\indicator\thematicmap\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\indicator\thematicmap\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\measure\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\measure\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\measure\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\measure\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\mouseposition\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\mouseposition\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\mouseposition\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\mouseposition\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\navigation\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\navigation\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\navigation\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\ogc\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\overlappingarea\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\overlappingarea\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\overlappingarea\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\overlap\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\overlap\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\overlap\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\overlap\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\overlap\_list.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\print\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\print\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\print\html5\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\print\html5\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\print\html5\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\print\html5\templates\template1.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\print\html5\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\print\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\print\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\query\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\query\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\query\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\query\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\scale\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\scale\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\scale\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\scale\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\shapefile\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\shapefile\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\shapefile\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\splash\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\splash\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\toc\AGSParser.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\toc\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\toc\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\toc\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\toc\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\toc\WMSParser.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\zee\query2\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\zee\query2\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\zee\query2\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\zee\query3\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\zee\query3\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\zee\query3\widget.html" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\zee\query\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\zee\query\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\zee\query\widget.html" />
+    <Content Include="srcassets\js\app\geometry\webservice\openlayers\Main.js" />
+    <Content Include="srcassets\js\app\geometry\webservice\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\webservice\widgets\wfs\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\webservice\widgets\wfs\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\webservice\widgets\wfs\esri\WidgetWorker.js" />
+    <Content Include="srcassets\js\app\geometry\webservice\widgets\wfs\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\webservice\widgets\wfs\openlayers\WidgetWorker.js" />
+    <Content Include="srcassets\js\app\geometry\webservice\widgets\wfs\widget.html" />
+    <Content Include="srcassets\js\app\geometry\webservice\widgets\wms\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\webservice\widgets\wms\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\webservice\widgets\wms\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\webservice\widgets\wms\widget.html" />
+    <Content Include="srcassets\js\app\geometry\widgets\basemap\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\widgets\basemap\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\widgets\basemap\leaflet\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\widgets\basemap\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\widgets\mouseposition\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\widgets\mouseposition\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\widgets\mouseposition\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\widgets\mouseposition\widget.html" />
+    <Content Include="srcassets\js\app\geometry\widgets\navigation\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\widgets\navigation\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\widgets\navigation\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\widgets\scale\BaseWidget.js" />
+    <Content Include="srcassets\js\app\geometry\widgets\scale\esri\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\widgets\scale\openlayers\Widget.js" />
+    <Content Include="srcassets\js\app\geometry\widgets\scale\widget.html" />
+    <Content Include="srcassets\js\app\incidence\incidence\BaseFormMap2.js" />
+    <Content Include="srcassets\js\app\incidence\incidence\Form2.js" />
+    <Content Include="srcassets\js\app\incidence\incidence\Main2.js" />
+    <Content Include="srcassets\js\app\incidence\incidence\openlayers\FormMap2.js" />
+    <Content Include="srcassets\js\app\Layout.js" />
+    <Content Include="srcassets\js\app\Main.js" />
+    <Content Include="srcassets\js\app\Master.js" />
+    <Content Include="srcassets\js\app\minedu\edan\BaseFormMap2.js" />
+    <Content Include="srcassets\js\app\minedu\edan\Form2.js" />
+    <Content Include="srcassets\js\app\minedu\edan\Main2.js" />
+    <Content Include="srcassets\js\app\minedu\edan\openlayers\FormMap2.js" />
+    <Content Include="srcassets\js\app\miningconcession\BaseMain.js" />
+    <Content Include="srcassets\js\app\miningconcession\CoordinateConverter.js" />
+    <Content Include="srcassets\js\app\miningconcession\importingemment\Main.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningcadaster\BaseMainMap2.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningcadaster\Main.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningcadaster\Main2.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningcadaster\openlayers\MainMap2.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningcadaster\Record.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningconcession\Alert.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningconcession\BaseOverlapMap.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningconcession\Main.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningconcession\MineralPrice.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningconcession\openlayers\OverlapMap.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningconcession\Overlap.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningconcession\Procedure.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningconcession\Statistics.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningconcession\Tracing.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningconcession\TracingDocument.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningrequest\BaseFormMap2.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningrequest\BaseMainMap.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningrequest\esri\MainMap.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningrequest\Form2.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningrequest\Main.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningrequest\Main2.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningrequest\openlayers\FormMap2.js" />
+    <Content Include="srcassets\js\app\miningconcession\miningstandard\Main.js" />
+    <Content Include="srcassets\js\app\miningconcession\pay\Main.js" />
+    <Content Include="srcassets\js\app\miningproject\deposittype\Main.js" />
+    <Content Include="srcassets\js\app\miningproject\MiningProject2.js" />
+    <Content Include="srcassets\js\app\miningproject\miningproject\Alert.js" />
+    <Content Include="srcassets\js\app\miningproject\miningproject\Folder.js" />
+    <Content Include="srcassets\js\app\miningproject\miningproject\FolderMain.js" />
+    <Content Include="srcassets\js\app\miningproject\miningproject\Main.js" />
+    <Content Include="srcassets\js\app\miningproject\miningproject\Procedure.js" />
+    <Content Include="srcassets\js\app\miningproject\miningproject\Tracing.js" />
+    <Content Include="srcassets\js\app\miningproject\miningproject\TracingDocument.js" />
+    <Content Include="srcassets\js\app\miningunit\miningunit\Main.js" />
+    <Content Include="srcassets\js\app\project\project\Main.js" />
+    <Content Include="srcassets\js\app\ruralcadaster\ruralcadaster\Main.js" />
+    <Content Include="srcassets\js\app\socialresponsability\agreementservice\Main.js" />
+    <Content Include="srcassets\js\app\socialresponsability\agreement\Main.js" />
+    <Content Include="srcassets\js\app\socialresponsability\directorate\Main.js" />
+    <Content Include="srcassets\js\app\socialresponsability\entity\BaseMainMap.js" />
+    <Content Include="srcassets\js\app\socialresponsability\entity\esri\MainMap.js" />
+    <Content Include="srcassets\js\app\socialresponsability\entity\Main.js" />
+    <Content Include="srcassets\js\app\socialresponsability\interestgrouptype\Main.js" />
+    <Content Include="srcassets\js\app\socialresponsability\negotiation\Main.js" />
+    <Content Include="srcassets\js\app\socialresponsability\relationship\Main.js" />
+    <Content Include="srcassets\js\app\socialresponsability\requirement\Main.js" />
+    <Content Include="srcassets\js\app\socialresponsability\riskpopulation\Main.js" />
+    <Content Include="srcassets\js\app\socialresponsability\settler\BaseMainMap.js" />
+    <Content Include="srcassets\js\app\socialresponsability\settler\esri\MainMap.js" />
+    <Content Include="srcassets\js\app\socialresponsability\settler\Main.js" />
+    <Content Include="srcassets\js\app\socialresponsability\surfaceright\Alert.js" />
+    <Content Include="srcassets\js\app\socialresponsability\surfaceright\Main.js" />
+    <Content Include="srcassets\js\app\socialresponsability\surfaceright\Procedure.js" />
+    <Content Include="srcassets\js\app\society\holderregime\Main.js" />
+    <Content Include="srcassets\js\app\society\holder\Main.js" />
+    <Content Include="srcassets\js\app\society\holder\Tracing.js" />
+    <Content Include="srcassets\js\app\society\holder\TracingDocument.js" />
+    <Content Include="srcassets\js\app\society\legalrepresentative\Main.js" />
+    <Content Include="srcassets\js\app\surfaceproperty\surfaceright\Alert.js" />
+    <Content Include="srcassets\js\app\surfaceproperty\surfaceright\Main.js" />
+    <Content Include="srcassets\js\app\surfaceproperty\surfaceright\Procedure.js" />
+    <Content Include="srcassets\js\app\surfaceproperty\surfaceright\Tracing.js" />
+    <Content Include="srcassets\js\app\surfaceproperty\surfaceright\TracingDocument.js" />
+    <Content Include="srcassets\js\app\uea\uea\Alert.js" />
+    <Content Include="srcassets\js\app\uea\uea\Main.js" />
+    <Content Include="srcassets\js\app\uea\uea\Procedure.js" />
+    <Content Include="srcassets\js\app\uea\uea\Tracing.js" />
+    <Content Include="srcassets\js\app\uea\uea\TracingDocument.js" />
+    <Content Include="srcassets\js\bootstrap.js" />
+    <Content Include="srcassets\js\extends.js" />
+    <Content Include="srcassets\js\extend\esriextend\Graphic.js" />
+    <Content Include="srcassets\js\extend\esriextend\GraphicsLayer.js" />
+    <Content Include="srcassets\js\extend\esriextend\graphicsUtils.js" />
+    <Content Include="srcassets\js\extend\esriextend\Map.js" />
+    <Content Include="srcassets\js\extend\esriextend\Point.js" />
+    <Content Include="srcassets\js\extend\jqueryextend\jquery.extend.js" />
+    <Content Include="srcassets\js\extend\leafletextend\BingLayer.js" />
+    <Content Include="srcassets\js\extend\leafletextend\TileLayer.js" />
+    <Content Include="srcassets\js\extend\openlayersextend\Feature.js" />
+    <Content Include="srcassets\js\extend\openlayersextend\Geometry.js" />
+    <Content Include="srcassets\js\extend\openlayersextend\LinearRing.js" />
+    <Content Include="srcassets\js\extend\openlayersextend\Map.js" />
+    <Content Include="srcassets\js\extend\openlayersextend\Point.js" />
+    <Content Include="srcassets\js\extend\openlayersextend\Polygon.js" />
+    <Content Include="srcassets\js\extend\openlayersextend\Projection.js" />
+    <Content Include="srcassets\js\extend\openlayersextend\View.js" />
+    <Content Include="srcassets\js\extend\proj4extend\proj4.js" />
+    <Content Include="srcassets\js\extra\extension\ArrayExtension.js" />
+    <Content Include="srcassets\js\extra\extension\ArrayExtension2.js" />
+    <Content Include="srcassets\js\extra\extension\BooleanExtension.js" />
+    <Content Include="srcassets\js\extra\extension\DateExtension.js" />
+    <Content Include="srcassets\js\extra\extension\JSONExtension.js" />
+    <Content Include="srcassets\js\extra\extension\NumberExtension.js" />
+    <Content Include="srcassets\js\extra\extension\ObjectExtension.js" />
+    <Content Include="srcassets\js\extra\extension\StringExtension.js" />
+    <Content Include="srcassets\js\extra\helper\Browser.js" />
+    <Content Include="srcassets\js\extra\helper\Color.js" />
+    <Content Include="srcassets\js\extra\helper\ColorPicker.js" />
+    <Content Include="srcassets\js\extra\helper\DateTime.js" />
+    <Content Include="srcassets\js\extra\helper\DropDownList.js" />
+    <Content Include="srcassets\js\extra\helper\File.js" />
+    <Content Include="srcassets\js\extra\helper\Notification.js" />
+    <Content Include="srcassets\js\extra\helper\Random.js" />
+    <Content Include="srcassets\js\extra\helper\RandomColor.js" />
+    <Content Include="srcassets\js\extra\helper\Request.js" />
+    <Content Include="srcassets\js\extra\helper\spatial\CswHelper.js" />
+    <Content Include="srcassets\js\extra\helper\spatial\TransformHelper.js" />
+    <Content Include="srcassets\js\extra\helper\spatial\WfsHelper.js" />
+    <Content Include="srcassets\js\extra\helper\spatial\WmsHelper.js" />
+    <Content Include="srcassets\js\extra\helper\Table.js" />
+    <Content Include="srcassets\js\extra\helper\Thread.js" />
+    <Content Include="srcassets\js\extra\polyfill\cq-prolyfill.js" />
+    <Content Include="srcassets\js\extra\spatial\OpenLayers.js" />
+    <Content Include="srcassets\js\extra\spatial\proj4js.js" />
+    <Content Include="srcassets\js\extra\spatial\turf.min.js" />
+    <Content Include="srcassets\js\extra\sql.js" />
+    <Content Include="srcassets\js\extra\util\date.js" />
+    <Content Include="srcassets\js\extra\util\html2canvas.js" />
+    <Content Include="srcassets\js\extra\util\moment.js" />
+    <Content Include="srcassets\js\extra\util\papaparse.min.js" />
+    <Content Include="srcassets\js\extra\util\rgba2kml.js" />
+    <Content Include="srcassets\js\extra\util\underscore.min.js" />
+    <Content Include="srcassets\js\extra\wicket.js" />
+    <Content Include="srcassets\js\i18next-1.11.1.js" />
+    <Content Include="srcassets\js\jquery.1.x.js" />
+    <Content Include="srcassets\js\jquery.js" />
+    <Content Include="srcassets\js\modernizr.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\calendar\css\bootstrap-calendar.css" />
+    <Content Include="srcassets\js\plugin\bootstrap\calendar\js\bootstrap-calendar-es-ES.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\calendar\js\bootstrap-calendar.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\checkbox\css\bootstrap-checkbox.css" />
+    <Content Include="srcassets\js\plugin\bootstrap\clockpicker\css\bootstrap-clockpicker.css" />
+    <Content Include="srcassets\js\plugin\bootstrap\clockpicker\js\bootstrap-clockpicker.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\colorpicker\css\bootstrap-colorpicker.css" />
+    <Content Include="srcassets\js\plugin\bootstrap\colorpicker\css\bootstrap-colorpicker.min.css" />
+    <Content Include="srcassets\js\plugin\bootstrap\colorpicker\img\bootstrap-colorpicker\alpha-horizontal.png" />
+    <Content Include="srcassets\js\plugin\bootstrap\colorpicker\img\bootstrap-colorpicker\alpha.png" />
+    <Content Include="srcassets\js\plugin\bootstrap\colorpicker\img\bootstrap-colorpicker\hue-horizontal.png" />
+    <Content Include="srcassets\js\plugin\bootstrap\colorpicker\img\bootstrap-colorpicker\hue.png" />
+    <Content Include="srcassets\js\plugin\bootstrap\colorpicker\img\bootstrap-colorpicker\saturation.png" />
+    <Content Include="srcassets\js\plugin\bootstrap\colorpicker\js\bootstrap-colorpicker.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\colorpicker\js\bootstrap-colorpicker.min.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\datepicker\css\bootstrap-datepicker3.css" />
+    <Content Include="srcassets\js\plugin\bootstrap\datepicker\js\bootstrap-datepicker.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\datepicker\locales\bootstrap-datepicker.de.min.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\datepicker\locales\bootstrap-datepicker.en-GB.min.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\datepicker\locales\bootstrap-datepicker.es.min.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\datepicker\locales\bootstrap-datepicker.fr-CH.min.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\datepicker\locales\bootstrap-datepicker.fr.min.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\dialog\css\bootstrap-dialog.css" />
+    <Content Include="srcassets\js\plugin\bootstrap\dialog\js\bootstrap-dialog.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\fileinput\css\fileinput.min.css" />
+    <Content Include="srcassets\js\plugin\bootstrap\fileinput\img\loading-sm.gif" />
+    <Content Include="srcassets\js\plugin\bootstrap\fileinput\img\loading.gif" />
+    <Content Include="srcassets\js\plugin\bootstrap\fileinput\js\fileinput.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\fileinput\js\fileinput_locale_es.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\fileinput\js\plugins\canvas-to-blob.min.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\filestyle\js\bootstrap-filestyle.min.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\fileupload\css\bootstrap.fileuplad.css" />
+    <Content Include="srcassets\js\plugin\bootstrap\fileupload\js\bootstrap.fileupload.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\fontpicker\css\all.css" />
+    <Content Include="srcassets\js\plugin\bootstrap\fontpicker\css\all.min.css" />
+    <Content Include="srcassets\js\plugin\bootstrap\fontpicker\js\bootstrap-font-picker.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\fontpicker\js\bootstrap-font-size-picker.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\slider\bootstrap-slider.css" />
+    <Content Include="srcassets\js\plugin\bootstrap\slider\bootstrap-slider.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\table\css\bootstrap-table.min.css" />
+    <Content Include="srcassets\js\plugin\bootstrap\table\js\bootstrap-table-.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\table\js\bootstrap-table-es-ES.min.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\table\js\bootstrap-table-flat-json.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\table\js\bootstrap-table-mobile.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\table\js\bootstrap-table-natural-sorting.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\touchspin\css\jquery.bootstrap-touchspin.min.css" />
+    <Content Include="srcassets\js\plugin\bootstrap\touchspin\js\jquery.bootstrap-touchspin.min.js" />
+    <Content Include="srcassets\js\plugin\bootstrap\tree\css\tree.css" />
+    <Content Include="srcassets\js\plugin\bootstrap\tree\js\tree.js" />
+    <Content Include="srcassets\js\plugin\jquery\colorpicker\css\spectrum.css" />
+    <Content Include="srcassets\js\plugin\jquery\colorpicker\js\spectrum.js" />
+    <Content Include="srcassets\js\plugin\jquery\contextmenu\js\jquery.contextmenu.js" />
+    <Content Include="srcassets\js\plugin\jquery\finger\js\jquery.finger.js" />
+    <Content Include="srcassets\js\plugin\jquery\geo\js\jquery.geo.js" />
+    <Content Include="srcassets\js\plugin\jquery\highcharts\js\highcharts-.js" />
+    <Content Include="srcassets\js\plugin\jquery\highcharts\js\highcharts-3d.js" />
+    <Content Include="srcassets\js\plugin\jquery\highcharts\js\highcharts-drilldown.js" />
+    <Content Include="srcassets\js\plugin\jquery\highcharts\js\highcharts-exporting.js" />
+    <Content Include="srcassets\js\plugin\jquery\highcharts\js\highcharts-more.js" />
+    <Content Include="srcassets\js\plugin\jquery\mask\js\jquery.mask.js" />
+    <Content Include="srcassets\js\plugin\jquery\numeric\js\jquery.numeric.js" />
+    <Content Include="srcassets\js\plugin\jquery\pagination\js\jquery.twbsPagination.js" />
+    <Content Include="srcassets\js\plugin\jquery\panzoom\js\jquery.panzoom.js" />
+    <Content Include="srcassets\js\plugin\jquery\signalr\js\jquery.signalR.min.js" />
+    <Content Include="srcassets\js\plugin\jquery\toastr\css\toastr.css" />
+    <Content Include="srcassets\js\plugin\jquery\toastr\js\toastr.js" />
+    <Content Include="srcassets\js\plugin\jquery\tree\css\tree.css" />
+    <Content Include="srcassets\js\plugin\jquery\xml2json\js\jquery.xml2json.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout2.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_LayoutMain.cshtml" />
+    <Content Include="srcassets\fonts\fontawesome-webfont.eot" />
+    <Content Include="srcassets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="srcassets\fonts\fontawesome-webfont.woff" />
+    <Content Include="srcassets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="srcassets\fonts\FontAwesome.otf" />
+    <Content Include="srcassets\fonts\gh.eot" />
+    <Content Include="srcassets\fonts\gh.ttf" />
+    <Content Include="srcassets\fonts\gh.woff" />
+    <Content Include="srcassets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="srcassets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="srcassets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="srcassets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="srcassets\fonts\jca.eot" />
+    <Content Include="srcassets\fonts\jca.ttf" />
+    <Content Include="srcassets\fonts\jca.woff" />
+    <Content Include="srcassets\fonts\open-sans-bold.woff" />
+    <Content Include="srcassets\fonts\open-sans-light.woff" />
+    <Content Include="srcassets\fonts\open-sans-normal.woff" />
+    <Content Include="srcassets\json\app\app.json" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\photographics\reporte.pdf" />
+    <Content Include="srcassets\js\app\geometry\viewer\widgets\custom\minedu\photographics\Reporte_IIEE.pdf" />
+    <Content Include="srcassets\js\plugin\bootstrap\colorpicker\css\bootstrap-colorpicker.css.map" />
+    <Content Include="srcassets\js\plugin\bootstrap\colorpicker\css\bootstrap-colorpicker.min.css.map" />
+    <Content Include="srcassets\locales\en\index.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="srcassets\js\app\geometry\catalog\esri\" />
+    <Folder Include="srcassets\js\app\geometry\catalog\widgets\advanced\" />
+    <Folder Include="srcassets\js\app\geometry\esri\widgets\" />
+    <Folder Include="srcassets\js\app\geometry\leaflet\widgets\" />
+    <Folder Include="srcassets\js\app\geometry\openlayers\widgets\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\esri4\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\coverage\openlayers\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\custom\documentlibrary\openlayers\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\custom\forestrycadaster\esri\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\custom\miningconcession\openlayers\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\custom\miningproject\openlayers\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\custom\project\esri\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\custom\ruralcadaster\esri\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\custom\surfacepropertynational\openlayers\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\custom\surfaceproperty\openlayers\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\elevationprofile\openlayers\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\facilities\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\geolocate\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\graphic\openlayers\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\indicator\query\openlayers\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\indicator\thematicmap\openlayers\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\magnifier\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\ogc\service\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\overlappingarea\openlayers\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\overviewmap\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\preventiveaction\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\progressive\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\shapefile\openlayers\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\socialconflict\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\zee\query2\openlayers\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\zee\query3\openlayers\" />
+    <Folder Include="srcassets\js\app\geometry\viewer\widgets\zee\query\openlayers\" />
+    <Folder Include="srcassets\js\app\geometry\webservice\esri\" />
+    <Folder Include="srcassets\js\app\miningconcession\miningcadaster\esri\" />
+    <Folder Include="srcassets\js\app\miningconcession\miningconcession\esri\" />
+    <Folder Include="srcassets\js\plugin\bootstrap\checkbox\js\" />
+    <Folder Include="srcassets\js\plugin\esri\" />
+    <Folder Include="srcassets\js\plugin\jquery\contextmenu\css\" />
+    <Folder Include="srcassets\js\plugin\jquery\finger\css\" />
+    <Folder Include="srcassets\js\plugin\jquery\geo\css\" />
+    <Folder Include="srcassets\js\plugin\jquery\highcharts\css\" />
+    <Folder Include="srcassets\js\plugin\jquery\mask\css\" />
+    <Folder Include="srcassets\js\plugin\jquery\numeric\css\" />
+    <Folder Include="srcassets\js\plugin\jquery\pagination\css\" />
+    <Folder Include="srcassets\js\plugin\jquery\signalr\css\" />
+    <Folder Include="srcassets\js\plugin\jquery\tree\js\" />
+    <Folder Include="srcassets\js\plugin\jquery\xml2json\css\" />
+    <Folder Include="srcassets\js\plugin\leaflet\" />
+    <Folder Include="srcassets\js\plugin\openlayers\" />
+    <Folder Include="Views\Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6585</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6585/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

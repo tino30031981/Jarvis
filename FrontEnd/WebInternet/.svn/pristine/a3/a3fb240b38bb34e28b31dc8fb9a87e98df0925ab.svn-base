@@ -1,0 +1,39 @@
+{
+    "spatialReferences": [
+        {
+            "id": 4326,
+            "label": "WGS 84 Geodesica",
+            "wkt": ""
+        },        
+        {
+            "id": 32717,
+            "label": "WGS 84 UTM Zona 17S",
+            "wkt": ""
+        },
+        {
+            "id": 32718,
+            "label": "WGS 84 UTM Zona 18S",
+            "wkt": ""
+        },
+        {
+            "id": 32719,
+            "label": "WGS 84 UTM Zona 19S",
+            "wkt": ""
+        },        
+        {
+            "id": 24877,
+            "label": "PSAD 56 UTM Zona 17S",
+            "wkt": ""
+        },
+        {
+            "id": 24878,
+            "label": "PSAD 56 UTM Zona 18S",
+            "wkt": ""
+        },
+        {
+            "id": 24879,
+            "label": "PSAD 56 UTM Zona 19S",
+            "wkt": ""
+        }
+    ]
+}

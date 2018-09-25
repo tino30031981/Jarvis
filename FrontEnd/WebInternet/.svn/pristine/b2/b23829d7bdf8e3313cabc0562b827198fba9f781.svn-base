@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">        
+        <h3> Reporte Daños a Centro Educativos - 2016 </h3>
+        <table class="table table-bordered table-condensed table-responsive table-striped table-hover">
+            <caption>Reporte</caption>
+            <tbody>
+                <tr>
+                    <td>2. Desempeño Laboral </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Cada año lectivo </td>
+                    <td> 02 </td>
+                </tr>
+                <tr>
+                    <td>Cada año, lectivo, para el caso de docentes de IIE
+                        <br />Privadas con constancia emitida por el Director de la IE</td>
+                    <td> 1.5 </td>
+                </tr>
+                <tr>
+                    <td> Puntaje maximo </td>
+                    <td> 25 </td>
+                </tr>
+                <tr>
+                    <td> 3. Capacitacion y/o Actualizacion Técnico Pedagófica(Hasta 10 puntos) </td>
+                    <td></td>
+                </tr> 
+                <tr>
+                    <td> Menor a 20 horas </td>
+                    <td> 0.5 </td>
+                </tr>
+                <tr>
+                    <td> 20 Horas </td>
+                    <td> 10 </td>
+                </tr>
+                <tr>
+                    <td> 30 Horas </td>
+                    <td> 1.5 </td>
+                </tr>
+                <tr>
+                    <td> 40 Horas </td>
+                    <td> 02 </td>
+                <tr>
+                    <td> Menor a 80 Horas </td>
+                    <td> 03 </td>
+                </tr>
+                <tr>
+                    <td> Mayor a 80 Horas </td>
+                    <td> 04 </td>
+                </tr>
+                <tr>
+                    <td> Puntaje Maximo </td>
+                    <td> 20 </td>
+                </tr>
+                <tr>
+                    <td> 4. Ámbito de desempeño </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> Por cada año de labor en zona urbana </td>
+                    <td> 02 </td>
+                </tr>
+                <tr>
+                    <td> Por cada año de labor en zona periferica </td>
+                    <td> 03 </td>
+                </tr>
+                <tr>
+                    <td> Por cada año de labor en zona rural </td>
+                    <td> 04 </td>
+                </tr>                
+                <tr>
+                    <td> Puntaje Maximo </td>
+                    <td> 20 </td>
+                </tr>
+
+                <tr>
+                    <td> 5. Meritos y Produccion Intelectual </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> Resolucion Ministerial, Vice-Ministerial, Directoral de Felicitacion del MINEDU </td>
+                    <td> 03 </td>
+                </tr>
+                <tr>
+                    <td> Resolucion Directoral de felicitacion de DRE o UGEL </td>
+                    <td> 02 </td>
+                </tr>
+                <tr>
+                    <td> Produccion Intelectual </td>
+                    <td> 1.5 </td>
+                </tr>
+                <tr>
+                    <td> Obras de las Especialidades </td>
+                    <td> 05 </td>
+                <tr>
+                    <td> Textos Escolares </td>
+                    <td> 03 </td>
+                </tr>
+                <tr>
+                    <td> Trabajos de Investigación </td>
+                    <td> 02 </td>
+                </tr>
+                <tr>
+                    <td> Articulos Educativos con texto no menor de una pagina A4 </td>
+                    <td> 01 </td>
+                </tr>
+                <tr>
+                    <td> Otros (Cuentas, cartillas, etc) por cada uno </td>
+                    <td> 01 </td>
+                </tr>
+            </tbody>
+        </table>
+        <figure>
+            <img id="img" src="" alt="Mapa" class="img-responsive col-xs-12 col-sm-12 col-md-12 col-lg-12" />
+            <figcaption>
+                Mapa generado desde Sigemin
+            </figcaption>
+        </figure>
+        <div class="col-xs-12 col-sm-4">
+            <img src="" />
+        </div>
+    </div>
+</body>
+</html>

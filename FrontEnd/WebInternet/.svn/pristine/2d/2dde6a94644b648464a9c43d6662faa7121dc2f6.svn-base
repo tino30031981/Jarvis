@@ -1,0 +1,8 @@
+﻿<form enctype="multipart/form-data" method="post" id="frmShapefile">
+    <fieldset class="form-group">
+        <label for="filShapefile">Archivo</label>
+        <input type="file" id="filShapefile" name="file" class="form-control-file filestyle" data-iconName="glyphicon glyphicon-inbox"
+               data-disabled="false" data-buttonBefore="false" data-placeholder="Seleccione el Shapefile" data-buttonText="..." />
+        <small class="text-muted">Seleccione Shapefile en formato ZIP.</small>
+    </fieldset>
+</form>

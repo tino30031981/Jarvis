@@ -1,0 +1,153 @@
+[
+  {
+    "type": "LocalMap",
+    "disabled": true,
+    "items": [
+      {
+        "label": "Local OSM",
+        "style": "ROADMAP",
+        "visible": false,
+        "icon": "maps/googleroad.png",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "type": "EmbeddedMap",
+    "disabled": true,
+    "items": [
+      {
+        "label": "Local OSM",
+        "style": "ROADMAP",
+        "visible": true,
+        "icon": "maps/googleroad.png",
+        "source": "basemap.mbtiles"
+      }
+    ]
+  },
+  {
+    "type": "GoogleMap",
+    "disabled": false,
+    "items": [
+      {
+        "label": "Google Hybrid",
+        "style": "HYBRID",
+        "visible": true,
+        "icon": "maps/googlehybrid.png"
+      },
+      {
+        "label": "Google Satellite",
+        "style": "SATELLITE",
+        "visible": false,
+        "icon": "maps/googlesatellite.png"
+      },
+      {
+        "label": "Google RoadMap",
+        "style": "ROADMAP",
+        "visible": false,
+        "icon": "maps/googleroad.png"
+      },
+      {
+        "label": "Google Terrain",
+        "style": "TERRAIN",
+        "visible": false,
+        "icon": "maps/googleterrain.png"
+      }
+    ]
+  },
+  {
+    "type": "BingMap",
+    "key": "Aj8gdsNO5yJ1wZog0iwtv-o4Y-gMurkI2Y38_hnhYu5FQNDIixyx2UbyfjNDCZON",
+    "items": [
+      {
+        "label": "Bing Maps Road",
+        "style": "Road",
+        "visible": false,
+        "icon": "http://www.arcgis.com/sharing/content/items/ba0e576b7c4f48b1af61eed10f111c18/info/thumbnail/tempbing_road_manchester2.png",
+        "culture": "es-ES"
+      },
+      {
+        "label": "Bing Maps Aerial",
+        "style": "Aerial",
+        "visible": false,
+        "icon": "http://www.arcgis.com/sharing/content/items/8651e4d585654f6b955564efe44d04e5/info/thumbnail/tempbing_aerial_manchester2.png",
+        "culture": "es-ES"
+      },
+      {
+        "label": "Bing Maps Hybrid",
+        "style": "AerialWithLabels",
+        "visible": false,
+        "icon": "http://www.arcgis.com/sharing/content/items/cebcf53409a04f109d309c2befa750e1/info/thumbnail/tempbing_hybrid_manchester2.png",
+        "culture": "es-ES"
+      }
+    ]
+  },
+  {
+    "type": "OSMap",
+    "disabled": true,
+    "items": [
+      {
+        "label": "MapQuest",
+        "style": "MapQuest",
+        "visible": false,
+        "icon": "http://www.arcgis.com/sharing/content/items/ba0e576b7c4f48b1af61eed10f111c18/info/thumbnail/tempbing_road_manchester2.png"
+      },
+      {
+        "label": "MapQuest Aerial",
+        "style": "MapQuestAerial",
+        "visible": false,
+        "disabled": true,
+        "icon": "http://www.arcgis.com/sharing/content/items/ba0e576b7c4f48b1af61eed10f111c18/info/thumbnail/tempbing_road_manchester2.png"
+      },
+      {
+        "label": "MapQuest Hybrid",
+        "style": "MapQuestHybrid",
+        "visible": false,
+        "disabled": true,
+        "icon": "http://www.arcgis.com/sharing/content/items/ba0e576b7c4f48b1af61eed10f111c18/info/thumbnail/tempbing_road_manchester2.png"
+      },
+      {
+        "label": "Humanitarian",
+        "style": "Humanitarian",
+        "visible": false,
+        "disabled": true,
+        "icon": "http://www.arcgis.com/sharing/content/items/ba0e576b7c4f48b1af61eed10f111c18/info/thumbnail/tempbing_road_manchester2.png"
+      },
+      {
+        "label": "Stamen watercolour",
+        "style": "WaterColour",
+        "visible": false,
+        "disabled": true,
+        "icon": "http://www.arcgis.com/sharing/content/items/ba0e576b7c4f48b1af61eed10f111c18/info/thumbnail/tempbing_road_manchester2.png"
+      },
+      {
+        "label": "Stamen toner",
+        "style": "Toner",
+        "visible": false,
+        "disabled": true,
+        "icon": "http://www.arcgis.com/sharing/content/items/ba0e576b7c4f48b1af61eed10f111c18/info/thumbnail/tempbing_road_manchester2.png"
+      },
+      {
+        "label": "Open Street Map",
+        "style": "Mapnik",
+        "visible": false,
+        "disabled": true,
+        "icon": "maps/osmmapnik.png"
+      },
+      {
+        "label": "Open Cycle Map",
+        "style": "OpenCycleMap",
+        "visible": false,
+        "disabled": true,
+        "icon": "http://www.arcgis.com/sharing/content/items/ba0e576b7c4f48b1af61eed10f111c18/info/thumbnail/tempbing_road_manchester2.png"
+      },
+      {
+        "label": "Transport Map",
+        "style": "TransportMap",
+        "visible": false,
+        "disabled": true,
+        "icon": "http://www.arcgis.com/sharing/content/items/ba0e576b7c4f48b1af61eed10f111c18/info/thumbnail/tempbing_road_manchester2.png"
+      }
+    ]
+  }
+]

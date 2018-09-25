@@ -1,0 +1,82 @@
+{
+  "service": {
+    "url": "geometry/mapprinter/geojaz/"
+  },
+  "appTitle": "Sistema Regional de Gestión Territorial del departamento de Madre de Dios",
+  "title": "Mapa Regional",
+  "author": "Gobierno Regional de Madre de Dios",
+  "description": "Descripción",
+  "useScale": 100000,
+  "defaultPaper": "A4",
+  "defaultOrientation": 1,
+  "defaultSrid": 32719,
+  "defaultScaleBarUnits": "Kilometers",
+  "minDpi":100,
+  "stepDpi":10,
+  "maxDpi":400,
+  "copyright": {
+    "visible": true,
+    "defaultValue": "JAZANI SAC"
+  },
+  "useSridsDefault": false,
+  "scaleBarUnits": [
+    {
+      "id": "Kilometers",
+      "label": "Kilómetros"
+    },
+    {
+      "id": "Meters",
+      "label": "Metros"
+    },
+    {
+      "id": "Miles",
+      "label": "Millas"
+    },
+    {
+      "id": "Feet",
+      "label": "Pies"
+    }
+  ],
+  "sistemReferences": [
+    {
+      "id": 4326,
+      "label": "WGS 84",
+      "wkt": ""
+    },
+    {
+      "id": 24877,
+      "label": "PSAD 56 UTM Zona 17S",
+      "wkt": ""
+    },
+    {
+      "id": 24878,
+      "label": "PSAD 56 UTM Zona 18S",
+      "wkt": ""
+    },
+    {
+      "id": 24879,
+      "label": "PSAD 56 UTM Zona 19S",
+      "wkt": ""
+    },
+    {
+      "id": 32717,
+      "label": "WGS 84 UTM Zona 17S",
+      "wkt": ""
+    },
+    {
+      "id": 32718,
+      "label": "WGS 84 UTM Zona 18S",
+      "wkt": ""
+    },
+    {
+      "id": 32719,
+      "label": "WGS 84 UTM Zona 19S",
+      "wkt": ""
+    },
+    {
+      "id": 3857,
+      "label": "Pseudo Mercator",
+      "wkt": ""
+    }
+  ]
+}

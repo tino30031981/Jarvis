@@ -1,0 +1,19 @@
+<form role="form">
+    <fieldset class="form-group">
+        <label for="txtX">Este (X)</label>
+        <input type="text" class="form-control text-right" id="txtX" placeholder="Este (X)">
+        <small class="text-muted">Coordenada este o longitud.</small>
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="txtY">Norte (Y)</label>
+        <input type="text" class="form-control text-right" id="txtY" placeholder="Norte (Y)">
+        <small class="text-muted">Coordenada norte o latitud.</small>
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="ddlSpatialReference">Sistema referencial</label>
+        <select id="ddlSpatialReference" class="form-control"></select>
+        <small class="text-muted">Sistema referencial de la coordenada.</small>
+    </fieldset>
+    <button type="button" id="btnSearch" class="btn"><i class="glyphicon glyphicon-search"></i> Ir</button>
+</form>
+<label class="col-sm-12 control-label">Las coordenadas transformadas son referenciales.</label>

@@ -1,0 +1,61 @@
+﻿@{
+    Page.Title = "Inciar Sesión";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+@section head{
+    @*<script src="@Url.Content("~")assets/js/app/default.js"></script>*@
+}
+@section body{
+    <div class="mainbox gh-centerxy">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="text-center">
+                    <b>Iniciar Sesión</b>
+                </h4>
+            </div>
+            <div class="panel-body">
+                <form id="frm" class="form-horizontal" role="form" action="http://localhost:6585/user/login" method="post" autocomplete="off">
+                    <input id="hdnAreaId" type="hidden" class="form-control" name="hdnAreaId" value="@ViewBag.AreaId">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-user"></i>
+                        </span> <input id="txtUsername" type="text" class="form-control" name="txtUsername" value="" placeholder="N° de tarjeta" required="required">
+                    </div>
+                    <span class="help-block"></span>
+                    <div class="col-sm-12 gh-padding-0">
+                        <div class="col-sm-5">
+                            <select id="ddlIDC" class="form-control">
+                                <option value="DNI">DNI</option>
+                                <option value="RUC">RUC</option>
+                                <option value="CE">CE</option>
+                                <option value="PAS">PAS</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-option-vertical"></i>
+                                </span> <input id="txtIDC" type="text" class="form-control" name="txtIDC" placeholder="IDC" required="required" maxlength="12"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <span class="help-block"></span>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-lock"></i>
+                        </span> <input id="pwdPassword" type="password" class="form-control" name="pwdPassword" placeholder="Clave internet" required="required"  maxlength="6" />
+                    </div>
+                    <span class="help-block text-center">@ViewBag.Message</span>
+                    <span class="help-block"></span>
+                    <button id="btnLogin" class="btn btn-lg btn-block" type="submit">
+                        <i class="glyphicon glyphicon-log-in"></i> Ingresar
+                    </button>
+                </form>
+            </div>
+            <div class="panel-footer">
+                @*Olvidó su contraseña! <a href="#"> Recupere aquí </a>*@
+            </div>
+        </div>
+    </div>
+}

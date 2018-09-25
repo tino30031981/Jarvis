@@ -1,0 +1,11 @@
+{
+  "descriptionLabel": {
+    "allServices": "[Todos]",
+    "allLayers": "[Todos]"
+  },
+  "zoomLevel": 2,
+  "service": {
+    "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/ServicioZEE2/MapServer",
+    "layerId": 0
+  }
+}

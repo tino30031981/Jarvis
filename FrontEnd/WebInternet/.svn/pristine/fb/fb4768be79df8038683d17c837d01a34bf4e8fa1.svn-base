@@ -1,0 +1,19 @@
+{
+  "service": {
+    "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CATASTRO_MINERO/MapServer",
+    "layerId": 0,
+    "joinField": "CODIGOU",
+    "displayField": "CODIGOU",
+    "outFields": [ "CODIGOU", "CONCESION", "TIT_CONCES" ]
+  },
+  "ingemmet": {
+    "urls": {
+      "base": "http://www.ingemmet.gob.pe/",
+      "sidemcat": "sidemcat?",
+      "summary": "igm-sidemcat-portlet/ver-resumen?pCodigo_DM={0}",
+      "pay": "igm-sidemcat-portlet/ver-penalidad?pCodigo_DM={0}",
+      "recordImage": "igm-sidemcat-portlet/image-pdf?cod_exp={0}&page={1}",
+      "recordRange": "igm-sidemcat-portlet/ver-documento?cod_exp={0}&pag_ini={1}&pag_fin={2}"
+    }
+  }
+}

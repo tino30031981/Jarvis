@@ -1,0 +1,21 @@
+{
+  "descriptionLabel": {
+    "allServices": "[Todos]",
+    "allLayers": "[Todos]"
+  },
+  "zoomLevel": 2,
+  "sum": true,
+  "showChart": true,
+  "enabledChart3d": true,
+  "title": "Avance de zonificación ecológica económica",
+  "sourceInformation": "Ministerio del ambiente",
+  "decimalNumbers": 3,
+  "measureUnit": "Has",
+  "service": {
+    "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/ServicioZEE/MapServer"
+  },
+  "serviceDepartment": {
+    "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/ServicioRepresentacionTerritorial/MapServer",
+    "layerId": 0
+  }
+}

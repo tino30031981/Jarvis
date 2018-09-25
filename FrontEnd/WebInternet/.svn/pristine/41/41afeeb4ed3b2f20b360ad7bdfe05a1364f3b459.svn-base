@@ -1,0 +1,8 @@
+﻿.gh-btn-group, .gh-btn-group-vertical {
+    margin: 10px 0 0 4px !important;
+}
+@media (max-width:767px) {
+    .gh-btn-group, .btn-group-vertical {
+        margin: 0;
+    }
+}

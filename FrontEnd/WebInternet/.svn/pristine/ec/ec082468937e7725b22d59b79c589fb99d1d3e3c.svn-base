@@ -1,0 +1,45 @@
+﻿@media (max-width: 800px) {
+    .table-mobile-responsive table,
+    .table-mobile-responsive thead,
+    .table-mobile-responsive tbody,
+    .table-mobile-responsive th,
+    .table-mobile-responsive td,
+    .table-mobile-responsive tr {
+        display: block;
+        border: 0 !important;
+    }
+
+        .table-mobile-responsive thead tr {
+            border: 0 !important;
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        .table-mobile-responsive td:before {
+            font-weight: bold;
+            content: attr(data-title) ": ";
+        }
+}
+
+.table-mobile-responsive table,
+.table-mobile-responsive thead,
+.table-mobile-responsive tbody,
+.table-mobile-responsive th,
+.table-mobile-responsive td,
+.table-mobile-responsive tr:container(width <= 800px) {
+    display: block;
+    border: 0 !important;
+}
+
+    .table-mobile-responsive thead tr:container(width <= 800px) {
+        border: 0 !important;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .table-mobile-responsive td:container(width <= 800px):before {
+        font-weight: bold;
+        content: attr(data-title) ": ";
+    }

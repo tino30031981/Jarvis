@@ -1,0 +1,269 @@
+{
+  "showAsTable": false,
+  "zoomLevel": 2,
+  "service": {
+    "url": "arcgis/rest/services/ServicioCatastroMinero/MapServer",
+    "layerId": 1,
+    "joinField": "id",
+    "defaultFields": ["CODIGO","NOMBRE","ID"],
+    "excludeFields": [""],
+    "fields": [ "*" ],
+    "report": true,
+    "useCustomInfoTemplate": false
+  },
+  "servicesOverlaps": [
+    {
+      "name": "INGEMMET",
+      "servicesOverlaps": [
+        {
+          "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_CATASTRO_MINERO_WGS84_18/MapServer",
+          "layerId": 0,
+          "fields": [ "*" ],
+          "excludeFields": [ "OBJECTID", "Zona", "Carta", "ESTADO_MINEM", "RESOL_EXTI", "FECHA_RESOL_EXTI", "DESIC_RESOL_EXT", "UBICA_EXP", "CALIFICA", "DIRECCION", "HASDATUM", "SHAPE.AREA", "SHAPE.LEN", "SHAPE", "Estado", "FEC_REG", "USU_REG", "FEC_ING", "FEC_LIB", "F_INCOR", "Ubigeo", "RESOL_TIT", "FECHA_RESOL_TIT" ],
+          "symbol": {
+            "color": [ 0, 0, 0, 50 ],
+            "outline": {
+              "color": [ 56, 168, 0, 100 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_AREA_RESERVADA_WGS84_18/MapServer",
+          "layerId": 1,
+          "fields": [ "*" ],
+          "excludeFields": [ "OBJECTID", "SHAPE", "SHAPE.AREA", "SHAPE.LEN" ],
+          "symbol": {
+            "color": [ 0, 0, 0, 50 ],
+            "outline": {
+              "color": [ 232, 190, 255, 100 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_AREA_RESERVADA_WGS84_18/MapServer",
+          "layerId": 3,
+          "fields": [ "*" ],
+          "excludeFields": [ "OBJECTID", "SHAPE", "SHAPE.AREA", "SHAPE.LEN" ],
+          "symbol": {
+            "color": [ 0, 0, 0, 50 ],
+            "outline": {
+              "color": [ 255, 211, 127, 100 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_AREA_RESERVADA_WGS84_18/MapServer",
+          "layerId": 4,
+          "fields": [ "*" ],
+          "excludeFields": [ "OBJECTID", "SHAPE", "SHAPE.AREA", "SHAPE.LEN" ],
+          "symbol": {
+            "color": [ 0, 0, 0, 50 ],
+            "outline": {
+              "color": [ 255, 85, 0, 100 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_AREA_RESERVADA_WGS84_18/MapServer",
+          "layerId": 5,
+          "fields": [ "*" ],
+          "excludeFields": [ "OBJECTID", "SHAPE", "SHAPE.AREA", "SHAPE.LEN" ],
+          "symbol": {
+            "color": [ 0, 0, 0, 50 ],
+            "outline": {
+              "color": [ 255, 222, 255, 100 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_AREA_RESERVADA_WGS84_18/MapServer",
+          "layerId": 6,
+          "fields": [ "*" ],
+          "excludeFields": [ "OBJECTID", "SHAPE", "SHAPE.AREA", "SHAPE.LEN" ],
+          "symbol": {
+            "color": [ 0, 0, 0, 50 ],
+            "outline": {
+              "color": [ 205, 46, 49, 100 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_AREA_RESERVADA_WGS84_18/MapServer",
+          "layerId": 7,
+          "fields": [ "*" ],
+          "excludeFields": [ "OBJECTID", "SHAPE", "SHAPE.AREA", "SHAPE.LEN" ],
+          "symbol": {
+            "color": [ 0, 0, 0, 50 ],
+            "outline": {
+              "color": [ 215, 215, 158, 100 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_AREA_RESERVADA_WGS84_18/MapServer",
+          "layerId": 8,
+          "fields": [ "*" ],
+          "excludeFields": [ "OBJECTID", "SHAPE", "SHAPE.AREA", "SHAPE.LEN" ],
+          "symbol": {
+            "color": [ 0, 0, 0, 50 ],
+            "outline": {
+              "color": [ 100, 150, 106, 100 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_AREA_RESERVADA_WGS84_18/MapServer",
+          "layerId": 9,
+          "fields": [ "*" ],
+          "excludeFields": [ "OBJECTID", "SHAPE", "SHAPE.AREA", "SHAPE.LEN" ],
+          "symbol": {
+            "color": [ 0, 0, 0, 50 ],
+            "outline": {
+              "color": [ 179, 255, 255, 100 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_AREA_RESERVADA_WGS84_18/MapServer",
+          "layerId": 10,
+          "fields": [ "*" ],
+          "excludeFields": [ "OBJECTID", "SHAPE", "SHAPE.AREA", "SHAPE.LEN" ],
+          "symbol": {
+            "color": [ 0, 0, 0, 50 ],
+            "outline": {
+              "color": [ 56, 168, 0, 100 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_AREA_RESERVADA_WGS84_18/MapServer",
+          "layerId": 11,
+          "fields": [ "*" ],
+          "excludeFields": [ "OBJECTID", "SHAPE", "SHAPE.AREA", "SHAPE.LEN" ],
+          "symbol": {
+            "color": [ 0, 0, 0, 50 ],
+            "outline": {
+              "color": [ 120, 237, 142, 100 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        }
+      ]
+    },
+    {
+      "name": "MINAM",
+      "servicesOverlaps": [
+        {
+          "url": "http://geoservidorperu.minam.gob.pe/arcgis/rest/services/ServicioTematico/MapServer",
+          "layerId": 27,
+          "fields": [ "*" ],
+          "excludeFields": [ "OBJECTID", "SHAPE", "SHAPE.AREA", "SHAPE.LEN" ],
+          "symbol": {
+            "color": [ 0, 0, 0, 50 ],
+            "outline": {
+              "color": [ 0, 132, 168, 100 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "url": "http://geoservidorperu.minam.gob.pe/arcgis/rest/services/ServicioTematico/MapServer",
+          "layerId": 35,
+          "fields": [ "*" ],
+          "excludeFields": [ "OBJECTID", "SHAPE", "SHAPE.AREA", "SHAPE.LEN" ],
+          "symbol": {
+            "color": [ 0, 0, 0, 50 ],
+            "outline": {
+              "color": [ 44, 8, 255, 100 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Min. CULTURA",
+      "servicesOverlaps": [
+        {
+          "url": "http://sigda.cultura.gob.pe/arcgis/rest/services/sigda/MAPsDesa/MapServer",
+          "layerId": 2,
+          "fields": [ "*" ],
+          "excludeFields": [ "OBJECTID", "SHAPE", "SHAPE.AREA", "SHAPE.LEN" ],
+          "symbol": {
+            "color": [ 0, 0, 0, 50 ],
+            "outline": {
+              "color": [ 54, 8, 25, 100 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        }
+      ]
+    }
+  ]
+}

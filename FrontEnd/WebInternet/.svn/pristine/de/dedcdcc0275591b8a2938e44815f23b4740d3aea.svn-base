@@ -1,0 +1,49 @@
+{
+    "symbols": {
+        "markerSymbol": {
+            "styles": [
+                {"id": "STYLE_CIRCLE", "label": "Círculo"},
+                {"id": "STYLE_CROSS", "label": "Cruz"},
+                {"id": "STYLE_DIAMOND", "label": "Diamante"},
+                {"id": "STYLE_SQUARE", "label": "Cuadrado"},
+                {"id": "STYLE_X", "label": "Cruz Diagonal"}
+            ]
+        },
+        "lineSymbol": {
+            "styles": [
+                {"id": "STYLE_SOLID", "label": "Sólido"},
+                {"id": "STYLE_DASH", "label": "Guión"},
+                {"id": "STYLE_DOT", "label": "Punto"},
+                {"id": "STYLE_DASHDOT", "label": "Guión Punto"},
+                {"id": "STYLE_DASHDOTDOT", "label": "Guión Punto Punto"}
+            ]
+        },
+        "fillSymbol": {
+            "styles": [
+                    {"id": "STYLE_SOLID", "label": "Sólido"},
+                    {"id": "STYLE_BACKWARD_DIAGONAL", "label": "Diagonal hacia Atrás"},
+                    {"id": "STYLE_CROSS", "label": "Cruz"},
+                    {"id": "STYLE_FORWARD_DIAGONAL", "label": "Diagonal hacia Delante"},
+                    {"id": "STYLE_HORIZONTAL", "label": "Horizontal"},
+                    {"id": "STYLE_VERTICAL", "label": "Vertical"}
+            ],
+            "outline": {
+                "styles": [
+                    {"id": "STYLE_SOLID", "label": "Sólido"},
+                    {"id": "STYLE_DASH", "label": "Guión"},
+                    {"id": "STYLE_DOT", "label": "Punto"},
+                    {"id": "STYLE_DASHDOT", "label": "Guión Punto"},
+                    {"id": "STYLE_DASHDOTDOT", "label": "Guión Punto Punto"}
+                ]
+            }
+        },
+        "textSymbol": {
+            "fonts": [
+                {"id": "Arial", "label": "Arial"},
+                {"id": "Courier", "label": "Courier"},
+                {"id": "Comic Sans MS", "label": "Comic Sans MS"},
+                {"id": "Serif", "label": "Serif"}
+            ]
+        }
+    }
+}

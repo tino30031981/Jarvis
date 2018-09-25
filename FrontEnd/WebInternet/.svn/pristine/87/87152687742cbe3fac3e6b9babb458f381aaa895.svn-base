@@ -1,0 +1,59 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.Serialization;
+
+namespace AppServices.Models
+{
+    [Serializable]
+    [DataContract]
+    public partial class UserModel
+    {
+        [DataMember]
+        public string Password { get; set; }
+
+        [DataMember]
+        public string UserName { get; set; }
+
+        [DataMember]
+        public bool LdapAuthentication { get; set; }
+
+        [DataMember]
+        [ForeignKey("UserId")]
+        public UserModel User { get; set; }
+
+        [DataMember]
+        public List<UserModel> Users { get; set; }
+
+        [DataMember]
+        public string TOKENUUID { get; set; }
+
+        #region "Calculados"
+
+        [DataMember]
+        public bool PasswordReset { get; set; }
+
+        [DataMember]
+        public int VisitByDate { get; set; }
+
+        [DataMember]
+        public DateTime StartDate { get; set; }
+
+        [IgnoreDataMember]
+        public bool Authenticated { get; set; }
+
+        [IgnoreDataMember]
+        public static UserModel Current { get; set; }
+
+        [IgnoreDataMember]
+        public bool CanCreateUser { get; set; }
+
+        [IgnoreDataMember]
+        public bool IsDefault { get; set; }
+
+        [IgnoreDataMember]
+        public bool IsLoginCoorporate { get; set; }
+
+        #endregion "Calculados"
+    }
+}

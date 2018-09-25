@@ -1,0 +1,32 @@
+{
+  "service": { "url": "https://elevation.arcgis.com/arcgis/rest/services/Tools/ElevationSync/GPServer" },
+  "description": "Dibuje una línea con la herramienta de abajo; ArcGIS creará un gráfico de perfil de elevación.",
+  "chartTitle": "Perfil de elevación",
+  "baseChartAtZero": true,
+  "measureUnits": [ 
+    {
+      "label": "Metros",
+      "id": "esriMeters"
+    },
+    {
+      "label": "Kilómetros",
+      "id": "esriKilometers"
+    },
+    {
+      "label": "Miles",
+      "id": "esriMiles"
+    },
+    {
+      "label": "Millas náuticas",
+      "id": "esriNauticalMiles"
+    },
+    {
+      "label": "Yardas",
+      "id": "esriYards"
+    },
+    {
+      "label": "Pies",
+      "id": "esriFeet"
+    }
+  ]
+}

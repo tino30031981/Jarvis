@@ -1,0 +1,101 @@
+{
+  "point": {
+    "default": {
+      "color": [ 255, 255, 0, 100 ],
+      "size": 8,
+      "angle": -30,
+      "xoffset": 0,
+      "yoffset": 0,
+      "type": "esriSMS",
+      "style": "esriSMSCircle",
+      "outline": {
+        "color": [ 255, 255, 0, 100 ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      }
+    },
+    "highlight": {
+      "color": [ 255, 255, 0, 100 ],
+      "size": 12,
+      "angle": -30,
+      "xoffset": 0,
+      "yoffset": 0,
+      "type": "esriSMS",
+      "style": "esriSMSCircle",
+      "outline": {
+        "color": [ 255, 255, 0, 100 ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      }
+    },
+    "selection": {
+      "color": [ 255, 255, 0, 100 ],
+      "size": 8,
+      "type": "esriSMS",
+      "style": "esriSMSCircle",
+      "outline": {
+        "color": [ 255, 255, 0, 100 ],
+        "width": 3,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      }
+    }
+  },
+  "polyline": {
+    "default": {
+      "color": [ 255, 255, 0, 100 ],
+      "width": 2,
+      "type": "esriSLS",
+      "style": "esriSLSLongDashDot"
+    },
+    "highlight": {
+      "color": [ 255, 255, 0, 100 ],
+      "width": 2,
+      "type": "esriSLS",
+      "style": "esriSLSLongDashDot"
+    },
+    "selection": {
+      "color": [ 255, 255, 0, 100 ],
+      "width": 3,
+      "type": "esriSLS",
+      "style": "esriSLSLongDashDot"
+    }
+  },
+  "polygon": {
+    "default": {
+      "color": [ 0, 0, 0, 50 ],
+      "outline": {
+        "color": [ 255, 255, 0, 100 ],
+        "style": "esriSLSSolid",
+        "type": "esriSLS",
+        "width": 2
+      },
+      "style": "esriSFSSolid",
+      "type": "esriSFS"
+    },
+    "highlight": {
+      "color": [ 255, 255, 0, 50 ],
+      "outline": {
+        "color": [ 255, 255, 0, 100 ],
+        "style": "esriSLSSolid",
+        "type": "esriSLS",
+        "width": 0.75
+      },
+      "style": "esriSFSSolid",
+      "type": "esriSFS"
+    },
+    "selection": {
+      "color": [ 255, 255, 0, 50 ],
+      "outline": {
+        "color": [ 255, 255, 0, 100 ],
+        "style": "esriSLSSolid",
+        "type": "esriSLS",
+        "width": 2
+      },
+      "style": "esriSFSSolid",
+      "type": "esriSFS"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+{
+  "formatsOutput": [ "xlsx", "kml", "shp" ]
+}

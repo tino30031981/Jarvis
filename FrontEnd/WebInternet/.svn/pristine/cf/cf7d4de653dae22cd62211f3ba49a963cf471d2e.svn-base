@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <table class="table table-bordered table-condensed table-responsive table-striped table-hover">
+            <caption>Reporte</caption>
+            <tbody>
+               
+            </tbody>
+        </table>
+        <figure>
+            <img id="img" src="" alt="Mapa" class="img-responsive col-xs-12 col-sm-12 col-md-12 col-lg-12" />
+            <figcaption>
+                Foto tomada con la aplicación Event Collect
+            </figcaption>
+        </figure>
+        <div id="divResources" class="col-xs-12 col-sm-4">
+            
+        </div>
+    </div>
+</body>
+</html>

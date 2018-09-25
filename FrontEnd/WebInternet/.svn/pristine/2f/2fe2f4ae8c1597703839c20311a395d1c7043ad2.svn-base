@@ -1,0 +1,18 @@
+﻿.gh-social-icon {
+    position: absolute;
+    top: 60px !important;
+    right: 20px;
+    z-index: 9999999;
+    font-size: 30px;
+}
+
+ul.gh-social-icon li {
+    display: inherit;
+}
+
+@media (max-width: 767px) {
+    .gh-social-icon {
+        left: 20px !important;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,80 @@
+{
+  "level": "PE",
+  "decimalSeparator": ".",
+  "zoomLevel": 1.5,
+  "service": {
+    "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/ServicioRepresentacionTerritorial/MapServer",
+    "layerDataId": 1,
+    "fields": [ "codigo", "nombre" ],
+    "displayField": "codigo",
+    "showLabels": true,
+    "labelExpressionInfo": { "value": "{codigo}({valor})" }
+  },
+  "fields": [ "valor" ],
+  "meatureUnitField": "Simbolo",
+  "classificationType": {
+    "uniqueValueDef": { },
+    "classBreaksDef": {
+      "breakCount": 5,
+      "classificationMethods": [
+        { "id": "natural-breaks" },
+        { "id": "equal-interval" },
+        { "id": "quantile" },
+        {
+          "id": "standard-deviation",
+          "standardDeviationIntervals": [
+            {
+              "id": 1,
+              "name": "Uno"
+            },
+            {
+              "id": 0.5,
+              "name": "Un medio"
+            },
+            {
+              "id": 0.33,
+              "name": "Un tercio"
+            },
+            {
+              "id": 0.25,
+              "name": "Un cuarto"
+            }
+          ]
+        },
+        { "id": "geometrical-interval" }
+      ],
+      "normalizationTypes": [
+        {
+          "id": "field",
+          "normalizationFields": [ ]
+        },
+        { "id": "log" },
+        { "id": "percent-of-total" }
+      ]
+    }
+  },
+  "colorRamp": { "algorithms": [ "cie-lab", "hsv", "lab-lch" ] },
+  "color": {
+    "defaultBase": "rgb(0, 0, 0)",
+    "defaultFrom": "rgb(255, 255, 0)",
+    "defaultTo": "rgb(0, 0, 255)",
+    "defaultLabel": "rgb(0, 0, 0)"
+  },
+  "infoTemplate": {
+    "title": "Código: {codigo}",
+    "fieldInfos": [
+      {
+        "fieldName": "codigo",
+        "label": "codigo",
+        "visible": true,
+        "format": {
+          "places": 0,
+          "digitSeparator": true
+        }
+      }
+    ],
+    "showAttachments": true
+  },
+  "enabledChart3d": true,
+  "chartTypes": [ "column", "line", "area", "pie", "spline", "scatter", "bar" ]
+}

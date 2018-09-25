@@ -1,0 +1,40 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading gh-padding-0">
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar">
+            <div class="btn-group" role="group" aria-label="Edit group">
+                <button class="btn" type="button" id="btnSearch" name="btnSearch">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+                <button class="btn" type="button" id="btnClean" name="btnClean">
+                    <i class="glyphicon glyphicon-refresh"></i>
+                </button>
+            </div>
+            <div class="btn-group pull-right">
+                <div class="btn-group dropdown" id="divServicesOverlaps">
+                    <button class="btn dropdown-toggle" id="ulServices" data-toggle="dropdown">
+                        <i class="glyphicon glyphicon-th-list"></i> <span class="caret"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="form-group form-group-sm">
+                <label for="txtCodeSearch">Código</label>
+                <input type="text" class="form-control" id="txtCodeSearch" placeholder="Ingrese el código">
+            </div>
+            <div class="form-group form-group-sm">
+                <label for="txtNameHolderSearch">Titular</label>
+                <input type="text" class="form-control" id="txtNameHolderSearch" placeholder="Tit. de referencia">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="form-group form-group-sm">
+                <label for="txtNameSearch">Nombre</label>
+                <input type="text" class="form-control" id="txtNameSearch" placeholder="Ingrese el nombre">
+            </div>
+        </div>
+    </form>
+    <table id="tblResult" data-toggle="table" data-card-view="true" class="table table-striped  table-condensed table-hover table-responsive table-striped nowrap"></table>
+</div>

@@ -1,0 +1,11 @@
+﻿.gh-row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+.gh-row-11 {
+    height: 100%;
+}
+
+.gh-row-12 {
+    height: 100%;
+}

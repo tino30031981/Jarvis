@@ -1,0 +1,68 @@
+﻿@{
+    Page.Title = "Consulta de pagos";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+@section head{
+
+}
+@section body{
+
+    <div class="panel panel-default">
+        <div class="panel-heading gh-padding-0"></div>
+        <div class="panel-body">
+            <form class="form-horizontal">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Registrar Pago</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-xs-12 col-sm-6 col-md-6">
+                                <input type="hidden" id="hdnId" name="hdnId" value="0" />
+                                <fieldset class="form-group row has-feedback">
+                                    <label for="txtCode" class="col-xs-12 col-sm-3 col-md-3 control-label">Código/Identificador</label>
+                                    <div class="col-xs-12 col-sm-9 col-md-9">
+                                        <input type="text" class="form-control" id="txtCode" placeholder="" required="required">
+                                    </div>
+                                </fieldset>
+                                <fieldset class="form-group row has-feedback">
+                                    <label for="txtName" class="col-xs-12 col-sm-3 col-md-3 control-label">Titular</label>
+                                    <div class="col-xs-12 col-sm-9 col-md-9">
+                                        <input type="text" class="form-control" id="txtName" placeholder="" required="required">
+                                    </div>
+                                </fieldset>
+                                <fieldset class="form-group row has-feedback">
+                                    <label for="txtFormulationDate" class="col-xs-12 col-sm-3 col-md-3 control-label">Monto</label>
+                                    <div class="col-xs-12 col-sm-9 col-md-9">
+                                        <input type="text" class="form-control" id="txtFormulationDate" placeholder="">
+                                    </div>
+                                </fieldset>
+                                <fieldset class="form-group row has-feedback">
+                                    <label for="txtFormulationHour" class="col-xs-12 col-sm-3 col-md-3 control-label">Elegir cuenta</label>
+                                    <div class="col-xs-12 col-sm-9 col-md-9 bootstrap-timepicker timepicker">
+                                        <input type="text" class="form-control" id="txtFormulationHour" placeholder="">
+                                    </div>
+                                </fieldset>
+                                <fieldset class="form-group row has-feedback">
+                                    <label for="txtFormulationHour" class="col-xs-12 col-sm-3 col-md-3 control-label">Token</label>
+                                    <div class="col-xs-12 col-sm-9 col-md-9 bootstrap-timepicker timepicker">
+                                        <input type="text" class="form-control" id="txtFormulationHour" placeholder="">
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-offset-3 col-xs-12 col-sm-6 col-md-6">
+                                <div class="col-sm-6">
+                                    <button class="btn">Cancelar</button>
+                                </div>
+                                <div class="col-sm-6 pull-right">
+                                    <button class="btn pull-right">Pagar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="divPopup"></div>
+}

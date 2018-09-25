@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section head{
+    @*<script src="@Url.Content("~")assets/js/app/admin/user/index.js"></script>*@
+}
+@section body{
+    
+    <div>
+        <a class="btn" href="http://localhost:6585/user/index">Login</a>
+    </div>
+}

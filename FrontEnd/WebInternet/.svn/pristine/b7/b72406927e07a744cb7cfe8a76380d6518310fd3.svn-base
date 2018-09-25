@@ -1,0 +1,297 @@
+{
+  "defaultZone": 18,
+  "symbolPreview": {
+    "color": [ 0, 255, 175, 0.3 ],
+    "outline": {
+      "color": [ 255, 255, 0, 1 ],
+      "style": "esriSLSSolid",
+      "type": "esriSLS",
+      "width": 0.75
+    },
+    "style": "esriSFSSolid",
+    "type": "esriSFS"
+  },
+  "symbolPreviewVertex": {
+    "color": [ 0, 255, 175, 0.3 ],
+    "outline": {
+      "color": [ 0, 255, 175, 0.3 ],
+      "style": "esriSLSSolid",
+      "type": "esriSLS",
+      "width": 0.75
+    },
+    "style": "esriSFSSolid",
+    "type": "esriSFS"
+  },
+   "services": [
+    {
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CATASTRO_MINERO/MapServer",
+      "layerId": 0,
+      "joinField": "CODIGOU",
+      "displayField": "CODIGOU",
+      "fields": [ "CODIGOU", "Nombre", "Titular" ],
+      "symbol": {
+        "color": [ 0, 255, 175, 0.3 ],
+        "outline": {
+          "color": [ 0, 255, 175, 0.3 ],
+          "style": "esriSLSSolid",
+          "type": "esriSLS",
+          "width": 2
+        },
+        "style": "esriSFSSolid",
+        "type": "esriSFS"
+      }
+    },
+    {
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_AREA_RESERVADA/MapServer",
+      "groups": [
+        {
+          "layerId": 0,
+          "joinField": "CODIGO",
+          "displayField": "NOMBRE",
+          "fields": [ "CODIGO", "NOMBRE", "TP_RESE" ],
+          "symbol": {
+            "color": [ 50, 255, 0, 0.3 ],
+            "outline": {
+              "color": [ 50, 255, 0, 0.3 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "layerId": 1,
+          "joinField": "CODIGO",
+          "displayField": "NOMBRE",
+          "fields": [ "CODIGO", "NOMBRE", "TP_RESE" ],
+          "symbol": {
+            "color": [ 0, 255, 0, 0.3 ],
+            "outline": {
+              "color": [ 50, 255, 0, 0.3 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "layerId": 3,
+          "joinField": "CODIGO",
+          "displayField": "NOMBRE",
+          "fields": [ "CODIGO", "NOMBRE", "TP_RESE" ],
+          "symbol": {
+            "color": [ 255, 255, 100, 0.3 ],
+            "outline": {
+              "color": [ 50, 255, 0, 0.3 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "layerId": 4,
+          "joinField": "CODIGO",
+          "displayField": "NOMBRE",
+          "fields": [ "CODIGO", "NOMBRE", "TP_RESE" ],
+          "symbol": {
+            "color": [ 150, 100, 50, 0.3 ],
+            "outline": {
+              "color": [ 50, 255, 0, 0.3 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "layerId": 5,
+          "joinField": "CODIGO",
+          "displayField": "NOMBRE",
+          "fields": [ "CODIGO", "NOMBRE", "TP_RESE" ],
+          "symbol": {
+            "color": [ 10, 50, 150, 0.3 ],
+            "outline": {
+              "color": [ 50, 255, 0, 0.3 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "layerId": 6,
+          "joinField": "CODIGO",
+          "displayField": "NOMBRE",
+          "fields": [ "CODIGO", "NOMBRE", "TP_RESE" ],
+          "symbol": {
+            "color": [ 50, 90, 100, 0.3 ],
+            "outline": {
+              "color": [ 50, 255, 0, 0.3 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "layerId": 7,
+          "joinField": "CODIGO",
+          "displayField": "NOMBRE",
+          "fields": [ "CODIGO", "NOMBRE", "TP_RESE" ],
+          "symbol": {
+            "color": [ 30, 20, 10, 0.3 ],
+            "outline": {
+              "color": [ 50, 255, 0, 0.3 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "layerId": 8,
+          "joinField": "CODIGO",
+          "displayField": "NOMBRE",
+          "fields": [ "CODIGO", "NOMBRE", "TP_RESE" ],
+          "symbol": {
+            "color": [ 20, 30, 40, 0.3 ],
+            "outline": {
+              "color": [ 50, 255, 0, 0.3 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "layerId": 9,
+          "joinField": "CODIGO",
+          "displayField": "NOMBRE",
+          "fields": [ "CODIGO", "NOMBRE", "TP_RESE" ],
+          "symbol": {
+            "color": [ 40, 40, 40, 0.3 ],
+            "outline": {
+              "color": [ 50, 255, 0, 0.3 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "layerId": 10,
+          "joinField": "CODIGO",
+          "displayField": "NOMBRE",
+          "fields": [ "CODIGO", "NOMBRE", "TP_RESE" ],
+          "symbol": {
+            "color": [ 50, 80, 80, 0.3 ],
+            "outline": {
+              "color": [ 50, 255, 0, 0.3 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        },
+        {
+          "layerId": 11,
+          "joinField": "CODIGO",
+          "displayField": "NOMBRE",
+          "fields": [ "CODIGO", "NOMBRE", "TP_RESE" ],
+          "symbol": {
+            "color": [ 50, 50, 0, 0.3 ],
+            "outline": {
+              "color": [ 50, 255, 0, 0.3 ],
+              "style": "esriSLSSolid",
+              "type": "esriSLS",
+              "width": 2
+            },
+            "style": "esriSFSSolid",
+            "type": "esriSFS"
+          }
+        }
+      ]
+    }
+  ],
+  "servicePoliticalDivision": {
+    "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CARTOGRAFIA_DEMARCACION_WGS84/MapServer",
+    "layerIdDepartment": "0",
+    "layerIdProvince": "1",
+    "layerIdDistrict": "2"
+  },
+  "serviceNationalCartography": {
+    "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84/SERV_ZONAS_GEOWGS84/MapServer",
+    "layerId": 0
+  },
+  "serviceZoneUTM": {
+    "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84/SERV_ZONAS_GEOWGS84/MapServer",
+    "layerId": 1
+  },
+  "servicesOnExtent": {
+    "17": {
+      "miningCadaster": {
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_17/WEBGIS_CATASTRO_MINERO_WGS84_17/MapServer",
+        "layerId": 0
+      },
+      "grid": {
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_17/WEBGIS_CUADRICULAS_WGS84_17/MapServer",
+        "layerId": 0
+      }
+    },
+    "18": {
+      "miningCadaster": {
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_CATASTRO_MINERO_WGS84_18/MapServer",
+        "layerId": 0
+      },
+      "grid": {
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_CUADRICULAS_WGS84_18/MapServer",
+        "layerId": 0
+      }
+    },
+    "19": {
+      "miningCadaster": {
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_19/WEBGIS_CATASTRO_MINERO_WGS84_19/MapServer",
+        "layerId": 0
+      },
+      "grid": {
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_19/WEBGIS_CUADRICULAS_WGS84_19/MapServer",
+        "layerId": 0
+      }
+    }
+  },
+  "spatialReferences": [
+    {
+      "id": 32717,
+      "name": "WGS 84 UTM 17S"
+    },
+    {
+      "id": 32718,
+      "name": "WGS 84 UTM 18S"
+    },
+    {
+      "id": 32719,
+      "name": "WGS 84 UTM 19S"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿<form>
+    <fieldset class="form-group">
+        <label for="ddlServer">Servidor</label>
+        <select class="form-control" id="ddlServer"></select>
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="txtAnyText">Texto</label>
+        <input type="email" class="form-control" id="txtAnyText" placeholder="Texto a buscar">
+        <small class="text-muted">Ingrese el texto a buscar</small>
+    </fieldset>
+    <button type="button" id="btnSearch" class="btn btn-default"><i class="glyphicon glyphicon-search"></i>Buscar</button>
+</form>
+<div class="text-center"><ul id="ulPaginator" class="pagination-sm"></ul></div>
+<div id="divResult"></div>

@@ -1,0 +1,130 @@
+{
+  "defaultsoap": 32718,
+  "defaultZone": 18,
+  "symbolPreview": {
+    "color": [ 0, 255, 175, 0.3 ],
+    "outline": {
+      "color": [ 255, 255, 0, 1 ],
+      "style": "esriSLSSolid",
+      "type": "esriSLS",
+      "width": 0.75
+    },
+    "style": "esriSFSSolid",
+    "type": "esriSFS"
+  },
+  "symbolPreviewVertex": {
+    "color": [ 0, 255, 175, 0.3 ],
+    "outline": {
+      "color": [ 0, 255, 175, 0.3 ],
+      "style": "esriSLSSolid",
+      "type": "esriSLS",
+      "width": 0.75
+    },
+    "style": "esriSFSSolid",
+    "type": "esriSFS"
+  },
+  "soaps": [
+    {
+      "id": 32717,
+      "name": "WGS 84 UTM Zona 17S",
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/services/WGS84_17/WEBGIS_CATASTRO_MINERO_WGS84_17/MapServer",
+      "layerId": 0
+    },
+    {
+      "id": 32718,
+      "name": "WGS 84 UTM Zona 18S",
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/services/WGS84_18/WEBGIS_CATASTRO_MINERO_WGS84_18/MapServer",
+      "layerId": 0
+    },
+    {
+      "id": 32719,
+      "name": "WGS 84 UTM Zona 19S",
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/services/WGS84_19/WEBGIS_CATASTRO_MINERO_WGS84_19/MapServer",
+      "layerId": 0
+    }
+  ],
+  "services": [
+    {
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CATASTRO_MINERO/MapServer",
+      "layerId": 0,
+      "joinField": "CODIGOU",
+      "displayField": "CODIGOU",
+      "fields": [ "CODIGOU", "Nombre", "Titular" ],
+      "symbol": {
+        "color": [ 0, 255, 175, 0.3 ],
+        "outline": {
+          "color": [ 0, 255, 175, 0.3 ],
+          "style": "esriSLSSolid",
+          "type": "esriSLS",
+          "width": 2
+        },
+        "style": "esriSFSSolid",
+        "type": "esriSFS"
+      }
+    },
+    {
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_AREA_RESERVADA/MapServer",
+      "joinField": "CODIGO",
+      "displayField": "NOMBRE",
+      "fields": [ "CODIGO", "NOMBRE", "TP_RESE" ],
+      "layerIds": [ 0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11 ],
+      "symbol": {
+        "color": [ 50, 255, 0, 0.3 ],
+        "outline": {
+          "color": [ 50, 255, 0, 0.3 ],
+          "style": "esriSLSSolid",
+          "type": "esriSLS",
+          "width": 2
+        },
+        "style": "esriSFSSolid",
+        "type": "esriSFS"
+      }
+    }
+  ],
+  "servicePoliticalDivision": {
+    "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CARTOGRAFIA_DEMARCACION_WGS84/MapServer",
+    "layerIdDepartment": "0",
+    "layerIdProvince": "1",
+    "layerIdDistrict": "2"
+  },
+  "serviceNationalCartography": {
+    "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84/SERV_ZONAS_GEOWGS84/MapServer",
+    "layerId": 0
+  },
+  "serviceZoneUTM": {
+    "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84/SERV_ZONAS_GEOWGS84/MapServer",
+    "layerId": 1
+  },
+  "servicesOnExtent": {
+    "17": {
+      "miningCadaster": {
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_17/WEBGIS_CATASTRO_MINERO_WGS84_17/MapServer",
+        "layerId": 0
+      },
+      "grid": {
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_17/WEBGIS_CUADRICULAS_WGS84_17/MapServer",
+        "layerId": 0
+      }
+    },
+    "18": {
+      "miningCadaster": {
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_CATASTRO_MINERO_WGS84_18/MapServer",
+        "layerId": 0
+      },
+      "grid": {
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_CUADRICULAS_WGS84_18/MapServer",
+        "layerId": 0
+      }
+    },
+    "19": {
+      "miningCadaster": {
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_19/WEBGIS_CATASTRO_MINERO_WGS84_19/MapServer",
+        "layerId": 0
+      },
+      "grid": {
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_19/WEBGIS_CUADRICULAS_WGS84_19/MapServer",
+        "layerId": 0
+      }
+    }
+  }
+}

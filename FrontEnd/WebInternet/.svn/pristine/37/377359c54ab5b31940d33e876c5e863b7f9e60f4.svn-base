@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="19px" viewBox="0 0 14 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Mobile-Portrait" sketch:type="MSArtboardGroup" transform="translate(-113.000000, -381.000000)" fill="#038FF4">
+            <path d="M126.244,392.232353 L125.852,391.841176 C125.516,391.505882 125.012,391.561765 124.676,391.841176 L120.868,395.697059 L120.812,382.117647 C120.812,381.502941 120.308,381 119.692,381 C119.076,381 118.572,381.502941 118.572,382.117647 L118.628,395.641176 L114.876,391.897059 C114.54,391.561765 114.036,391.505882 113.644,391.841176 L113.252,392.232353 C112.916,392.567647 112.916,393.070588 113.252,393.405882 L118.908,399.105882 L118.908,399.105882 L119.188,399.385294 C119.356,399.552941 119.524,399.608824 119.748,399.608824 C119.972,399.608824 120.14,399.497059 120.308,399.329412 L120.588,398.994118 L120.644,398.994118 L126.3,393.35 C126.636,393.014706 126.58,392.567647 126.244,392.232353 L126.244,392.232353 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,28 @@
+
+<form>
+    <fieldset class="col-xs-12 col-sm-6 col-md-6">
+        <label for="ddlDepartment">Departamento</label>
+        <select class="form-control" id="ddlDepartment"></select>
+    </fieldset>
+    <fieldset class="col-xs-12 col-sm-6 col-md-6">
+        <label for="ddlProvince">Provincia</label>
+        <select class="form-control" id="ddlProvince"></select>
+    </fieldset>
+    <fieldset class="col-xs-12">
+        <label for="ddlDistrict">Distrito</label>
+        <select class="form-control" id="ddlDistrict"></select>
+    </fieldset>
+    <fieldset class="col-xs-12">
+        <label for="ddlVariable">Variable</label>
+        <select class="form-control" id="ddlVariable"></select>
+    </fieldset>
+    <hr /><hr />
+    <fieldset class="col-xs-12">
+        <input id="txtValue" class="form-control" type="text" data-slider-min="0" data-slider-max="0" data-slider-step="0" data-slider-value="0" /><br />
+        <span id="spnValue"><span></span>&nbsp;<span></span></span>
+    </fieldset>
+    <hr />
+    <fieldset id="fdsVariablesAqua" class="col-xs-12">
+        <ul class="list-group"></ul>
+    </fieldset>
+</form>

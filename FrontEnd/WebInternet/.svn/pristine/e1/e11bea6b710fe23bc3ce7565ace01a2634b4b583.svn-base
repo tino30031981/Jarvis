@@ -1,0 +1,18 @@
+﻿<form>
+    <fieldset class="col-xs-12 col-sm-6 col-md-6">
+        <label for="ddlDepartment">Departamento</label>
+        <select class="form-control" id="ddlDepartment"></select>
+    </fieldset>
+    <fieldset class="col-xs-12 col-sm-6 col-md-6">
+        <label for="ddlProvince">Provincia</label>
+        <select class="form-control" id="ddlProvince"></select>
+    </fieldset>
+    <fieldset class="col-xs-12">
+        <label for="ddlDistrict">Distrito</label>
+        <select class="form-control" id="ddlDistrict"></select>
+    </fieldset>
+    <fieldset class="col-xs-12">
+        <label for="ddlLayer">Capa</label>
+        <select class="form-control" id="ddlLayer"></select>
+    </fieldset>
+</form>

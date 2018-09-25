@@ -1,0 +1,15 @@
+{
+  "wrapAround180": true,
+  "defaultBaseMap": "satellite",
+  "addArcgisBasemaps": false,
+  "portalUrl": "https://www.arcgis.com/",
+  "esriLogoVisible": false,
+  "initialExtent": {
+    "xMinimum": -9109878.5,
+    "yMinimum": -2103124.144,
+    "xMaximum": -7593812.968,
+    "yMaximum": 24130.111
+  },
+  "projectionCode": 3857,
+  "scopeLayer": "geometry/viewer/detailscope"
+}

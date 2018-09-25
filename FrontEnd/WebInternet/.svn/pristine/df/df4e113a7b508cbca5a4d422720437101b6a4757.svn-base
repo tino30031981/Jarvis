@@ -1,0 +1,46 @@
+{
+  "service": {
+    "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CATASTRO_MINERO/MapServer",
+    "layerId": 0,
+    "joinField": "CODIGOU",
+    "displayField": "CODIGOU",
+    "outFields": [ "CODIGOU", "CONCESION", "TIT_CONCES" ]
+  },
+  "servicesOverlaps": {
+    "district": {
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/PSAD56_GEO/SERV_DEMARCACION_LIMITES_GEOPSAD56/MapServer",
+      "layerId": 0
+    },
+    "nationalCartography": {
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/PSAD56_GEO/SERV_ZONAS_GEOPSAD56/MapServer",
+      "layerId": 0
+    }
+  },
+  "servicesByZone": {
+    "17": {
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_17/WEBGIS_CATASTRO_MINERO_WGS84_17/MapServer",
+      "layerId": 0,
+      "srid": 32717
+    },
+    "18": {
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_CATASTRO_MINERO_WGS84_18/MapServer",
+      "layerId": 0,
+      "srid": 32718
+    },
+    "19": {
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_19/WEBGIS_CATASTRO_MINERO_WGS84_19/MapServer",
+      "layerId": 0,
+      "srid": 32719
+    }
+  },
+  "ingemmet": {
+    "urls": {
+      "base": "http://www.ingemmet.gob.pe/",
+      "sidemcat": "sidemcat?",
+      "summary": "igm-sidemcat-portlet/ver-resumen?pCodigo_DM={0}",
+      "pay": "igm-sidemcat-portlet/ver-penalidad?pCodigo_DM={0}",
+      "recordImage": "igm-sidemcat-portlet/image-pdf?cod_exp={0}&page={1}",
+      "recordRange": "igm-sidemcat-portlet/ver-documento?cod_exp={0}&pag_ini={1}&pag_fin={2}&paginado=10"
+    }
+  }
+}

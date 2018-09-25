@@ -1,0 +1,77 @@
+﻿@{
+    Page.Title = (String.IsNullOrWhiteSpace(Page.Title) ? "Plantilla Principal" : Page.Title);
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section head{
+    @*<script src="@Url.Content("~")assets/js/extends.min.js"></script>
+        <script src="@Url.Content("~")assets/js/extension.min.js"></script>
+        <script src="@Url.Content("~")assets/js/helper.min.js"></script>
+        <script src="@Url.Content("~")assets/js/app/base.js"></script>
+        <script src="@Url.Content("~")assets/js/app/master.js"></script>*@
+    @RenderSection("head", required: false)
+}
+@section header{
+    <header id="jcaHeader" class="navbar">
+        <nav class="navbar navbar-default navbar-fixed-top"
+             role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed"
+                            data-toggle="collapse" data-target="#jcaMenu" aria-expanded="false"
+                            aria-controls="jcaMenu">
+                        <span id="jcaTitleMini" class="sr-only"></span>
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </button>
+                    <span class="navbar-brand gh-navbar-brand">
+                        @*<img id="jcaLogo" alt="logo" class="img-responsive jca-logo" />*@
+                    </span>
+                    <span class="navbar-brand gh-navbar-brand gh-position-absolute"><span id="jcaTitle" class="jca-title"></span><small id="jcaSubTitle" class="jca-sub-title"></small></span>
+                </div>
+                <div class="collapse navbar-collapse jca-menu" id="jcaMenu" data-toggle="collapse" data-target="#jcaMenu" aria-s="true" aria-expanded="false">
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li>
+                            <a href="@Url.Content("~")" title="Inicio">
+                                <span class="glyphicon glyphicon-home"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Content("~")default/help/index" title="Ayuda" target="_blank">
+                                <span class="glyphicon glyphicon-question-sign"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="divLoading"></div>
+    @RenderSection("header", required: false)
+}
+@section body{
+    <section id="jcaBody" class="container-fluid gh-content">
+        @*<ol class="breadcrumb gh-margin-0">
+            <li class="active">@Page.Title</li>
+        </ol>*@
+        <div id="jcaMain">
+            @RenderSection("body", required: true)
+        </div>
+        <div id="jcaForm"></div>
+    </section>
+}
+@section footer{
+
+    &nbsp;<footer id="jcaFooter" class="footer text-center navbar-fixed-bottom">
+        <span>
+            <span id="spnCopyright"></span>&nbsp;
+            <span id="spnSuite"></span>&nbsp;
+            <span id="spnYear"></span>&nbsp;
+            <span id="spnProduct"></span>
+        </span>
+    </footer>
+
+    @if (IsSectionDefined("footer"))
+    {
+        @RenderSection("footer", required: false)
+    }
+}

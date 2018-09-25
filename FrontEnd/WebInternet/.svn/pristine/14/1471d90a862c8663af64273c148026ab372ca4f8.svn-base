@@ -1,0 +1,50 @@
+{
+  "state": {
+    "pending": {
+      "id": "PENDING",
+      "label": "No Iniciado",
+      "color": "#C6C6C6",
+      "textColor": "#A7A7A7",
+      "icon": "glyphicon-alert"
+    },
+    "procedure": {
+      "id": "PROCEDURE",
+      "label": "Tramite",
+      "color": "#DF5944",
+      "textColor": "#DF5944",
+      "icon": "glyphicon-minus"
+    },
+    "completed": {
+      "id": "COMPLETED",
+      "label": "Completado",
+      "color": "#50C243",
+      "textColor": "#000000",
+      "icon": "glyphicon-ok"
+    }
+  },
+  "requirement": {
+    "state": {
+      "pending": {
+        "id": "PENDING",
+        "label": "No Iniciado",
+        "color": "#C6C6C6",
+        "textColor": "#A7A7A7",
+        "icon": "glyphicon-alert"
+      },
+      "procedure": {
+        "id": "PROCEDURE",
+        "label": "Tramite",
+        "color": "#DF5944",
+        "textColor": "#DF5944",
+        "icon": "glyphicon-minus"
+      },
+      "completed": {
+        "id": "COMPLETED",
+        "label": "Completado",
+        "color": "#50C243",
+        "textColor": "#000000",
+        "icon": "glyphicon-ok"
+      }
+    }
+  }
+}

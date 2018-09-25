@@ -1,0 +1,32 @@
+﻿.gh-mouseposition {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 40;
+    height: auto;
+    padding: 1px 3px 1px 3px;
+    transition: all 0.9s ease 0s;
+    width: auto;
+    border-radius:0 ;
+    -moz-border-radius: 0;
+    -webkit-border-radius:0 ;
+    opacity: 0.9;
+}
+
+@media (max-width: 320px) {
+    .gh-mouseposition {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 40;
+        height: auto;
+        padding: 1px 3px 1px 3px;
+        transition: all 0.9s ease 0s;
+        width: 100%;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        opacity: 0.9;
+    }
+}

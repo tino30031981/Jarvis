@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'jca';
+    src: url('../fonts/jca.eot?8p3bjg');
+    src: url('../fonts/jca.eot?8p3bjg#iefix') format('embedded-opentype'), 
+    url('../fonts/jca.ttf?8p3bjg') format('truetype'), 
+    url('../fonts/jca.woff?8p3bjg') format('woff'), 
+    url('../fonts/jca.svg?8p3bjg#jca') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.jca {
+    display: inline-block;
+    font: normal normal normal 14px/1 jca;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.jca-lg {
+    font-size: 1.33333333em;
+    line-height: 0.75em;
+    vertical-align: -15%;
+}
+
+.jca-2x {
+    font-size: 2em;
+}
+
+.jca-3x {
+    font-size: 3em;
+}
+
+.jca-4x {
+    font-size: 4em;
+}
+
+.jca-5x {
+    font-size: 5em;
+}
+
+.jca-community:before {
+  content: "\e900";
+}
+.jca-department:before {
+  content: "\e901";
+}
+.jca-district:before {
+  content: "\e902";
+}
+.jca-event:before {
+  content: "\e903";
+}
+.jca-forestry-cadaster:before {
+  content: "\e904";
+}
+.jca-iga:before {
+  content: "\e905";
+}
+.jca-mineral-price:before {
+  content: "\e906";
+}
+.jca-mining-cadaster:before {
+  content: "\e907";
+}
+.jca-mining-concession:before {
+  content: "\e908";
+}
+.jca-mining-concession-2:before {
+  content: "\e909";
+}
+.jca-mining-project:before {
+  content: "\e90a";
+}
+.jca-mining-project-2:before {
+  content: "\e90b";
+}
+.jca-mining-request:before {
+  content: "\e90c";
+}
+.jca-mining-request-2:before {
+  content: "\e90d";
+}
+.jca-national-cartography:before {
+  content: "\e90e";
+}
+.jca-otf:before {
+  content: "\e90f";
+}
+.jca-overlap:before {
+  content: "\e910";
+}
+.jca-peasant-community:before {
+  content: "\e911";
+}
+.jca-photography:before {
+  content: "\e912";
+}
+.jca-pip-component:before {
+  content: "\e913";
+}
+.jca-populated-center:before {
+  content: "\e914";
+}
+.jca-project:before {
+  content: "\e915";
+}
+.jca-province:before {
+  content: "\e916";
+}
+.jca-record:before {
+  content: "\e917";
+}
+.jca-rural-cadaster:before {
+  content: "\e918";
+}
+.jca-station:before {
+  content: "\e919";
+}
+.jca-surface-property:before {
+  content: "\e91a";
+}
+.jca-surface-property-2:before {
+  content: "\e91b";
+}
+.jca-tdr:before {
+  content: "\e91c";
+}
+.jca-uea:before {
+  content: "\e91d";
+}
+.jca-zee:before {
+  content: "\e91e";
+}

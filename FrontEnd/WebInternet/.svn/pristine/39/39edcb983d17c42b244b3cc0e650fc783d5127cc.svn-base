@@ -1,0 +1,13 @@
+{
+  "defaultDepartment": "05",
+  "service": {
+    "url": "arcgis/rest/services/serviciobase/mapserver",
+    "layerDepartmentId": 0,
+    "layerProvinceId": 1,
+    "layerDistrictId": 2
+  },
+  "serviceData": {
+    "url": "arcgis/rest/services/serviciovip/mapserver",
+    "layerId": 0
+  }
+}

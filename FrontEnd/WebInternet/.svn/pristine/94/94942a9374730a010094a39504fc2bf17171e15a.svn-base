@@ -1,0 +1,102 @@
+﻿using AppServices.Models;
+using System;
+using System.Web.Mvc;
+
+
+namespace AppWeb.Controllers
+{
+    public class UserController : BaseController
+    {
+        // GET: User
+        public ActionResult Index()
+        {
+            return View();
+        }        
+
+        [ActionName("login"), HttpGet]
+        public ActionResult Login()
+        {
+            UserModel item = (UserModel)this.Session["user"];
+            if (item != null)
+            {
+                if (item.IsDefault == false)
+                {
+                    if (Request.UrlReferrer == null)
+                        return new RedirectResult(Url.Content("~") + BaseController.DEFAULTINDEX);
+                    else
+                        return new RedirectResult(Request.UrlReferrer.ToString());//Request.Headers["Referer"]
+                }
+                else
+                {
+                    try
+                    {
+                        return View("Login");
+                    }
+                    catch (Exception ex)
+                    {
+                        this.ViewBag.Message = ex.Message;
+                        return View("../Error/View");
+                    }
+                }
+            }
+            else
+                return new RedirectResult(Url.Content("~") + BaseController.LOGINGUEST);
+        }
+
+        [ActionName("login"), HttpPost]
+        public ActionResult Login2(FormCollection collection)
+        {
+            UserModel item = Session[BaseController.USERSESSIONNAME] as UserModel;
+            if (item == null || item.IsDefault == false)
+                return new RedirectResult(Url.Content("~") + BaseController.DEFAULTINDEX2);
+            //ResponseEntity<UserModel> response = null;
+            try
+            {
+                string userName = Request.Form["txtUsername"];
+                string password = Request.Form["pwdPassword"];
+                string areaId = LOGINCOORPORATE ? Request.Form["hdnAreaId"] : "";
+                //if (string.IsNullOrWhiteSpace(areaId))
+                //    response = new UserService().Login(userName, password, false, false);
+                //else
+                //     response = new UserService().Login(userName, password, Convert.ToInt32(areaId), false, false);
+                //if (response.Success == true)
+                //{
+                //    response.Item.IsDefault = false;
+                //    response.Item.IsLoginCoorporate = LOGINCOORPORATE;
+                //    response.Item.Role.Menus.Add(new MenuModel() { Url = BaseController.DEFAULTINDEX });
+                //    response.Item.Role.Menus.Add(new MenuModel() { Url = BaseController.LOGIN });
+                //    response.Item.Role.Menus.Add(new MenuModel() { Url = BaseController.DEFAULTLOGINBYAREA });
+                //    foreach (string element in URLPERMISSION)
+                //    {
+                //        response.Item.Role.Menus.Add(new MenuModel() { Url = element });
+                //    }
+                //    Session[BaseController.USERSESSIONNAME] = response.Item;
+                    
+                //}
+                //else
+                //{
+                //    this.ViewBag.Error = response.Message;
+                //    return LOGINCOORPORATE ? Login(Convert.ToInt32(Request.Form["hdnAreaId"])) : View("Login");
+                //}
+                //ControllerContext.HttpContext.Session[BaseController.USERSESSIONNAME] = response.Item;
+                string url = Url.Content("~") + BaseController.DEFAULTINDEX;
+                //if (LOGINCOORPORATE)
+                    url = Url.Content("~") + BaseController.DEFAULTINDEX2;
+                return new RedirectResult(url);
+            }
+            catch (Exception ex)
+            {
+                this.ViewBag.Message = ex.Message;
+                return new RedirectResult(Url.Content("~") + BaseController.DEFAULTINDEX2);
+                //return LOGINCOORPORATE ? Login(Convert.ToInt32(Request.Form["hdnAreaId"])) : View("Login");
+            }
+        }
+
+        public ActionResult Logout()
+        {
+            Session.RemoveAll();
+            Session.Abandon();
+            return new RedirectResult(Url.Content("~") + BaseController.LOGINGUEST);
+        }
+    }
+}

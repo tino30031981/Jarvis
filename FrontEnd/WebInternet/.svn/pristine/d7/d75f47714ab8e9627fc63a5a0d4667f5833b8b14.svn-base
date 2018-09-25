@@ -1,0 +1,31 @@
+{
+	"showAsTable": true,
+	"zoomLevel": 2,
+	"tolerance": 3,
+	"services": 
+	[
+		{
+		    "type":"wfs",
+			"url": "http://54.233.126.219/geoserver/geojaz/wfs",
+			"layers": 
+			[
+				{
+					"id": "geojaz:ccpp",
+					"searchFields": 
+					[
+						"ubigeo",
+						"nombre"
+					]
+				},
+				{
+					"id": "geojaz:distrito",
+					"searchFields": 
+					[
+						"ubigeo",
+						"nomdis"
+					]
+				}
+			]
+		}
+	]
+}

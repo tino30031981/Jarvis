@@ -1,0 +1,11 @@
+{
+  "service": {
+    "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/ServicioRepresentacionTerritorial/MapServer",
+    "layerId": 0,
+    "queryField": "id",
+    "queryFieldParent": "representacionterritorialid",
+    "fields": [ "*" ]
+  },
+  "informationSource": "MINAM-DGOT",
+  "chartTypes": [ "column", "line", "area", "pie", "spline", "scatter", "bar" ]
+}

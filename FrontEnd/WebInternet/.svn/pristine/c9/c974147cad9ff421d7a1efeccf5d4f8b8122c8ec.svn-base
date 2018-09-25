@@ -1,0 +1,78 @@
+﻿.jca-title {
+    font-size: 100% !important;
+}
+.jca-sub-title {
+    font-size: 100% !important;
+}
+@media (max-width: 768px) {
+    body, main {
+        font-size: 120%;
+    }
+
+    .gh, .jca, .fa, .glyphicon, input, select {
+        font-size: 200% !important;
+    }
+
+    .gh-menu-icon-body {
+        font-size: 800% !important;
+    }
+
+    .gh-menu-text-body {
+        font-size: 150% !important;
+    }
+    .jca-title {
+        font-size: 100% !important;
+    }
+
+    .jca-sub-title {
+        font-size: 100% !important;
+    }
+}
+
+@media (max-width: 520px) {
+    body, main {
+        font-size: 120%;
+    }
+    .gh, .jca, .fa, .glyphicon, input, select {
+        font-size: 100% !important;
+    }
+
+    .gh-menu-icon-body {
+        font-size: 700% !important;
+    }
+
+    .gh-menu-text-body {
+        font-size: 80% !important;
+    }
+    .jca-title {
+        font-size: 100% !important;
+    }
+
+    .jca-sub-title {
+        font-size: 100% !important;
+    }
+}
+
+@media (max-width: 320px) {
+    body, main {
+        font-size: 100%;
+    }
+    .gh, .jca, .fa, .glyphicon, input, select {
+        font-size: 80% !important;
+    }
+
+    .gh-menu-icon-body {
+        font-size: 350% !important;
+    }
+
+    .gh-menu-text-body {
+        font-size: 80% !important;
+    }
+    .jca-title {
+        font-size: 80% !important;
+    }
+
+    .jca-sub-title {
+        font-size: 90% !important;
+    }
+}
