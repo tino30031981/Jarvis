@@ -47,7 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\ClienteEntity.cs" />
+    <Compile Include="Models\ContribuyenteEntity.cs" />
     <Compile Include="Models\CuentaEntity.cs" />
+    <Compile Include="Models\OperacionEntity.cs" />
+    <Compile Include="Models\ResponseEntity.cs" />
+    <Compile Include="Models\TributoEntity.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\Service.cs" />

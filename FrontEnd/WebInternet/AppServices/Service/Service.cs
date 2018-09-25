@@ -14,7 +14,7 @@ namespace AppServices.Service
             ClienteEntity eRespuesta = new ClienteEntity();
             try
             {
-                string data = this.ServiceGet(tarjeta + "/" + idc + "/" + clave, "http://localhost:8080/api/cliente");
+                string data = this.ServiceGet(tarjeta + "/" + idc + "/" + clave, "http://localhost:8080/api/cliente/");
                 eRespuesta = JsonConvert.DeserializeObject<ClienteEntity>(data);
             }
             catch (Exception ex)
@@ -24,14 +24,59 @@ namespace AppServices.Service
             return eRespuesta;
         }
 
+        public ClienteEntity Login(string idCliente)
+        {
+            ClienteEntity eRespuesta = new ClienteEntity();
+            try
+            {
+                string data = this.ServiceGet(idCliente, "http://localhost:8080/api/cliente/");
+                eRespuesta = JsonConvert.DeserializeObject<ClienteEntity>(data);
+            }
+            catch (Exception ex)
+            {
+                eRespuesta = null;
+            }
+            return eRespuesta;
+        }
+
+        public ContribuyenteEntity ConsultaTributos(string buscar)
+        {
+            ContribuyenteEntity eRespuesta = new ContribuyenteEntity();
+            try
+            {
+                string data = this.ServiceGet(buscar, "http://localhost:8888/api/tributo/");
+                eRespuesta = JsonConvert.DeserializeObject<ContribuyenteEntity>(data);
+            }
+            catch (Exception ex)
+            {
+                eRespuesta = null;
+            }
+            return eRespuesta;
+        }       
+
+        public int Pagar(TributoEntity item, OperacionEntity operacion)
+        {
+            int value = 0;
+            try
+            {
+                string datos = JsonConvert.SerializeObject(item);
+                string json = this.ServicPost(datos, "http://localhost:8888/api/enviar");
+                string datos2 = JsonConvert.SerializeObject(operacion);
+                string json2 = this.ServicPost(datos2, "http://localhost:8080/api/retiro");
+                value = 1;
+            }
+            catch (Exception)
+            {
+                value = 0;
+            }            
+            return value;
+        }
 
         public string ServiceGet(string parameters, string path)
         {
             string json = string.Empty;
-            //var usuario = ConfigurationManager.AppSettings["usuario"].ToString();
-            //var clave = ConfigurationManager.AppSettings["clave"].ToString();
             var tiempoEspera = "10";
-            var url = path + "/" + parameters;
+            var url = path + parameters;
             url = url.Replace("$", "&");
             HttpWebRequest peticion;
             peticion = WebRequest.Create(url) as HttpWebRequest;
@@ -50,21 +95,12 @@ namespace AppServices.Service
             return json;
         }
 
-        public void EnvioPost()
+        public string ServicPost(string parameters, string path)
         {
-            ClienteEntity utem = new ClienteEntity();
-            string datos = JsonConvert.SerializeObject(utem);
-            this.ServicPost(datos, "cliente");
-        }
-
-        public string ServicPost(string paraments, string path)
-        {
-            string datos = paraments;
+            string datos = parameters;
             string json = string.Empty;
-            //var usuario = ConfigurationManager.AppSettings["usuario"].ToString();
-            //var clave = ConfigurationManager.AppSettings["clave"].ToString();
-            var tiempoEspera = "10";
-            var url = "http://localhost:8080/api/" + path;
+            var tiempoEspera = "50";
+            var url = path;
             url = url.Replace("$", "&");
             byte[] data = UTF8Encoding.UTF8.GetBytes(datos);
             HttpWebRequest peticion;

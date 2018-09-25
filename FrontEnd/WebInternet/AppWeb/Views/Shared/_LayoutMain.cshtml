@@ -3,11 +3,6 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @section head{
-    @*<script src="@Url.Content("~")assets/js/extends.min.js"></script>
-        <script src="@Url.Content("~")assets/js/extension.min.js"></script>
-        <script src="@Url.Content("~")assets/js/helper.min.js"></script>
-        <script src="@Url.Content("~")assets/js/app/base.js"></script>
-        <script src="@Url.Content("~")assets/js/app/master.js"></script>*@
     @RenderSection("head", required: false)
 }
 @section header{
@@ -23,18 +18,26 @@
                         <span class="glyphicon glyphicon-menu-hamburger"></span>
                     </button>
                     <span class="navbar-brand gh-navbar-brand">
-                        @*<img id="jcaLogo" alt="logo" class="img-responsive jca-logo" />*@
                     </span>
                     <span class="navbar-brand gh-navbar-brand gh-position-absolute"><span id="jcaTitle" class="jca-title"></span><small id="jcaSubTitle" class="jca-sub-title"></small></span>
                 </div>
                 <div class="collapse navbar-collapse jca-menu" id="jcaMenu" data-toggle="collapse" data-target="#jcaMenu" aria-s="true" aria-expanded="false">
                     <ul class="nav navbar-nav navbar-right">
-
-                        <li>
-                            <a href="@Url.Content("~")" title="Inicio">
-                                <span class="glyphicon glyphicon-home"></span>
-                            </a>
-                        </li>
+                        @{
+                            if (Session["user"] != null)
+                            {
+                                <li>
+                                    <a href="@Url.Content("~")" title="Inicio">
+                                        <span class="glyphicon glyphicon-home"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Content("~")user/logout" title="Cerrar sesión">
+                                        Salir
+                                    </a>
+                                </li>
+                            }
+                        }
                         <li>
                             <a href="@Url.Content("~")default/help/index" title="Ayuda" target="_blank">
                                 <span class="glyphicon glyphicon-question-sign"></span>
@@ -50,9 +53,6 @@
 }
 @section body{
     <section id="jcaBody" class="container-fluid gh-content">
-        @*<ol class="breadcrumb gh-margin-0">
-            <li class="active">@Page.Title</li>
-        </ol>*@
         <div id="jcaMain">
             @RenderSection("body", required: true)
         </div>

@@ -73,7 +73,7 @@ namespace AppWeb.Controllers
         {
             Session.RemoveAll();
             Session.Abandon();
-            return new RedirectResult(Url.Content("~") + BaseController.LOGINGUEST);
+            return new RedirectResult(Url.Content("~") + BaseController.DEFAULTINDEX);
         }
     }
 }
