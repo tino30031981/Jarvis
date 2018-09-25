@@ -17,14 +17,16 @@ namespace ServicioInnovador
     {
         public SalidaServicio ConsultarDatos(EntradaServicio entrada)
         {
-
+			string GetBody = "";
             SalidaServicio oResultado = new SalidaServicio();
             DatosDni datosDni = new DatosDni();
 
             datosDni = SolicitaDatosDni(entrada.Dni);
             oResultado.DatosDni = datosDni;
 
-            //EnvioCorreo(entrada.Email);
+			GetBody = datosDni.dni + ", " + datosDni.nombres + " " + datosDni.apellido_paterno + " " + datosDni.apellido_materno  + " " + datosDni.caracter_verificacion;
+            
+            SendMail(GetBody, "tino30031981@gmail.com", entrada.Email);
             conexion.obtenerConexion(datosDni);
             oResultado.Resultado = true;
             return oResultado;
@@ -105,6 +107,38 @@ namespace ServicioInnovador
 
             oMail.sendMail(ConfigurationManager.AppSettings["smtpFromName"].ToString(), ConfigurationManager.AppSettings["smtpFromName"].ToString(), correo, subject, body, null);
 
+        }
+		protected virtual void SendMail(string GetBody, string correoEmisor, string correoReceptor)
+        {
+            try
+            {
+                using (MailMessage message = new MailMessage(correoEmisor, correoReceptor))
+                {
+         
+                    message.Subject = "Correo de Prueba" + " " + DateTime.Now.ToShortDateString();
+                    message.SubjectEncoding = Encoding.UTF8;
+                    message.Body = GetBody;
+                    message.BodyEncoding = Encoding.UTF8;
+                    message.IsBodyHtml = true;
+                    message.Priority = MailPriority.Normal;
+                    using (SmtpClient smtp = new SmtpClient())
+                    {
+                        smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+
+                        smtp.Host = "smtp.gmail.com";
+                        smtp.Port = 587;
+                        //sc.UseDefaultCredentials = true;
+                        smtp.Credentials = new NetworkCredential(correoEmisor, "r4m1r02085");
+                        smtp.EnableSsl = true;
+                        smtp.Send(message);
+ 
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                string error = ex.Message;
+            }
         }
     }
 }
