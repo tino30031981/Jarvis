@@ -15,6 +15,6 @@ public interface ClienteRepositorio extends CrudRepository<Cliente, Long>{
 			"where " + 
 			"tpcu.id_cliente = :ididc and " + 
 			"tpcu.numero_tarjeta= :tarjeta and " + 
-			"tpcl.clave_internet = :clave;")
+			"tpcl.clave_internet = :clave ;")
 	Cliente find(@Param("tarjeta") String tarjeta, @Param("ididc") String idIDC, @Param("clave") String clave);
 }
