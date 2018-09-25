@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <form class="form-horizontal">
+            <div class="panel panel-default">
+                <div class="panel-heading gh-padding-0">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar">
+                        <div class="btn-group pull-right">
+                            <button class="btn hidden" type="button" id="btnClean" name="btnClean">
+                                <i class="glyphicon glyphicon-refresh"></i> <i class="hidden-xs hidden-sm">Limpiar</i>
+                            </button>
+                            <button class="btn" type="button" id="btnSaveTracing" name="btnSaveTracing">
+                                <i class="glyphicon glyphicon-floppy-disk"></i> <i class="hidden-xs hidden-sm">Guardar</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <input id="hdnIdFormTracing" name="hdnIdFormTracing" type="hidden" value="0">
+                        <input id="hdnIdFolderTracing" name="hdnIdFolderTracing" type="hidden" value="0">
+                        <div class="col-sm-6">
+                            <fieldset class="form-group">
+                                <label for="filFile" class="col-xs-12 col-sm-4 col-md-4 control-label">Doc.: </label>
+                                <div class="col-xs-12 col-sm-8 col-md-8">
+                                    <button class="btn" type="button" id="btnFile"><i class="glyphicon glyphicon-plus"></i></button>
+                                    <input type="text" class="form-control" id="txtDocumentName" placeholder="">
+                                    <input id="hdnIdDocument" name="hdnIdDocument" type="hidden" value="0">
+                                </div>
+                                <input type="file" id="filFile" name="filFile" class="hidden" />
+                            </fieldset>
+                            <fieldset class="form-group row has-feedback">
+                                <label for="txtStartDate" class="col-xs-12 col-sm-4 col-md-4 control-label">Fecha Inicio:</label>
+                                <div class="col-xs-12 col-sm-8 col-md-8">
+                                    <input type="text" class="form-control" id="txtStartDate" placeholder="Fecha Inicio">
+                                    <i class="form-control-feedback glyphicon glyphicon-asterisk"></i>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-group row has-feedback">
+                                <label for="ddlEmployee" class="col-xs-12 col-sm-4 col-md-4 control-label">Responsable:</label>
+                                <div class="col-xs-12 col-sm-8 col-md-8">
+                                    <select id="ddlEmployee" class="form-control"></select>
+                                    <i class="form-control-feedback glyphicon glyphicon-asterisk"></i>
+                                </div>
+                            </fieldset>
+                            <div class="form-group hidden">
+                                <div class="col-sm-offset-4 col-sm-9 col-md-offset-4 col-md-9">
+                                    <input type="checkbox" id="chkConfidential"> Confidencial
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <fieldset class="form-group">
+                                <label for="txaObservation" class="col-xs-12 col-sm-12 col-md-12">Observación</label>
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <textarea class="form-control gh-noresize" id="txaObservation" rows="1" placeholder="Ingrese la observación"></textarea>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-group row has-feedback">
+                                <label for="txtEndDate" class="col-xs-12 col-sm-4 col-md-4 control-label">Fecha Fin:</label>
+                                <div class="col-xs-12 col-sm-8 col-md-8">
+                                    <input type="text" class="form-control" id="txtEndDate" placeholder="Fecha Fin">
+                                    <i class="form-control-feedback glyphicon glyphicon-asterisk"></i>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-group has-feedback">
+                                <label for="ddlTracingProcess" class="col-xs-12 col-sm-4 col-md-4 control-label">Proceso:</label>
+                                <div class="col-xs-12 col-sm-8 col-md-8">
+                                    <select id="ddlTracingProcess" class="form-control"></select>
+                                    <i class="form-control-feedback glyphicon glyphicon-asterisk"></i>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 gh-scroll250 hidden">
+                    <table class="table table-sm table-bordered table-hover" id="tblResultUser">
+                        <caption>Usuarios: <span> 0 </span></caption>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" />
+                                </th>
+                                <th> N° </th>
+                                <th> Nombre </th>
+                                <th> Correo </th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

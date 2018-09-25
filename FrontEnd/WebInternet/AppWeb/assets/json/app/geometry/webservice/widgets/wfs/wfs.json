@@ -1,0 +1,9 @@
+{
+  "services": [
+    {
+      "disabled": false,
+      "name": "Local",
+      "url": "http://54.233.126.219/geoserver/geojaz/wfs"
+    }
+  ]
+}

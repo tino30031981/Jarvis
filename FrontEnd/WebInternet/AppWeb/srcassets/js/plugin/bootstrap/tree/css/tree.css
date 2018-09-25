@@ -1,0 +1,46 @@
+﻿.tree {
+  margin-left: 0;
+  padding: 0;
+}
+.tree ul {
+  padding-left: 20px;
+}
+.tree ul.root {
+  margin: 0;
+  padding: 0;
+}
+.tree li {
+  list-style: none;
+  clear: both;
+}
+.tree label {
+  display: inline-block;
+  float: left;
+  margin: 0 0 0 4px;
+}
+.tree input {
+  float: left;
+}
+.tree ul.hide {
+  display: none;
+}
+.tree span {
+  color: #999;
+  cursor: default;
+}
+.tree .expanded,
+.tree .collapsed {
+  cursor: pointer;
+  float: left;
+  margin: 1px 2px 0 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  width: 16px;
+}
+.tree .expanded:after {
+  content: '\25BC';
+  margin-left: -1px;
+}
+.tree .collapsed:after {
+  content: '\25B6';
+}

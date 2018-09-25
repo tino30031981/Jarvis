@@ -1,0 +1,56 @@
+.esriPopup .contentPane {
+    padding: 1px 1px 1px 7px !important;
+    font-size: inherit !important;
+}
+
+.esriOverviewMap.ovwBR .ovwContainer {
+    padding-top: 1px;
+    padding-left: 1px;
+}
+
+.esriOverviewMap .ovwHighlight:before {
+    font: normal normal normal 20px/1 FontAwesome;
+    /*   content: "\f0b2";*/
+    margin-right: 5px;
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+.esriPopup .titleButton {
+    background: none;
+    top: 3px !important;
+    font-weight: normal;
+}
+
+.esriPopup .close, .esriPopup .maximize, .esriPopup .zoomTo {
+    color: inherit !important;
+    font-size: inherit !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+    line-height: normal;
+}
+
+    .esriPopup .close:before {
+        font-family: "Glyphicons Halflings";
+        content: "\e014";
+    }
+
+    .esriPopup .maximize:before {
+        font-family: "Glyphicons Halflings";
+        content: "\002b";
+    }
+
+    .esriPopup .zoomTo:before {
+        font-family: "Glyphicons Halflings";
+        content: "\e015";
+    }
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 320px) {
+    #esri_dijit_OverviewMap_0 {
+        display: none;
+    }
+}

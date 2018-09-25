@@ -1,0 +1,63 @@
+{
+  "appName": "minvivienda",
+  "title": "",
+  "subtitle": "",
+  "logo": "logos/minvivienda.png",
+  "warning": "",
+  "footer": {
+    "address": "",
+    "officehours": "",
+    "email": "",
+    "city": "",
+    "country": "",
+    "copyright": "©",
+    "suite": "GeoJAZ",
+    "year": 2017,
+    "product": "GeoIndicators"
+  },
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "detailIsPopup": false,
+  "alert": {
+    "title": "Min. Vivienda"
+  },
+  "number": {
+    "decimalCount": 2,
+    "decimalCountOld": 3,
+    "decimalArea": 4,
+    "decimalLength": 2
+  },
+  "date": {
+    "format": "yyyy-MM-dd",
+    "formatISO8601": "yyyy-MM-dd"
+  },
+  "datetime": {
+    "format": "yyyy-MM-dd HH:mm:ss",
+    "formatISO8601": "yyyy-MM-dd HH:mm:ss"
+  },
+  "factorLength": {
+    "kilometer": 1000
+  },
+  "factorArea": {
+    "hectare": 10000
+  },
+  "factorMeter": {
+    "meter": 100
+  },
+  "db": {
+    "name": "geominingsuite.sqlite"
+  },
+  "corsServers": [
+    "services.arcgisonline.com",
+    "static.arcgis.com",
+    "geoservidor.minam.gob.pe",
+    "geocatmin.ingemmet.gob.pe",
+    "catastro.cofopri.gob.pe",
+    "sigda.cultura.gob.pe",
+    "54.233.126.219"
+  ],
+  "proxy": "proxy/index"
+}

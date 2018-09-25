@@ -1,0 +1,24 @@
+{
+  "showAsTable": false,
+  "zoomLevel": 2,
+  "startExtraAttributes": false,
+  "service": {
+    "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CATASTRO_MINERO/MapServer",
+    "layerId": 0,
+    "joinField": "CODIGOU",
+    "joinFieldExtra": "CODIGOU",
+    "fields": [ "*" ],
+    "extraAttributes": {
+      "detailReport": "Detalle Ingemmet",
+      "payReport": "Pagos Ingemmet",
+      "record": "Expediente",
+      "recordFull": "Expediente completo"
+    },
+    "useCustomInfoTemplate": false
+  },
+  "urlDetailReport": "http://www.ingemmet.gob.pe/igm-sidemcat-portlet/ver-resumen?pCodigo_DM={0}",
+  "urlPayReport": "http://www.ingemmet.gob.pe/igm-sidemcat-portlet/ver-penalidad?pCodigo_DM={0}",
+  "urlRecordFull": "http://www.ingemmet.gob.pe/igm-sidemcat-portlet/ver-documento?cod_exp={0}&paginado=0",
+  "urlRecordImage": "http://www.ingemmet.gob.pe/igm-sidemcat-portlet/image-pdf?cod_exp={0}&page={1}",
+  "urlRecordCode": "http://www.ingemmet.gob.pe/sidemcat?"
+}

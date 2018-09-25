@@ -1,0 +1,105 @@
+{
+  "identifylayeroption": "visible",
+  "tolerance": 3,
+  "defaultzoomscale": 5000,
+  "keepidentifyactive": true,
+  "returngeometryforzoom": true,
+  "enablelineselect": true,
+  "enableextentselect": true,
+  "enablepolyselect": true,
+  "enablecircleselect": true,
+  "enableellipseselect": true,
+  "enablemouseovergraphicsinfo": false,
+  "enablemouseoverrecordinfo": true,
+  "enablegraphicclickinfo": true,
+  "usemaptime": false,
+  "infoautoclosemilliseconds": 2000,
+  "autoactivatedtool": "mappoint",
+  "excludebasemaps": true,
+  "disablepopuplinks": false,
+  "disableLayerDropdown": false,
+  "disableAllLayersChoice": false,
+  "replacenullswithemptystring": true,
+  "descriptionLabel": {
+    "allLayers": "[Todos]"
+  },
+
+  "services": [
+    {
+      "type": "wms",
+      "disabled": true,
+      "url": "http://54.233.126.219/geoserver/geojaz/wms/",
+      "layers": [
+        {
+          "id": "proyectoinversion",
+          "disabled": true
+        },
+
+        {
+          "id": "ccpp"
+        },
+
+        {
+          "id": "iiee"
+        },
+
+        {
+          "id": "catastroforestal"
+        },
+
+        {
+          "id": "catastrorural"
+        },
+
+        {
+          "id": "catastrominero"
+        }
+      ]
+    },
+    {
+      "type": "wms",
+      "disabled": false,
+      "url": "http://190.234.7.232:8080/geoserver/propiedades/wms/",
+      "layers": [
+        {
+          "id": "derechominerovista",
+          "disabled": false
+        },
+        {
+          "id": "ueavista",
+          "disabled": false
+        },
+        {
+          "id": "lima3857",
+          "disabled": false
+        },
+        {
+          "id": "3857concessiones",
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "type": "agsd",
+      "disabled": false,
+      "url": "arcgis/rest/services/serviciocatastrominero/MapServer",
+      "layers": "0,1,2,3,4"
+    },
+    {
+      "type": "agsd",
+      "disabled": true,
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CATASTRO_MINERO/MapServer",
+      "layers": [
+        {
+          "id": "0"
+        }
+      ]
+    },
+    {
+      "type": "agsd",
+      "disabled": true,
+      "url": "http://geoservidorperu.minam.gob.pe/arcgis/rest/services/ANP/MapServer",
+      "layers": "12"
+    }
+  ]
+}

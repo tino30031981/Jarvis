@@ -1,0 +1,24 @@
+{
+  "titleMap": "Mapa Sigemin",
+  "author": "Volcan",
+  "description": "La información que se presenta en este documento tiene un carácter referencial y está en constante proceso de actualización por parte de los especialistas de la empresa Unacem",
+  "corporationTitle": "VOLCAN <br/> DIRECCION DE RECURSOS MINEROS <br/> CENTRO DE CONCESSION DE VOLCAN",
+  "source": "Sistema de información para la gestión de propiedades y concesiones mineras",
+  "useScale": 100000,
+  "defaultPaper": "A4",
+  "defaultSrid": 32718,
+  "spatialReferences": [
+    {
+      "id": 32717,
+      "name": "WGS 84 UTM Zona 17S"
+    },
+    {
+      "id": 32718,
+      "name": "WGS 84 UTM Zona 18S"
+    },
+    {
+      "id": 32719,
+      "name": "WGS 84 UTM Zona 19S"
+    }
+  ]
+}

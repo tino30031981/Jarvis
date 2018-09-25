@@ -1,0 +1,14 @@
+{
+  "descriptionLabel": {
+    "allServices": "[Todos]",
+    "allLayers": "[Todos]"
+  },
+  "multiple": true,
+  "size": 3,
+  "defaultRadio": 5,
+  "zoomLevel": 5,
+  "service": {
+    "url": "http://54.233.126.219/geoserver/geojaz/wfs/",
+    "layers":["geojaz:distrito"]
+  }
+}

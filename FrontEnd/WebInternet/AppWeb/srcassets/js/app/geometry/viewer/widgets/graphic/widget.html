@@ -1,0 +1,112 @@
+﻿<form>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar">
+        <input type="hidden" id="hdnIsGeometry">
+        <div class="btn-group gh-btn-group gh-btn-graphic" role="group" aria-label="Graphic group">
+            <button type="button" id="btnPoint" class="btn" title="Punto"><i class="gh gh-point"></i></button>
+            <button type="button" id="btnPolyline" class="btn" title="Polilínea"><i class="gh gh-polyline"></i></button>
+            <button type="button" id="btnPolylineFreeHand" class="btn" title="Polilínea libre"><i class="gh gh-polyline-freehand"></i></button>
+            <button type="button" id="btnPolygon" class="btn" title="Polígono"><i class="gh gh-polygon"></i></button>
+            <button type="button" id="btnPolygonFreeHand" class="btn" title="Polígono libre"><i class="gh gh-polygon-freehand"></i></button>
+            <button type="button" id="btnRectangle" class="btn" title="Rectángulo"><i class="gh gh-rectangle"></i></button>
+            <button type="button" id="btnCircle" class="btn" title="Círculo"><i class="gh gh-circle"></i></button>
+            <button type="button" id="btnEllipse" class="btn" title="Elipse"><i class="gh gh-ellipse"></i></button>
+            <button type="button" id="btnText" class="btn" title="Texto"><i class="gh gh-text"></i></button>
+        </div>
+        <div class="btn-group gh-btn-group" role="group" aria-label="Clean group">
+            <button type="button" id="btnClear" class="btn"></button>
+        </div>
+    </div>
+    <div id="divContentSymbols">
+        <div id="divMarkerSymbol">
+            <table>
+                <tr>
+                    <td>Color:</td>
+                    <td><input type='text' id="txtColorMarkerSymbol"></td>
+                    <td>Estilo:</td>
+                    <td><select id="ddlMarkerSymbolStyle"></select></td>
+                </tr>
+                <tr>
+                    <td>Tamaño:</td>
+                    <td><input type="number" id="nmbSizeMarkerSymbol" min="0" max="50" value="15"></td>
+                    <td>Alfa:</td>
+                    <td><input type="number" id="nmbAlphaMarkerSymbol" min="0" max="1" step="0.1" value="0.8"></td>
+                    <td>Ángulo:</td>
+                    <td><input type="number" id="nmbAngleMarkerSymbol" min="-360" max="360" value="0"></td>
+                </tr>
+                <tr>
+                    <td>Color de Contorno:</td>
+                    <td><input type='text' id="txtOutlineColorMarkerSymbol"></td>
+                    <td>Ancho:</td>
+                    <td><input type="number" id="nmbWidthMarkerSymbol" min="0" max="5" value="2"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="divLineSymbol">
+            <table>
+                <tr>
+                    <td>Color de Línea:</td>
+                    <td><input type='text' id="txtColorLineSymbol"></td>
+                    <td>Estilo:</td>
+                    <td><select id="ddlLineSymbolStyle"></select></td>
+                </tr>
+                <tr>
+                    <td>Ancho:</td>
+                    <td><input type="number" id="nmbWidthLineSymbol" min="0" max="50" value="5"></td>
+                    <td>Alfa:</td>
+                    <td><input type="number" id="nmbAlphaLineSymbol" min="0" max="1" step="0.1" value="1"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="divFillSymbol">
+            <table>
+                <tr>
+                    <td>Color de Relleno:</td>
+                    <td><input type='text' id="txtColorFillSymbol"></td>
+                    <td>Estilo:</td>
+                    <td><select id="ddlFillSymbolStyle"></select></td>
+                </tr>
+                <tr>
+                    <td>Alfa:</td>
+                    <td><input type="number" id="nmbAlphaFillSymbol" min="0" max="1" step="0.1" value="0.5"></td>
+                </tr>
+                <tr>
+                    <td>Color de Contorno:</td>
+                    <td><input type='text' id="txtOutlineColorFillSymbol"></td>
+                    <td>Ancho:</td>
+                    <td><input type="number" id="nmbWidthFillSymbol" min="0" max="50" value="1"></td>
+                </tr>
+                <tr>
+                    <td>Alfa:</td>
+                    <td><input type="number" id="nmbOutlineAlphaFillSymbol" min="0" max="1" step="0.1" value="0.8"></td>
+                    <td>Estilo:</td>
+                    <td><select id="ddlOutlineFillSymbolStyle"></select></td>
+                </tr>
+            </table>
+        </div>
+        <div id="divTextSymbol">
+            <table>
+                <tr>
+                    <td>Texto:</td>
+                    <td><input type="text" id="txtTextSymbol"></td>
+                    <td><button type="button" id="btnBoldTextSymbol" value="inactive"> <b>B</b> </button> <input type="hidden" id="hddBoldTextSymbol" /></td>
+                    <td><button type="button" id="btnItalicTextSymbol" value="inactive"> <i>I</i> </button> <input type="hidden" id="hddItalicTextSymbol" /></td>
+                    <td><button type="button" id="btnUnderlineTextSymbol" value="inactive"> <u>U</u> </button> <input type="hidden" id="hddUnderlineTextSymbol" /></td>
+                </tr>
+                <tr>
+                    <td>Fuente:</td>
+                    <td><select id="ddlFontTextSymbol"></select></td>
+                    <td><input type="checkbox" id="chkHaloTextSymbol" /></td>
+                    <td>Agregar Halo</td>
+                </tr>
+                <tr>
+                    <td>Color:</td>
+                    <td><input type='text' id="txtColorTextSymbol"></td>
+                    <td>Tamaño:</td>
+                    <td><input type="number" id="nmbSizeTextSymbol" min="0" max="100" value="20"></td>
+                    <td>Rotación:</td>
+                    <td><input type="number" id="nmbRotationTextSymbol" min="-360" max="360" value="0"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</form>

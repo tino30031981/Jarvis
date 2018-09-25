@@ -1,0 +1,23 @@
+﻿<form>
+    <div class="modal-small">
+        <div class="btn-group gh-btn-group gh-btn-graphic" role="group" aria-label="measure options">
+            <button type="button" id="btnPoint" class="btn" title="Punto"><i class="gh gh-point"></i></button>
+            <button type="button" id="btnPolyline" class="btn" title="Polilínea"><i class="gh gh-polyline"></i></button>
+            <button type="button" id="btnPolygon" class="btn" title="Polígono"><i class="gh gh-polygon"></i></button>
+        </div>
+        <fieldset id="fdsSpatialReference" class="form-group">
+            <br />
+            <label for="ddlSpatialReference">Referencia Espacial</label>
+            <select class="form-control" id="ddlSpatialReference"></select>
+        </fieldset>
+        <fieldset id="fdsMeasureUnitLength" class="form-group">
+            <label for="ddlMeasureUnitLength">Unidad de medida de longitud</label>
+            <select class="form-control" id="ddlMeasureUnitLength"></select>
+        </fieldset>
+        <fieldset id="fdsMeasureUnitArea" class="form-group">
+            <label for="ddlMeasureUnitArea">Unidad de medida de área</label>
+            <select class="form-control" id="ddlMeasureUnitArea"></select>
+        </fieldset>
+    </div>
+</form>
+<div id="result" class="col-sm-12"></div>

@@ -1,0 +1,12 @@
+{
+  "paginator": {
+    "recordsByPage": 20,
+    "visiblePages": 5
+  },
+  "servers": [
+    {
+      "name": "Local",
+      "url": "http://geo.gob.bo/geonetwork/srv/eng/csw?"
+    }
+  ]
+}

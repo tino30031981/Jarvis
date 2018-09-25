@@ -1,0 +1,63 @@
+{
+  "spatialReferences": [    
+    {
+      "id": 32717,
+      "label": "WGS 84 UTM Zona 17S",
+      "wkt": ""
+    },
+    {
+      "id": 32718,
+      "label": "WGS 84 UTM Zona 18S",
+      "wkt": ""
+    },
+    {
+      "id": 32719,
+      "label": "WGS 84 UTM Zona 19S",
+      "wkt": ""
+    },
+    {
+      "id": 4326,
+      "label": "WGS 84 Geodésica",
+      "wkt": ""
+    }
+  ],
+  "arealUnit": [
+    { "id": "109414", "label": "Kilómetros cuadrados" },
+    { "id": "109404", "label": "Metros cuadrados" },
+    { "id": "109402",  "label": "Acres" },
+    { "id": "109401", "label": "Hectáreas" },
+    { "id": "109451", "label": "Centímetros cuadrados" },
+    { "id": "109450", "label": "Decímetros cuadrados" },
+    { "id": "109405", "label": "Pies cuadrados" },
+    { "id": "109453", "label": "Pulgadas cuadradas" },
+    { "id": "109439", "label": "Millas cuadradas" },
+    { "id": "109452", "label": "Milímetros cuadradas" },
+    { "id": "109442", "label": "Yardas cuadradas" }
+  ],
+  "lengthUnit": [
+    {
+      "id": "9001",
+      "label": "Metros"
+    },
+    {
+      "id": "9036",
+      "label": "Kilómetros"
+    },
+    {
+      "id": "9002",
+      "label": "Pies Intern."
+    },
+    {
+      "id": "9030",
+      "label": "Millas Nauticas"
+    },
+    {
+      "id": "9093",
+      "label": "Millas"
+    },
+    {
+      "id": "109012",
+      "label": "Millas Nauticas USA"
+    }
+  ]
+}

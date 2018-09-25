@@ -1,0 +1,121 @@
+﻿<form>
+    <fieldset class="form-group">
+        <label for="ddlLayer">Capa</label>
+        <select id="ddlLayer" class="form-control"></select>
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="ddlAnalysis">Opción</label>
+        <select id="ddlAnalysis" class="form-control">
+            <option value="Graphic">Por gráfico</option>
+            <option value="Coordinate">Por coordenadas</option>
+            <!--<option value="PoliticalDivision">Por div. política</option>-->
+            <!--<input type="radio" id="rdbFile" name="rdbAnalysis" />Por Archivo
+                <input type="radio" id="rdbHydrographicBasin" name="rdbAnalysis" />Por cuenca hidrog.
+            <input type="radio" id="rdbTown" name="rdbAnalysis" />Por CC.PP.-->
+        </select>
+    </fieldset>
+    <div id="fdsForm">
+        <div id="divCoordinate">
+            <div class="form-group">
+                <label for="rdbQuery" class="col-sm-12 form-control-label">Consulta:</label>
+
+                <label class="radio-inline">
+                    <input type="radio" id="rdbPoint" name="rdbCoordinateInput" checked="checked" />
+                    Punto
+                </label>
+                <!--<label class="radio-inline">
+                    <input type="radio" id="rdbPolyline" name="rdbCoordinateInput" />
+                    Polilínea
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" id="rdbPolygon" name="rdbCoordinateInput" />
+                    Polilínea
+                </label>-->
+            </div>
+            <div>
+                <div class="form-group col-sm-12">
+                    <div class="col-sm-6">
+                        <label for="txtX" class="control-label">Este (X)</label>
+                        <input type="text" id="txtX" class="form-control" placeholder="X" />
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="txtY" class="control-label">Norte (Y)</label>
+                        <input type="text" id="txtY" class="form-control" placeholder="Y" />
+                    </div>
+                </div>
+                <!--
+        <table id="tblResultado" class="table">
+            <thead><tr><th>Vért.</th><th>Exte (X)</th><th>Norte (Y)</th></tr></thead>
+            <tbody></tbody>
+        </table>-->
+                <fieldset class="form-group">
+                    <label for="ddlSpatialReference">Sist. Ref.</label>
+                    <select id="ddlSpatialReference" class="form-control"></select>
+                </fieldset>
+                <fieldset class="form-group">
+                    <button type="button" id="btnGraphicCoordinate" class="btn" name="btnGraphicCoordinate"><i class="glyphicon glyphicon-pencil"></i> Graficar</button>
+                    </fieldset>
+</div>
+        </div>
+        <div id="divGraphic" class="btn-group gh-btn-group gh-btn-graphic " role="group" aria-label="extract options">
+            <button type="button" id="btnPoint" class="btn" title="Punto"><i class="gh gh-point"></i></button>
+            <button type="button" id="btnPolyline" class="btn" title="Polilínea"><i class="gh gh-polyline"></i></button>
+            <button type="button" id="btnPolylineFreeHand" class="btn" title="Polilínea libre"><i class="gh gh-polyline-freehand"></i></button>
+            <button type="button" id="btnPolygon" class="btn" title="Polígono"><i class="gh gh-polygon"></i></button>
+            <button type="button" id="btnPolygonFreeHand" class="btn" title="Polígono libre"><i class="gh gh-polygon-freehand"></i></button>
+            <button type="button" id="btnRectangle" class="btn" title="Rectángulo"><i class="gh gh-rectangle"></i></button>
+            <button type="button" id="btnCircle" class="btn" title="Círculo"><i class="gh gh-circle"></i></button>
+            <button type="button" id="btnEllipse" class="btn" title="Elipse"><i class="gh gh-ellipse"></i></button>
+        </div>
+        <div id="divFile">
+            <fieldset class="form-group">
+                <label for="filFile">File input</label>
+                <input type="file" class="form-control-file" id="filFile" name="filFile" />
+                <small class="text-muted">Sólo se aceptan shapefile(en formato ZIP), Hojas de cálculo (xlsx) y Archivos de texto (txt)</small>
+            </fieldset>
+            <fieldset class="form-group">
+                <button type="button" id="btnGraphicFile" class="btn" name="btnGraphicFile">Graficar</button>
+                </fieldset>
+</div>
+        <div id="divPoliticalDivision">
+            <fieldset class="form-group">
+                <label for="ddlDepartamentSearch">Departamento</label>
+                <select id="ddlDepartamentSearch" class="form-control"></select>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="ddlProvinceSearch">Provincia</label>
+                <select id="ddlProvinceSearch" class="form-control"></select>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="ddlDistrictSearch">Distrito</label>
+                <select id="ddlDistrictSearch" class="form-control"></select>
+            </fieldset>
+            <button type="button" id="btnGraphicPoliticalDivision" class="btn" title="Graficar"></button>
+        </div>
+        <div id="divHidrographicalBasin">
+            <fieldset class="form-group">
+                <label for="ddlHydrographicBasinSearch">Cuenca hidrográfica</label>
+                <select id="ddlHydrographicBasinSearch" class="form-control"></select>
+            </fieldset>
+            <fieldset class="form-group">
+                <button type="button" id="btnGraphicHidrographicalBasin"><i class="glyphicon glyphicon-pencil"></i> Graficar</button>
+                </fieldset>
+</div>
+        <div id="divTown">
+            <fieldset class="form-group">
+                <label for="ddlTown">Centro poblado</label>
+                <select id="ddlTown" class="form-control"></select>
+            </fieldset>
+            <fieldset class="form-group">
+                <button type="button" id="btnGraphicTown" class="btn"><i class="glyphicon glyphicon-pencil"></i> Graficar</button>
+                </fieldset>
+</div>
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="txtRadio">Radio</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="txtRadio" placeholder="Radio">
+            <div class="input-group-addon">Km.</div>
+        </div>
+    </div>
+</form>

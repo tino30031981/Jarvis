@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="divPdf">
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar">
+            <div class="btn-group pull-right" role="group" aria-label="Edit group">
+                <button class="btn" type="button" id="btnPdf2" name="btnPdf2" title="Descargar en pdf">
+                    <i class="fa fa-file-pdf-o"></i> <i class="hidden-xs hidden-sm">PDF</i>
+                </button>
+            </div>
+        </div>
+        <figure>
+            <figcaption>
+                Mapa generado desde Sigemin
+            </figcaption>
+            <img id="img" src="" alt="Mapa" class="img-responsive col-xs-12 col-sm-12 col-md-12 col-lg-12" />
+        </figure>
+        &nbsp;
+        &nbsp;
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <label>&nbsp;</label>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <label>&nbsp;</label>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <label>&nbsp;</label>
+        </div>
+        <div id="divDetailPdf" class="col-md-6">
+            <table id="tblDetailGeneral" class="table table-bordered table-condensed table-responsive table-striped table-hover">
+                <caption>Datos Generales</caption>
+                <tbody>
+                    <tr><td>Código:</td><td id="divCode"></td></tr>
+                    <tr><td>Nombre:</td><td id="divName"></td></tr>
+                    <tr><td>Tipo Yacimiento:</td><td id="divDepositType"></td></tr>
+                    <tr><td>Origen Yacimiento:</td><td id="divDepositOrigin"></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="divDetailDocument" class="col-md-6">
+            <table id="tblDetailDocument" class="table table-bordered table-condensed table-responsive table-striped table-hover">
+                <caption>Documentos</caption>
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>Nombre</th>
+                        <th>Fecha Creación</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="divDetailAlert" class="col-md-6">
+            <table id="tblDetailAlert" class="table table-bordered table-condensed table-responsive table-striped table-hover">
+                <caption>Alertas</caption>
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>Nombre</th>
+                        <th>Description</th>
+                        <th>Frecuencia</th>
+                        <th>Fecha Inicio</th>
+                        <th>Fecha Fin</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <table id="tblResultCoordinates" class="table table-bordered table-condensed table-responsive table-striped table-hover">
+                <caption>Coordenadas</caption>
+                <thead class=""><tr><th>Vért.</th><th>Este (X)</th><th>Norte (Y)</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

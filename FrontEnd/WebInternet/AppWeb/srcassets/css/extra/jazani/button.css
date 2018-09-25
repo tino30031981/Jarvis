@@ -1,0 +1,7 @@
+﻿.jca-btn-left {
+    float: left !important;
+    display: block !important;
+    clear: both;
+    left: 5px;
+    margin-bottom: 5px !important;
+}

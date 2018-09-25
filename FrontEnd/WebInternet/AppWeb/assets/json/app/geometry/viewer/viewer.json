@@ -1,0 +1,697 @@
+{
+  "isMenuButton": true,
+  "isWidgetPopup": false,
+  "embedded": true,
+  "style": {
+    "alpha": 0.8
+  },
+  "geometryService": {
+    "url": "http://geoservidorperu.minam.gob.pe/arcgis/rest/services/Utilities/Geometry/GeometryServer"
+  },
+
+  "withOverview": false,
+  "withSplash": false,
+  "splashPage": {
+    "label": "GORE - MAD",
+    "uri": "splash",
+    "config": "splash/splash.json"
+  },
+  "map": {
+    "wrapAround180": true,
+    "addArcgisBasemaps": false,
+    "portalUrl": "https://www.arcgis.com/",
+    "initialExtent": {
+      "xMinimum": -9109878.5,
+      "yMinimum": -2103124.144,
+      "xMaximum": -7593812.968,
+      "yMaximum": 24130.111
+    },
+    "projectionCode": 3857,
+    "services": [
+      {
+        "type": "wms",
+        "url": "http://54.233.126.219/geoserver/geojaz/wms",
+        "disabled": true,
+        "groups": [
+          {
+            "label": "Datos base",
+            "visible": false,
+            "alpha": 0.5,
+            "disabled": false,
+            "layerIds": "ccpp, redvial, iiee, flujoagua"
+          },
+
+          {
+            "label": "Limites políticos administrativos",
+            "visible": false,
+            "alpha": 0.5,
+            "disabled": false,
+            "layerIds": "distrito, provincia, departamento, limitedistrital"
+          },
+
+          {
+            "label": "Proyectos de inversión",
+            "visible": false,
+            "alpha": 0.5,
+            "disabled": false,
+            "layerIds": "proyectoinversion"
+          },
+
+          {
+            "label": "Catasto forestal",
+            "visible": false,
+            "alpha": 0.5,
+            "disabled": false,
+            "layerIds": "catastroforestal"
+          },
+
+          {
+            "label": "Catastro rural",
+            "visible": false,
+            "alpha": 0.5,
+            "disabled": false,
+            "layerIds": "catastrorural"
+          },
+
+          {
+            "label": "Catastro minero",
+            "visible": false,
+            "alpha": 0.5,
+            "disabled": false,
+            "layerIds": "catastrominero"
+          },
+
+          {
+            "label": "Areas de conservación natural",
+            "visible": false,
+            "alpha": 0.5,
+            "disabled": false,
+            "layerIds": "geojaz:anp, geojaz:anpprivada,geojaz:za"
+          },
+
+          {
+            "label": "Comunidades nativas",
+            "visible": false,
+            "alpha": 0.5,
+            "disabled": false,
+            "layerIds": "geojaz:ccnn"
+          },
+
+          {
+            "label": "Temáticos",
+            "visible": false,
+            "alpha": 0.5,
+            "disabled": false,
+            "layerIds": "geojaz:suelo, geojaz:fisiografia, geojaz:unidvege,geojaz:unifores, geojaz:geologia, geojaz:deforesta, geojaz:geomorfo, geojaz:clima"
+          },
+
+          {
+            "label": "Departamento de Madre de Dios",
+            "visible": true,
+            "alpha": 0.5,
+            "disabled": false,
+            "layerIds": "geojaz:apaddepartamental"
+          }
+        ]
+      },
+      {
+        "label": "Propiedad Superficial",
+        "type": "wms",
+        "visible": false,
+        "alpha": 0.5,
+        "disabled": true,
+        "layerIds": "terrenossupeficialesunacem",
+        "url": "http://192.168.1.200/mapserver/mapserver/base/ows"
+      },
+      {
+        "label": "Concesiones mineras",
+        "type": "wms",
+        "visible": true,
+        "alpha": 0.5,
+        "disabled": true,
+        "layerIds": "mc.derechominerovista,uea.ueavista,mc.petitoriominerovista,mp.proyectominerovista",
+        "url": "http://192.168.1.200/mapserver/mapserver/miningcadaster/ows"
+      },
+      {
+        "label": "División política",
+        "type": "wms",
+        "visible": true,
+        "alpha": 0.5,
+        "disabled": true,
+        "layerIds": "departamento",
+        "url": "mapserver/base/ows"
+      },
+      {
+        "label": "División política",
+        "type": "wms",
+        "visible": true,
+        "alpha": 0.5,
+        "disabled": true,
+        "layerIds": "geo.departamentovista",
+        "url": "mapserver/base/ows"
+      },
+      {
+        "label": "Catastro Minero",
+        "type": "agsd",
+        "visible": false,
+        "alpha": 0.5,
+        "layerIds": "0",
+        "disabled": false,
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CATASTRO_MINERO/MapServer"
+      },
+      {
+        "label": "Catastro Minero Ingemmet",
+        "type": "agsd",
+        "visible": false,
+        "alpha": 0.5,
+        "layerIds": "0",
+        "disabled": true,
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CATASTRO_MINERO/MapServer"
+      },
+      {
+        "label": "Catastro Minero Antapaccay",
+        "type": "agsd",
+        "visible": false,
+        "disabled": true,
+        "alpha": 0.5,
+        "url": "http://192.168.1.200:6080/arcgis/rest/services/ServicioCatastroMinero/MapServer"
+      },
+      {
+        "label": "Catastro de Predios Antapaccay",
+        "type": "agsd",
+        "visible": false,
+        "disabled": true,
+        "alpha": 0.5,
+        "url": "http://192.168.1.200:6080/arcgis/rest/services/ServicioPropiedadSuperficial/MapServer"
+      },
+      {
+        "label": "EMPRESA: Medio ambiente",
+        "type": "agsd",
+        "visible": false,
+        "disabled": true,
+        "alpha": 0.5,
+        "url": "http://pektyasrv841:6080/arcgis/rest/services/Antapaccay/ServicioMedioAmbiente/MapServer"
+      },
+      {
+        "label": "Catastro Minero",
+        "type": "agsd",
+        "visible": false,
+        "disabled": true,
+        "alpha": 0.5,
+        "layerIds": "0",
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/PSAD56_18/SERV_CATASTRO_MINERO_18/MapServer"
+      },
+      {
+        "label": "INGEMMET: Catastro Minero",
+        "type": "agsd",
+        "visible": false,
+        "disabled": true,
+        "alpha": 0.5,
+        "layerIds": "0",
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CATASTRO_MINERO/MapServer"
+      },
+      {
+        "label": "INGEMMET: Geologia 100k",
+        "type": "agsd",
+        "visible": false,
+        "disabled": true,
+        "alpha": 0.5,
+        "layerIds": "",
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_GEOLOGIA_100K/MapServer"
+      },
+      {
+        "label": "INGEMMET: Geologia 250k",
+        "type": "agsd",
+        "visible": false,
+        "disabled": true,
+        "alpha": 0.5,
+        "layerIds": "",
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_GEOLOGIA_250K/MapServer"
+      },
+      {
+        "label": "INGEMMET: Geologia Regional",
+        "type": "agsd",
+        "visible": false,
+        "disabled": true,
+        "alpha": 0.5,
+        "layerIds": "",
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_GEOLOGIA_REGIONAL/MapServer"
+      },
+      {
+        "label": "INGEMMET: Geologia",
+        "type": "agsd",
+        "visible": false,
+        "disabled": true,
+        "alpha": 0.5,
+        "layerIds": "",
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_GEOLOGIA/MapServer"
+      },
+      {
+        "label": "INGEMMET: Areas Reservadas",
+        "type": "agsd",
+        "visible": false,
+        "disabled": true,
+        "alpha": 0.5,
+        "layerIds": "",
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/WGS84_18/WEBGIS_AREA_RESERVADA_WGS84_18/MapServer"
+      },
+      {
+        "label": "INGEMMET: Limite Politico",
+        "type": "agsd",
+        "visible": false,
+        "disabled": true,
+        "alpha": 0.5,
+        "layerIds": "0,1,2",
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CARTOGRAFIA_DEMARCACION_WGS84/MapServer"
+      },
+      {
+        "label": "MINAM",
+        "type": "agsd",
+        "visible": false,
+        "disabled": true,
+        "alpha": 0.5,
+        "layerIds": "24",
+        "url": "http://geoservidorperu.minam.gob.pe/arcgis/rest/services/ServicioTematico/MapServer"
+      },
+      {
+        "label": "MIN. CULTURA",
+        "type": "agsd",
+        "visible": false,
+        "disabled": true,
+        "alpha": 0.5,
+        "layerIds": "2",
+        "url": "http://sigda.cultura.gob.pe/arcgis/rest/services/sigda/MAPsDesa/MapServer"
+      },
+      {
+        "label": "Geografia",
+        "type": "agsd",
+        "visible": true,
+        "disabled": true,
+        "alpha": 0.5,
+        "layerIds": "",
+        "url": "http://pektyasrv841:6080/arcgis/rest/services/Antapaccay/ServicioBase/MapServer"
+      },
+      {
+        "label": "COFOPPRI: Comunidad Campesinas",
+        "type": "agsd",
+        "visible": false,
+        "disabled": false,
+        "alpha": 0.5,
+        "layerIds": "18,20",
+        "url": "http://geosnirh.ana.gob.pe:6080/arcgis/rest/services/SERV_FUENTES_EXTERNAS/MapServer"
+      },
+      {
+        "label": "Concesiones",
+        "type": "wms",
+        "visible": false,
+        "disabled": true,
+        "alpha": 0.5,
+        "layerIds": "derechominerovista",
+        "url": "http://190.233.244.197:8080/geoserver/concesion/wms"
+      },
+      {
+        "label": "Shape",
+        "type": "wms",
+        "visible": false,
+        "disabled": true,
+        "alpha": 0.5,
+        "layerIds": "sectores_rimac",
+        "url": "http://localhost:8080/geoserver/shp/wms"
+      }
+    ]
+  },
+  "widgetsDefault": [ "navigation", "basemap", "toc", "scale", "mouseposition" ],
+  "widgetContainer": {
+    "layout": "float",
+    "widgets": [
+      {
+        "label": "Medición",
+        "left": 10,
+        "top": 10,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "gh gh-measure-2",
+        "uri": "measure",
+        "config": "measure/measure.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Plotear punto",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "gh gh-goto",
+        "uri": "goto",
+        "config": "goto/goto.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Identificador",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "gh gh-identify",
+        "uri": "identify",
+        "config": "identify/identify.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Cargar Shapefile",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "gh gh-shapefile",
+        "uri": "shapefile",
+        "config": "shapefile/shapefile.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Perfiles de elevación",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "gh gh-elevation-profile",
+        "uri": "elevationprofile",
+        "config": "elevationprofile/elevationprofile.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Análisis de áreas de interés",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "gh gh-overlapping-area",
+        "uri": "overlappingarea",
+        "config": "overlappingarea/overlappingarea.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Graficación de Geometrias y Textos",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "gh gh-graphic",
+        "uri": "graphic",
+        "config": "graphic/graphic.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Cambios de cobertura",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "gh gh-coverage-change",
+        "uri": "coverage",
+        "config": "coverage/coveragechange.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Extraer datos",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "gh gh-extract-data-2",
+        "uri": "extractdata",
+        "config": "extractdata/extractdata.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Extraer datos",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "gh gh-extract-data-2",
+        "uri": "extractdata2",
+        "config": "extractdata2/extractdata.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Marcadores",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "gh gh-bookmark",
+        "uri": "bookmark",
+        "config": "bookmark/bookmark.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Consulta de ZEE",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "zee",
+        "uri": "zee/query3",
+        "config": "zee/query3/queryzee.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Mapa temático",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "thematic-map",
+        "uri": "indicator/thematicmap",
+        "config": "indicator/thematicmap/thematicmap.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Consulta de capas",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "gh gh-query",
+        "uri": "query",
+        "config": "query/query.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Consulta de proyectos",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "gh gh-project",
+        "uri": "custom/project",
+        "config": "custom/project/query.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Consulta de catastro rural",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "gh gh-rural-cadaster",
+        "uri": "custom/ruralcadaster",
+        "config": "custom/ruralcadaster/query.json",
+        "location": "top"
+      },
+
+      {
+        "label": "Consulta de catastro forestal",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "gh gh-forestry-cadaster",
+        "uri": "custom/forestrycadaster",
+        "config": "custom/forestrycadaster/query.json",
+        "location": "top"
+      },
+      {
+        "label": "Concesiones Mineras (Empresa)",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "jca jca-mining-concession",
+        "uri": "custom/miningconcession",
+        "config": "custom/miningconcession/query.json",
+        "location": "top"
+      },
+      {
+        "label": "Proyecto Minero (Empresa)",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "jca jca-mining-project",
+        "uri": "custom/miningproject",
+        "config": "custom/miningproject/query.json",
+        "location": "top"
+      },
+      {
+        "label": "Catastro Nacional",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "jca jca-mining-cadaster",
+        "uri": "custom/miningcadaster",
+        "config": "custom/miningconcession/querynational.json",
+        "location": "top"
+      },
+      {
+        "label": "Predio (Empresa)",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "jca jca-surface-property",
+        "uri": "custom/surfaceproperty",
+        "config": "custom/surfaceproperty/query.json",
+        "location": "top"
+      },
+      {
+        "label": "Predio (Nacional)",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "jca jca-surface-property-2",
+        "uri": "custom/surfacepropertynational",
+        "config": "custom/surfacepropertynational/query.json",
+        "location": "top"
+      },
+      {
+        "label": "Vulnerabilidad Poblacional",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "glyphicon glyphicon-stats",
+        "uri": "custom/vip",
+        "config": "custom/vip/query.json",
+        "location": "top"
+      },
+      {
+        "label": "Estaciones de monitoreo",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "glyphicon glyphicon-stats",
+        "uri": "custom/environment/station",
+        "config": "custom/environment/station/query.json",
+        "location": "top"
+      },
+      {
+        "label": "Impresión de mapas",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "gh gh-print",
+        "uri": "print",
+        "config": "print/print.json",
+        "location": "top"
+      },
+      {
+        "label": "Impresión de mapas",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "gh gh-print",
+        "uri": "print/html5",
+        "config": "print/html5/print.json",
+        "location": "top"
+      },
+      {
+        "label": "Variables",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "glyphicon glyphicon-list-alt",
+        "uri": "custom/vip/variable",
+        "config": "custom/vip/variable.json",
+        "location": "top"
+      },
+      {
+        "label": "Reporte de Daños IIEE",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "glyphicon glyphicon-list-alt",
+        "uri": "custom/minedu",
+        "config": "custom/minedu/query.json",
+        "location": "top"
+      },
+      {
+        "label": "Analisís superposición",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "gh gh-overlap",
+        "uri": "overlap",
+        "config": "overlap/overlap.json",
+        "location": "top"
+      },
+      {
+        "label": "Colección de eventos",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": true,
+        "icon": "jca jca-event",
+        "uri": "custom/event",
+        "config": "custom/event/query.json",
+        "location": "top"
+      },
+      {
+        "label": "Gestor de documentos",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "glyphicon glyphicon-list-alt",
+        "uri": "custom/documentlibrary",
+        "config": "custom/documentlibrary/query.json",
+        "location": "top"
+      },
+      {
+        "label": "Monitoreo de Areas",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "glyphicon glyphicon-eye-open",
+        "uri": "custom/monitoring",
+        "config": "custom/monitoring/query.json",
+        "location": "top"
+      }
+    ]
+  }
+}

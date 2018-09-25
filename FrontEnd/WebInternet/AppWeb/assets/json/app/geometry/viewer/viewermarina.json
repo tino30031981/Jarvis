@@ -1,0 +1,245 @@
+{
+  "embedded": true,
+  "title": "SPINCAM",
+  "subTitle": "",
+  "logo": "/resources/images/logo.png",
+  "style": { "alpha": 0.8 },
+  "bing": { "key": "Anoj3R_Xa5mfQQgOyUf0B5MLAV97PmXWq3-lSpRo3nZkkx9vetp1-RQ56BlF2aA9" },
+  "geometryService": { "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/Utilities/Geometry/GeometryServer" },
+  "withOverview": true,
+  "withSplash": true,
+  "splashPage": {
+    "label": "SPINCAM 1.0.0",
+    "script": "splash/splash.js",
+    "config": "splash/splash.json",
+    "url": "splash/splash.html"
+  },
+  "map": {
+    "wrapAround180": true,
+    "defaultBaseMap": "satellite",
+    "addArcgisBasemaps": true,
+    "portalUrl": "https://www.arcgis.com/",
+    "esriLogoVisible": false,
+    "initialExtent": {
+      "xMinimum": -9109878.5,
+      "yMinimum": -2301155,
+      "xMaximum": -7593812.968,
+      "yMaximum": -344276
+    },
+    "fullExtent": {
+      "xMinimum": -9109878.5,
+      "yMinimum": -2301155,
+      "xMaximum": -7593812.968,
+      "yMaximum": -344276
+    },
+    "projectionCode": 3857,
+    "displayProjectionCode": 4326,
+    "baseMaps": [
+    ],
+    "services": [
+      {
+        "label": "Servicio Tematico",
+        "type": "agsd",
+        "visible": false,
+        "alpha": 0.5,
+        "layers": "0,8,11,24",
+        "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/ServicioTematico/MapServer"
+      },
+      {
+        "label": "Servicio Base",
+        "type": "agsd",
+        "visible": false,
+        "alpha": 0.5,
+        "layers": "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14",
+        "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/ServicioBase/MapServer"
+      },
+      {
+        "label": "Servicio ZEE",
+        "type": "agsd",
+        "visible": false,
+        "alpha": 0.5,
+        "layers": "0,1,2,3,4,5,6,7,8,9",
+        "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/ServicioZEE/MapServer"
+      },
+      {
+        "label": "Externos",
+        "visible": false,
+        "disabled": true,
+        "services": [
+          {
+            "label": "Ingemmet",
+            "visible": true,
+            "services": [
+              {
+                "label": "Catastro Minero",
+                "type": "agsd",
+                "visible": false,
+                "alpha": 0.5,
+                "layers": "0",
+                "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CATASTRO_MINERO/MapServer"
+              },
+              {
+                "label": "GeoFotos",
+                "type": "agsd",
+                "visible": false,
+                "alpha": 0.5,
+                "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_GEOFOTO/MapServer"
+              },
+              {
+                "label": "Geología 100K",
+                "type": "agsd",
+                "visible": false,
+                "alpha": 0.5,
+                "url": "http://geocatminapp.ingemmet.gob.pe/arcgis/rest/services/WEBGIS_GEOLOGIA_100K/MapServer"
+              }
+            ]
+          },
+          {
+            "label": "Cofopri",
+            "visible": true,
+            "services": [
+              {
+                "label": "Catastro rural",
+                "type": "agsd",
+                "visible": false,
+                "alpha": 0.5,
+                "url": "http://catastro.cofopri.gob.pe:6080/arcgis/rest/services/CatastroRuralPSAD56/CatastroRuralPSAD56/MapServer"
+              }
+            ]
+          },
+          {
+            "label": "MINAM",
+            "visible": true,
+            "services": [
+              {
+                "label": "ANP",
+                "type": "agsd",
+                "visible": false,
+                "alpha": 0.5,
+                "layers": "10,11,12,13",
+                "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/ANP/MapServer"
+              }
+            ]
+          },
+          {
+            "label": "Min. Cultura",
+            "visible": false,
+            "services": [
+              {
+                "label": "Modelo EU",
+                "type": "agsd",
+                "visible": false,
+                "alpha": 0.5,
+                "url": "http://sigda.cultura.gob.pe/arcgis/rest/services/sigda/MAPsDesa/MapServer"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "spatialReferences": [
+      {
+        "id": 4326,
+        "label": "WGS 84",
+        "wkt": ""
+      },
+      {
+        "id": 24877,
+        "label": "PSAD 56 UTM Zona 17S",
+        "wkt": ""
+      },
+      {
+        "id": 24878,
+        "label": "PSAD 56 UTM Zona 18S",
+        "wkt": ""
+      },
+      {
+        "id": 24879,
+        "label": "PSAD 56 UTM Zona 19S",
+        "wkt": ""
+      },
+      {
+        "id": 32717,
+        "label": "WGS 84 UTM Zona 17S",
+        "wkt": ""
+      },
+      {
+        "id": 32718,
+        "label": "WGS 84 UTM Zona 18S",
+        "wkt": ""
+      },
+      {
+        "id": 32719,
+        "label": "WGS 84 UTM Zona 19S",
+        "wkt": ""
+      },
+      {
+        "id": 3857,
+        "label": "Pseudo Mercator",
+        "wkt": ""
+      }
+    ]
+  },
+  "widgetContainer": {
+    "layout": "float",
+    "widgets": [
+      {
+        "label": "Medición",
+        "left": 20,
+        "top": 100,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "icon/measure.png",
+        "url": "measure/measure.html",
+        "script": "measure/measure.js",
+        "config": "measure/measure.json"
+      },
+      {
+        "label": "Identificador de elementos",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "icon/identify.png",
+        "url": "identify/identify.html",
+        "script": "identify/identify.js",
+        "config": "identify/identify.json"
+      },
+      {
+        "label": "Impresión de mapas",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "icon/print.png",
+        "url": "util/print/print.html",
+        "script": "util/print/print.js",
+        "config": "util/print/print.json"
+      },
+      {
+        "label": "Marcadores",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "icon/bookmark.png",
+        "url": "bookmark/bookmark.html",
+        "script": "bookmark/bookmark.js",
+        "config": "bookmark/bookmark.json"
+      },
+      {
+        "label": "Indicadores",
+        "left": 0,
+        "top": 0,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "icon/indicator.png",
+        "url": "indicator/query/query.html",
+        "script": "indicator/query/query.js",
+        "config": "indicator/query/query.json"
+      }
+    ]
+  },
+  "corsServers": [ "services.arcgisonline.com", "static.arcgis.com", "geoservidor.minam.gob.pe", "geocatmin.ingemmet.gob.pe", "catastro.cofopri.gob.pe", "sigda.cultura.gob.pe","www.ingemmet.gob.pe" ],
+  "proxy": "proxy/index"
+}

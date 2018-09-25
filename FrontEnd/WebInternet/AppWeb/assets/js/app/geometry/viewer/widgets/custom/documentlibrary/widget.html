@@ -1,0 +1,56 @@
+<div class="panel panel-default">
+    <div class="panel-heading gh-padding-0"></div>
+    <div class="panel-body">
+        <div>
+            <input type="hidden" id="hdnIdOffice" value="0">
+            <input type="hidden" id="hdnIdUser" value="0">
+            <input type="hidden" id="hdnIdMiningProject" value="0">
+            <input type="hidden" id="hdnIdFolder" value="0">
+            <div id="divMiningProject">
+                <h5><span class="form-inline">
+                        Proyectos Mineros
+                </span></h5>
+                <ul></ul>
+            </div>            
+        </div>
+        <!-- Div donde se mostraran los archivos -->
+        <div>
+            <div class="gh-scroll250">
+                <table class="table table-sm  table-hover" id="tblResultDocument">
+                    <caption>
+                        <span class="form-inline">
+                            Nombre: 
+                            <input id="txtDocumentSearch" type="text" class="form-control"> 
+                        </span>
+                        <span>
+                            <button class="btn pull-right" type="button" id="btnAddDocument" title="Añadir Documento">
+                                <i class="glyphicon glyphicon-plus"></i><i class="hidden-xs hidden-sm"></i>
+                            </button>
+                        </span>
+                        <span>
+                            <button class="btn pull-right" type="button" id="btnDocumentSearch">
+                                <i class="glyphicon glyphicon-search"></i><i class="hidden-xs hidden-sm"></i>
+                            </button>
+                        </span>
+                    </caption>
+                    <thead>
+                        <tr>                            
+                            <th> Nº </th>
+                            <th> Nombre </th>
+                            <th> Estado </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id="divRowsFind" class="fixed-table-pagination" style="">
+                Documentos Encontrados: <span>0</span>
+            </div>
+        </div>
+    </div>
+    <!-- Div donde se agregaran los archivos -->
+    <div id="divPopup"></div>
+</div>

@@ -1,0 +1,28 @@
+{
+  "descriptionLabel": {
+    "allServices": "[Todos]",
+    "allLayers": "[Todos]"
+  },
+  "defaultRadio": 5,
+  "zoomLevel": 5,
+  "services": [
+    {
+      "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/ServicioTematico/MapServer",
+      "layerId": "0",
+      "fields": [ "*" ],
+      "download": true
+    },
+    {
+      "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/ServicioBase/MapServer",
+      "layerId": "0",
+      "fields": [ "*" ],
+      "download": true
+    },
+    {
+      "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/ServicioZEE/MapServer",
+      "layerId": "0",
+      "fields": [ "*" ],
+      "download": true
+    }
+  ]
+}

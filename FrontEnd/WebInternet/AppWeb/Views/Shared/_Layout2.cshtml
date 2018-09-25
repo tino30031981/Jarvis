@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // Safari iOS apps only -->
+    <!-- Sets whether a web application runs in full-screen mode -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Sets the style of the status bar for a web application -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- // Chrome for Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="GeoJAZ">
+    <meta name="author" content="JCA (jazani.oficial@gmail.com)">
+
+    <title>..::@(String.IsNullOrWhiteSpace(Page.Title) ? "Página" : Page.Title) - GeoJAZ::..</title>
+    <script src="@Url.Content("~")util/script"></script>
+    <!--<script src="@Url.Content("~")assets/js/polyfill.min.js"></script>-->
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/html5.min.css" />
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/bootstrapplugin.min.css" />
+    <!--<link rel="stylesheet" href="@Url.Content("~")assets/css/bootstrapextend.min.css" />-->
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/jqueryplugin.min.css" />
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/extra.min.css" />
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/gh.min.css" />
+    <link rel="stylesheet" href="@Url.Content("~")assets/css/jazani.min.css" />
+    <!--<script src="@Url.Content("~")assets/js/modernizr.min.js"></script>-->
+    <script src="@Url.Content("~")assets/js/util.min.js"></script>
+    <script src="@Url.Content("~")assets/js/jquery.min.js"></script>
+    <script src="@Url.Content("~")assets/js/bootstrap.min.js"></script>
+    <script src="@Url.Content("~")assets/js/bootstrapplugin.min.js"></script>
+    <script src="@Url.Content("~")assets/js/jqueryplugin.min.js"></script>
+    <script src="@Url.Content("~")assets/js/jqueryextend.min.js"></script>
+    <script src="@Url.Content("~")assets/js/extra.min.js"></script>
+    <script src="@Url.Content("~")assets/js/spatial.min.js"></script>
+    <script src="@Url.Content("~")assets/js/proj4extend.min.js"></script>
+    <script src="@Url.Content("~")signalr/hubs"></script>
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" type="image/png" href="@Url.Content("~")assets/ico/minus.png" />
+    <script>
+        //console.log(window.dojo);
+        //if (window.dojo !== undefined && window.dojo != null) {
+        //    require(["dojo/request/notify"], function (notify) {
+        //        notify("start", function () {
+        //            console.log("start");
+        //            // Do something when the request queue has started
+        //            // This event won't fire again until "stop" has fired
+        //        });
+        //        notify("send", function (response, cancel) {
+        //            console.log("send");
+        //            // Do something before a request has been sent
+        //            // Calling cancel() will prevent the request from
+        //            // being sent
+        //        });
+        //        notify("load", function (response) {
+        //            console.log("load");
+        //            // Do something when a request has succeeded
+        //        });
+        //        notify("error", function (error) {
+        //            console.log("error");
+        //        });
+        //        notify("done", function (responseOrError) {
+        //            console.log("terminado");
+        //            // Do something whether a request has succeeded or failed
+        //            if (responseOrError instanceof Error) {
+        //                // Do something when a request has failed
+        //            } else {
+        //                // Do something when a request has succeeded
+        //            }
+        //        });
+        //        notify("stop", function () {
+        //            console.log("stop");
+        //            // Do something when all in-flight requests have finished
+        //        });
+
+        //    });
+        //}
+        //require(["dojo/aspect"], function (aspect) {
+        //    aspect.after(dojo, "xhr", function (method,arcgs) {
+        //        console.log("AJAX AFTER");
+        //        console.log(method);
+        //        //deferred.then(function (response) {
+        //        //    //CALLED AFTER 'load' METHOD IS CALLED.
+        //        //    console.log("Testing");
+        //        //}, function (response) {
+        //        //    console.log("Error");
+        //        //});
+        //    }, true);
+        //    //aspect.after(dojo, "xhr", function (deferred) {
+        //    //    console.log("AJAX AFTER");
+        //    //    deferred.then(function (response) {
+        //    //        //CALLED AFTER 'load' METHOD IS CALLED.
+        //    //        console.log("Testing");
+        //    //    }, function (response) {
+        //    //        console.log("Error");
+        //    //    });
+        //    //});
+        //    aspect.before(dojo, "xhr", function (method, args) {
+
+        //        console.log("AJAX BEFORE");
+        //    });
+        //});
+    </script>
+    @RenderSection("head", required: false)
+</head>
+<body>
+    <main>
+        @RenderSection("header", required: false)
+        @RenderSection("body", required: true)
+        @RenderSection("footer", required: false)
+    </main>
+</body>
+</html>

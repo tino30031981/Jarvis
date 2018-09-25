@@ -1,0 +1,4 @@
+﻿.fixed-table-toolbar .bs-bars, .fixed-table-toolbar .columns, .fixed-table-toolbar .search {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}

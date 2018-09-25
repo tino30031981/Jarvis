@@ -1,0 +1,38 @@
+﻿.jca-toolbar {
+    position: absolute;
+    top: 0;
+    z-index: 40;
+    padding: 1px 3px 1px 3px;
+    transition: all 0.9s ease 0s;
+    height: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    opacity: 0.9;
+    width: 100%;
+}
+
+    .jca-toolbar button {        
+        border-radius: 36px !important;
+        width: 36px;
+        height: 36px;
+        position: relative;
+    }
+
+
+
+@media (max-width: 320px) {
+    .jca-toolbar button {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .jca-toolbar button {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+}

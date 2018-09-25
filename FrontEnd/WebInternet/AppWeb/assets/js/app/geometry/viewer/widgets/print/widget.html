@@ -1,0 +1,87 @@
+<div>
+    <div class="form-group">
+        <label for="txtTitle" class="col-sm-3 form-control-label">Título</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="txtTitle" placeholder="Título" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtAuthor" class="col-sm-3 form-control-label">Autor</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="txtAuthor" placeholder="Autor" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="ddlPaper" class="col-sm-3 form-control-label">Papel</label>
+        <div class="col-sm-9">
+            <select class="form-control" id="ddlPaper"></select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="ddlFormat" class="col-sm-3 form-control-label">Formato</label>
+        <div class="col-sm-9">
+            <select class="form-control" id="ddlFormat"></select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtRecommendedScale" class="col-sm-3 form-control-label">Esc. Recomenda</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="txtRecommendedScale" placeholder="Escala recomendada" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="txtScale" class="col-sm-3 form-control-label">Escala</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="txtScale" placeholder="Escala" readonly="readonly" />
+            <label class="checkbox-inline">
+                <input type="checkbox" name="chkScale" id="chkScale">Utilizar
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="ddlSpatialReference" class="col-sm-3 form-control-label">Ref. Espacial.</label>
+        <div class="col-sm-9">
+            <select class="form-control" id="ddlSpatialReference"></select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="ddlScaleBarUnit" class="col-sm-3 form-control-label">unds. de medida</label>
+        <div class="col-sm-9">
+            <select class="form-control" id="ddlScaleBarUnit"></select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="nbrDpi" class="col-sm-3 form-control-label">Resoluci&oacute;n</label>
+        <div class="col-sm-9"><input type="text" maxlength="3" class="form-control" id="txtNbrDpi" placeholder="dpi"></div>
+    </div>
+    <div class="form-group">
+        <label for="rdbHorizontal" class="col-sm-3 form-control-label">Dirección</label>
+        <div class="col-sm-9">
+            <label class="radio-inline">
+                <input type="radio" id="rdbHorizontal" name="rdbOrientation" checked="checked" value="1">
+                Horizontal
+            </label>
+            <label class="radio-inline">
+                <input type="radio" id="rdbVertical" name="rdbOrientation" value="2">
+                Vertical
+            </label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="txaDescription" class="col-sm-3 form-control-label ">Descripción:</label>
+        <div class="col-sm-9">
+            <textarea class="form-control" rows="5" id="txaDescription" placeholder="Descripción del mapa"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            <button type="button" id="btnPrint" class="btn" title="Imprimir">
+                <i class="glyphicon glyphicon-print"></i>
+                Imprimir
+            </button>
+        </div>
+    </div>
+    <div id="message"></div>
+</div>

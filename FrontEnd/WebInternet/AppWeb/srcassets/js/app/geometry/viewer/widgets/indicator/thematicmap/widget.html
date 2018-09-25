@@ -1,0 +1,126 @@
+﻿<form class="form form-horizontal">
+    <div id="divTerritorialRepresentation"></div>
+    <hr />
+
+    <div id="pFields" class="form-group">
+        <label for="ddlField" class="col-sm-3 control-label">
+            Campo:
+        </label>
+        <div class="col-sm-9">
+            <select id="ddlField" class="form-control"></select>
+        </div>
+    </div>
+    <div id="divDynamic">
+        <div class="form-group">
+            <label for="ddlVariable" class="col-sm-3 control-label">
+                Indicador:
+            </label>
+            <div class="col-sm-9">
+                <select id="ddlVariable" class="form-control"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ddlSourceInformation" class="col-sm-3 control-label">
+                Fuente:
+            </label>
+            <div class="col-sm-9">
+                <select id="ddlSourceInformation" class="form-control"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ddlPeriodType" class="col-sm-3 control-label">
+                Periodo:
+            </label>
+            <div class="col-sm-9">
+                <select id="ddlPeriodType" class="form-control"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ddlYear" class="col-sm-3 control-label">
+                Año:
+            </label>
+            <div class="col-sm-9">
+                <select id="ddlYear" class="form-control"></select>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="ddlClassificationType" class="col-sm-3 control-label">
+            Clasificación:
+        </label>
+        <div class="col-sm-9">
+            <select id="ddlClassificationType" class="form-control"></select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="ddlAlgorithm" class="col-sm-3 control-label">
+            Algoritmo:
+        </label>
+        <div class="col-sm-9">
+            <select id="ddlAlgorithm" class="form-control"></select>
+        </div>
+    </div>
+    <div id="divAdvancedOptions">
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                N° rango:
+            </label>
+            <div class="col-sm-9">
+
+                <input class="form-control" type="text" id="txtBreakCount" maxlength="3" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">
+                Método:
+            </label>
+            <div class="col-sm-9">
+
+                <select  class="form-control" id="ddlClassificationMethod" size="0"></select>
+            </div>
+        </div>
+       <!-- <p><label>N° rango</label><input type="text" id="txtBreakCount" maxlength="3" /></p>
+        <p><label>Método:</label><select id="ddlClassificationMethod" size="0"></select></p>
+        <p><label>Intervalo:</label><select id="ddlInterval"></select></p>
+        <p><label>tipo de Normalización:</label><select id="ddlNormalizationType"></select></p>
+        <p><label>Campo de normalización:</label><select id="ddlNormalizationField"></select></p>-->
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-3 control-label">
+            Símbolo base:
+        </label>
+        <div class="col-sm-9">
+            <input  class="form-control" type="text" id="txtBaseColor" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label">
+            Color inicial:
+        </label>
+        <div class="col-sm-9">
+            <input  class="form-control" type="text" id="txtFromColor" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label">
+            Color final:
+        </label>
+        <div class="col-sm-9">
+            <input  class="form-control" type="text" id="txtToColor" />
+        </div>
+    </div>
+    <!--
+    <p><label>Símbolo base: </label><input type="text" id="txtBaseColor" /></p>
+    <p><label>Color inicial: </label><input type="text" id="txtFromColor" /></p>
+    <p><label>Color final: </label><input type="text" id="txtToColor" /></p>-->
+    <div class="form-group">
+        <label class="col-sm-3 control-label">
+        </label>
+        <div class="col-sm-9">
+            <button type="button" class="btn" id="btnGenerate" name="btnGenerate"><i class="glyphicon glyphicon-plus"></i> Generar</button>
+        </div>
+    </div>
+</form>

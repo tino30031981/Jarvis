@@ -1,0 +1,19 @@
+{
+  "defaultDepartment": "0",
+  "servicePoliticalDivision": {
+    "url": "arcgis/rest/services/serviciobase/mapserver",
+    "layerDepartmentId": 0,
+    "layerProvinceId": 1,
+    "layerDistrictId": 2
+  },
+  "service": {
+    "url": "arcgis/rest/services/servicioevento/mapserver",
+    "layers":[{
+        "id": 0,
+        "name": "Desastres"
+      },{
+        "id": 1,
+        "name": "Geofotos"
+      }]
+  }
+}

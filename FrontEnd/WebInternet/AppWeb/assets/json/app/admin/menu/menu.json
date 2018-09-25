@@ -1,0 +1,139 @@
+{
+  "items": [
+    {
+      "name": "Inicio",
+      "description": "",
+      "icon": "",
+      "url": "areas/admin/menu/main.html",
+      "both": false
+    },
+    {
+      "name": "Consulta de <br> Cat. Minero",
+      "title": "Catastro minero",
+      "subtitle": "Consulta",
+      "description": "Permite consultar el catastro minero",
+      "icon": "mining-concession",
+      "url": "areas/miningconcession/miningcadaster/main.html",
+      "both": true,
+      "disabled": true
+    },
+    {
+      "name": "Consulta de <br> expedientes",
+      "title": "Expediente minero",
+      "subtitle": "Consulta",
+      "description": "Consultar expedientes",
+      "icon": "record",
+      "url": "areas/miningconcession/miningcadaster/record.html",
+      "both": true,
+      "disabled": true
+    },
+    {
+      "name": "Análisis. de<br> área petitorio",
+      "title": "Petitorio minero",
+      "subtitle": "Análisis",
+      "description": "Análisis de áreas de petitorio minero",
+      "icon": "mining-request",
+      "url": "areas/miningconcession/miningrequest/main.html",
+      "both": true,
+      "disabled": true
+    },
+    {
+      "name": "Consulta de <br> superposición",
+      "title": "Consulta de capas",
+      "subtitle": "Superposición",
+      "description": "Mapea áreas de eventos y registra ficha de datos",
+      "icon": "overlap",
+      "url": "areas/miningconcession/miningconcession/overlap.html",
+      "both": true,
+      "disabled": true
+    },
+    {
+      "name": "Precio de <br> minerales",
+      "title": "Precio de minerales",
+      "subtitle": "24 horas",
+      "description": "Mapea áreas de eventos y registra ficha de datos",
+      "icon": "event",
+      "url": "areas/miningconcession/miningconcession/mineralprice.html",
+      "both": true,
+      "disabled": true
+    },
+    {
+      "name": "Consulta de <br> Proy. Mineros",
+      "title": "Proyectos mineros",
+      "subtitle": "Consulta",
+      "description": "Mapea áreas de eventos y registra ficha de datos",
+      "icon": "event",
+      "url": "areas/miningproject/miningproject/main.html",
+      "both": true,
+      "disabled": true
+    },
+    {
+      "name": "Recolecta <br> fotografías",
+      "title": "Geofotos",
+      "subtitle": "Consulta",
+      "extract": "Fotografías georeferenciadas",
+      "description": "Captura fotografías y las georeferencia.",
+      "icon": "photography",
+      "url": "areas/geometry/geophoto/main.html",
+      "both": true
+    },
+    {
+      "name": "Dibuja área <br> de peligro",
+      "title": "Área de peligro",
+      "subtitle": "Consulta",
+      "extract": "Mapeo de eventos",
+      "description": "Mapea áreas de eventos y registra ficha de datos",
+      "icon": "event",
+      "url": "areas/event/event/main.html",
+      "both": true
+    },
+    {
+      "name": "Rec. datos <br> de predios",
+      "title": "Recol. de predios",
+      "subtitle": "Consulta",
+      "extract": "Predios",
+      "description": "Registra ficha de datos de predios y su ubicación geográfica",
+      "icon": "surface-property",
+      "url": "areas/surfaceproperty/surfaceproperty/main.html",
+      "both": true,
+      "disabled": true
+    },
+    {
+      "name": "Georeferencia <br> de PIP's",
+      "title": "Georeferencia PIP",
+      "subtitle": "Consulta",
+      "extract": "Componentes",
+      "description": "Georeferencia componentes de proyectos y ficha de datos",
+      "icon": "pip-component",
+      "url": "areas/pip/pipcomponent/main.html",
+      "both": true,
+      "disabled": true
+    },
+    {
+      "name": "EDAN <br> Educación",
+      "title": "EDAN Educación",
+      "subtitle": "Consulta",
+      "description": "Permite coleccionar datos de EDAN",
+      "icon": "mining-concession",
+      "url": "areas/minedu/edan/main.html",
+      "both": true,
+      "disabled": true
+    },
+    {
+      "subtitle": "Ayuda",
+      "name": "Ayuda",
+      "description": "Ayuda",
+      "icon": "",
+      "url": "areas/default/home/help.html",
+      "both": false
+    },
+    {
+      "subtitle": "Acerca",
+      "name": "Acerca",
+      "description": "Acerca",
+      "icon": "",
+      "url": "areas/default/home/about.html",
+      "both": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "id": 4326,
+    "name": "GEODESICAS - WGS 84",
+    "wkt": ""
+  },  
+  {
+    "id": 32717,
+    "name": "WGS 84 UTM Zona 17S",
+    "wkt": ""
+  },
+  {
+    "id": 32718,
+    "name": "WGS 84 UTM Zona 18S",
+    "wkt": ""
+  },
+  {
+    "id": 32719,
+    "name": "WGS 84 UTM Zona 19S",
+    "wkt": ""
+  },
+  {
+    "id": 3857,
+    "name": "Pseudo Mercator",
+    "wkt": ""
+  }
+]

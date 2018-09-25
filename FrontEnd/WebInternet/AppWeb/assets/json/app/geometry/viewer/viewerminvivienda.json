@@ -1,0 +1,77 @@
+{
+  "isMenuButton": true,
+  "isWidgetPopup": false,
+  "embedded": true,
+  "style": {
+    "alpha": 0.8
+  },
+  "geometryService": {
+    "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/Utilities/Geometry/GeometryServer"
+  },
+
+  "withOverview": false,
+  "withSplash": false,
+  "splashPage": {
+    "label": "GORE - MAD",
+    "uri": "splash",
+    "config": "splash/splash.json"
+  },
+  "map": {
+    "wrapAround180": true,
+    "addArcgisBasemaps": false,
+    "portalUrl": "https://www.arcgis.com/",
+    "initialExtent": {
+      "xMinimum": -9109878.5,
+      "yMinimum": -2103124.144,
+      "xMaximum": -7593812.968,
+      "yMaximum": 24130.111
+    },
+    "projectionCode": 3857,
+    "services": [
+      {
+        "label": "Catastro Minero",
+        "type": "agsd",
+        "visible": false,
+        "disabled": false,
+        "alpha": 0.5,
+        "layerIds": "",
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CATASTRO_MINERO/MapServer"
+      },
+      {
+        "label": "Cartografía base",
+        "type": "agsd",
+        "visible": false,
+        "alpha": 0.5,
+        "layerIds": "",
+        "disabled": false,
+        "url": "http://geocatmin.ingemmet.gob.pe/arcgis/rest/services/SERV_CARTOGRAFIA_BASE_WGS84/MapServer"
+      }
+    ]
+  },
+  "widgetsDefault": [ "navigation", "basemap", "scale", "toc", "mouseposition" ],
+  "widgetContainer": {
+    "layout": "float",
+    "widgets": [
+      {
+        "label": "Medir",
+        "left": 10,
+        "top": 10,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "gh gh-measure",
+        "uri": "measure",
+        "config": "measure/measure.json"
+      },
+      {
+        "label": "Variables",
+        "left": 0,
+        "top": 0,
+        "openInitial": true,
+        "disabled": false,
+        "icon": "glyphicon glyphicon-list-alt",
+        "uri": "custom/vip/variable",
+        "config": "custom/vip/variable.json"
+      }
+    ]
+  }
+}

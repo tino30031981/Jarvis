@@ -1,0 +1,74 @@
+<!--div class="box">-->
+<div class="panel panel-default">
+    <form>
+        <div class="box-body">
+            <div class="col-xs-6 gh-padding-0">
+                <input id="chkServiceType" type="checkbox" value="2" name="chkServiceType">
+                <label for="chkServiceType">Capas externas</label>
+            </div>
+            <div class="col-xs-12 form-group">
+                <h5 class="row-head">Seleccione capas de información</h5>
+            </div>
+            <div class="col-xs-12">
+                <div class="gh-scroll200" id="divListServicesInternal">
+                </div>
+                <div class="gh-scroll200" id="divListServicesExternal">
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <hr />
+                <label for="ddlFormat">Formato</label>
+                <select id="ddlFormat" class="form-control"></select>
+            </div>
+            <div class="col-xs-12">
+                <h5 class="row-head">Seleccione Tipo área</h5>
+            </div>
+            <div class="col-xs-12">
+                <div class="col-xs-6">
+                    <input id="rbtGraphic" type="radio" value="1" name="rbtSource" checked="checked">
+                    <label for="rbtGraphic">Graficar</label>
+                </div>
+                <div id="divRbtFile" class="col-xs-6">
+                    <input id="rbtFile" type="radio" value="2" name="rbtSource">
+                    <label for="rbtFile">Archivo</label>
+                </div>
+            </div>
+            <div class="clearfix"></div><hr />
+            <div id="divGraphic" class="col-xs-12 btn-group gh-btn-group gh-btn-graphic form-group" role="group" aria-label="extract options">
+                <!--<button type="button" id="btnPoint" class="btn" title="Punto"><i class="gh gh-point"></i></button>-->
+                <button type="button" id="btnPolyline" class="btn" title="Polilínea"><i class="gh gh-polyline"></i></button>
+                <!--<button type="button" id="btnPolylineFreeHand" class="btn" title="Polilínea libre"><i class="gh gh-polyline-freehand"></i></button>-->
+                <button type="button" id="btnPolygon" class="btn" title="Polígono"><i class="gh gh-polygon"></i></button>
+                <!--<button type="button" id="btnPolygonFreeHand" class="btn" title="Polígono libre"><i class="gh gh-polygon-freehand"></i></button>-->
+                <button type="button" id="btnRectangle" class="btn" title="Rectángulo"><i class="gh gh-rectangle"></i></button>
+                <!--<button type="button" id="btnCircle" class="btn" title="Círculo"><i class="gh gh-circle"></i></button>-->
+                <button type="button" id="btnEllipse" class="btn" title="Elipse"><i class="gh gh-ellipse"></i></button>
+                <div class="clearfix"></div>
+            </div>
+            <div id="divFile" class="col-xs-12">
+                <fieldset class="form-group">
+                    <label for="filFile">File input</label>
+                    <input type="file" class="form-control-file" id="filFile" name="filFile" />
+                    <small class="text-muted">Sólo se aceptan shapefile(en formato ZIP)</small>
+                </fieldset>
+                <div id="divRadio" class="form-group">
+                    <label for="txtRadio">Radio / Buffer</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="txtRadio" maxlength="2" placeholder="Radio">
+                        <div class="input-group-addon">Km.</div>
+                    </div>
+                </div>
+                <fieldset class="form-group">
+                    <hr />
+                    <button type="button" id="btnGraphicFile" class="btn" name="btnGraphicFile">
+                        <i class="glyphicon glyphicon-pencil"></i> Graficar
+                    </button>
+                </fieldset>
+            </div>
+            <div><span id="divStatus"></span></div>
+        </div>
+        <div class="col-xs-6">
+            <a href="#" target="_blank" class="btn col-xs-12" id="aDownload">Descargar</a>
+        </div>
+    </form>
+</div>

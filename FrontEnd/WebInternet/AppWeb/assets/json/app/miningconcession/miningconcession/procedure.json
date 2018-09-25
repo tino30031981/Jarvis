@@ -1,0 +1,25 @@
+{
+  "noapproved": "No aprobado",
+  "state": {
+    "completed": {
+      "label": "Completado",
+      "color": " #d3fece"
+    },
+    "nocompleted": {
+      "label": "Falta",
+      "color": "#f5c8c1"
+    }
+  },
+  "requirement": {
+    "state": {
+      "completed": {
+        "label": "Completado",
+        "color": " #d3fece"
+      },
+      "nocompleted": {
+        "label": "Falta",
+        "color": "#f5c8c1"
+      }
+    }
+  }
+}

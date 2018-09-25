@@ -1,0 +1,1033 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
+body, main {
+    font-size: 12px !important; 
+  
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+
+button {
+    cursor: pointer !important;
+    transition: all 0.6s ease 0s;    
+    border: none;
+         overflow: visible !important;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+.btn:hover, .btn:focus, .btn.focus {
+    color: #fff;
+    text-decoration: none;
+}
+ /*
+    button:hover:after {
+        border-radius: 5px;
+        top: 100%;
+        content: attr(title);
+        left: 20%;
+        padding: 5px 15px;
+        position: absolute;
+        z-index: 999;
+        width: auto;
+        text-indent: 0;
+    }
+
+    button:hover:before {        
+        bottom: 0;
+        content: "";
+        left: 50%;
+        position: absolute;
+        z-index: 99;
+    }
+
+   
+    .gh-btn-left .btn:hover::after {
+    content: attr(title);
+    position: absolute;
+    min-width: auto;
+    font-weight: 100;
+    line-height: 1.3em;
+    margin: 0;
+    background: #2098d1;
+    color: #fff;
+    padding: 5px 10px!important;
+    text-transform: uppercase;
+    left: 100%;
+    top: 0px;
+    z-index: 99999999999;
+    font-size: 10px;
+    height: auto;
+    opacity: .9;
+    border-radius: 30px!important;
+}
+    .gh-btn-top .btn:hover::after {
+    content: attr(title);
+    position: absolute;
+    min-width: auto;
+    font-weight: 100;
+    line-height: 1.3em;
+    margin: 0;
+    background: #2098d1;
+    color: #fff;
+    padding: 5px 10px!important;
+    text-transform: uppercase;
+    left: 0px;
+    top: 40px;
+    z-index: 99999999999;
+    font-size: 10px;
+    height: auto;
+    opacity: .9;
+    border-radius: 30px!important;
+}
+        */
+
+.table > caption .btn {
+        border-radius: 0 !important;
+}
+/*****Scroll Bar*****/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f19e;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c3c5c1;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #4974b9;
+    }
+
+body  {
+    background-color: #ffffff;
+}
+
+.table > caption, .table > thead, 
+.navbar-default,
+.panel-default > .panel-heading,
+.panel-default > .panel-footer,
+.modal-content-default > .modal-header,
+.modal-content-default > .modal-footer,
+.btn, .jca-color, .esriPopup .titlePane,.footer,.gh-selected,.datepicker>div>table>thead{
+         box-shadow: none;
+    text-shadow: none;
+    border: 0;
+    background-color: #4974b9 !important;  
+ 
+}
+.navbar-default, .panel-lateral .panel-heading, .btn-toolbar
+{
+background-color: #3c65a7;
+    background-color: #3c65a7;
+    background: rgba(73,116,185,1);
+    background: -moz-linear-gradient(top, rgba(73,116,185,1) 0%, rgba(62,102,163,1) 49%, rgba(60,101,167,1) 51%, rgba(73,116,185,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,116,185,1)), color-stop(49%, rgba(62,102,163,1)), color-stop(51%, rgba(60,101,167,1)), color-stop(100%, rgba(73,116,185,1)));
+    background: -webkit-linear-gradient(top, rgba(73,116,185,1) 0%, rgba(62,102,163,1) 49%, rgba(60,101,167,1) 51%, rgba(73,116,185,1) 100%);
+    background: -o-linear-gradient(top, rgba(73,116,185,1) 0%, rgba(62,102,163,1) 49%, rgba(60,101,167,1) 51%, rgba(73,116,185,1) 100%);
+    background: -ms-linear-gradient(top, rgba(73,116,185,1) 0%, rgba(62,102,163,1) 49%, rgba(60,101,167,1) 51%, rgba(73,116,185,1) 100%);
+    background: linear-gradient(to bottom, rgba(73,116,185,1) 0%, rgba(62,102,163,1) 49%, rgba(60,101,167,1) 51%, rgba(73,116,185,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4974b9', endColorstr='#4974b9', GradientType=0 );
+    border-bottom: 1px solid #2f5898;
+}
+
+
+   .btn,  .icon-bar, .navbar-brand, .caret, .fa,  .glyphicon, .jca,
+    .gh-menu-text-body, .panel-default > .panel-heading, .panel-default > .panel-footer, .navbar-default .navbar-nav > li > a, .modal-title, .modal-header .close, .footer,
+    table > thead, panel > panel-heading > .btn, pager li > a, .pager li > span,.navbar-text, .esriScalebarLabel, .ol-scale-line-inner {
+        color: #fff  ;
+    }
+
+.esriPopup .contentPane, .esriOverviewMap .ovwContainer, .esriElevationProfile, .esriElevationProfileChartNode {
+    background-color: #fff !important;
+}
+
+.esriScalebarLine,.ol-scale-line-inner {
+    border-color: #fff;
+}
+
+button:hover, button:active {
+    background-color: #339dd3;
+}
+
+    button:hover:before {
+        border-color: #f5f5f5 transparent;
+    }
+
+.dropdown-submenu:hover > a:after {
+    border-right-color: #ccc !important;
+}
+
+select, input[type="number"] {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.jca-title, .jca-sub-title {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.jca-menu li:hover {
+    background-color: #c0cad2;
+}
+
+.carousel-inner {
+    background: #121416;
+}
+
+.jca-menu li:hover {
+    background-color: rgb(143, 225, 238);
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: rgb(7, 118, 123);
+}
+
+.jca-img-circle {
+    border: 10px solid #6d96c1;
+}
+.form-control-feedback.glyphicon.glyphicon-asterisk {
+    color: #6e6e6e !important;
+}
+
+.datepicker table tr td, .datepicker table tr th {
+    border-radius: 0px !important;
+ 
+}
+.nav > li > a:hover {
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+/*.esriPopup .contentPane, .esriOverviewMap .ovwContainer, .esriElevationProfile, .esriElevationProfileChartNode {
+    background-color: inherit !important;
+}*/
+
+.esriPopup a {
+    color: inherit !important;
+}
+
+
+    .jca-color-blue
+	{
+        color:blue !important;
+	}
+
+
+/* sideteva */
+/* 17/01/2017 */
+.jca-toolbar button {        
+        border-radius: 36px !important;
+        width: 44px;
+        height: 44px;
+        position: relative;
+        color: #ffffff;     
+        font-size: 17px !important;
+    }
+
+.fixed-table-container tbody .selected td {
+    background-color: #A7EFF9;
+}
+.gh-navbar-brand {   
+    width: 160px;
+}
+.gh-navbar-brand > img {   
+    padding: 10px 10px !important;   
+    max-width: 100% !important;
+}
+
+ 
+.gh-btn-top .btn {
+    margin-right: 5px;
+}
+
+.gh-btn-top {
+    width: auto;
+    position: absolute;
+    left: 100px;
+    top: 5px;
+    z-index: 1;
+}
+
+.gh-btn-left
+{
+    width: auto;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 1;
+}
+
+.gh-btn-left .dropdown-toggle {
+    margin-left: 5px;
+}
+.jca-btn-circle {
+    
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+    -moz-border-radius: 50%; 
+   -webkit-border-radius: 50%;  
+   border-radius:  50%; 
+   width:40px;
+    height:40px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+      background: #3c65a7;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    font-size: 18px;
+    padding: 0px;
+    color:white;
+}
+ 
+.jca-btn-circle:before {
+    content: "";
+    position: absolute;
+    z-index: -1 !important;
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0 !important;
+    right: 0;
+    background: #2098D1;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.jca-btn-circle:hover, .jca-btn-circle:focus, .jca-btn-circle:active {
+    color: white;
+}
+.jca-btn-circle:hover:before, .jca-btn-circle:focus:before, .jca-btn-circle:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+
+.panel-lateral.lg {
+    width: 400px !important;
+     z-index: 0;
+}
+.panel-lateral {
+    position: fixed;  
+    height: 100%;
+    top: 40px;
+    right: 0px;
+    max-height: 100vh;
+    box-shadow: none;
+
+}
+.panel-lateral .panel-heading {
+    padding: 10px;
+    color:white !important;
+       background: #4974b9;
+           border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.btn-panel-lateral {
+    position: absolute;
+    top: 0px;
+    left: -42px;
+    padding: 10px 15px;
+    background: #4974b9 !important;
+    color: white;
+    border: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: rgb(46, 72, 103);
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+}
+
+
+ 
+/*
+.gh-content:before {
+    background: #fff;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.8;
+    z-index: 0;
+}
+    */
+.panel-default {
+    border-color: transparent;
+    border:0px;
+}
+.btn-toolbar { 
+      background: #3c65a7;
+    color: white;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    margin-left:0px;
+
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.pl-close-lg {
+    right: -400px !important;
+}
+
+
+/*ajustar altura */
+.gh-content { 
+    height: 100% !important;
+}
+
+
+.map {
+    z-index: 0;
+}
+.panel-lateral::before {
+    content: "";
+    height: 100%;
+    width: 400px;
+    position: absolute;
+    background: white;
+    opacity: 1;
+    z-index: -1;
+}
+form {
+    padding: 10px;
+}
+.form-group {
+  
+    clear: both;
+}
+.form-horizontal .form-group {
+    margin-right: 0;
+    margin-left: 0;
+}
+.panel-body ul {
+    padding: 0;
+}
+
+.form-control {
+    width: 100%;
+    border: 1px solid #e2e9fb;
+    padding: 5px 10px;
+    line-height: 12px;
+    color: #4974b9;
+    background: #f5f5f5!important;
+    border: 0px solid #f5f9fa;
+    text-align: left!important;
+    border-radius: 0;
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 12px!important;
+    -o-transition: color .2s ease-out,background 1s ease-in,border 2s ease-in;
+    -ms-transition: color .2s ease-out,background 1s ease-in,border 2s ease-in;
+    -moz-transition: color .2s ease-out,background 1s ease-in,border 2s ease-in;
+    -webkit-transition: color .2s ease-out,background 1s ease-in,border 2s ease-in;
+    transition: color .2s ease-out,background 1s ease-in,border 2s ease-in;
+    border-bottom: 4px solid #eaeaea;
+}
+
+.form-control:active, .form-control:focus, .form-control:hover {
+    background-color: #f9f9f9!important;
+    border: 0px solid #f5f9fa;
+    border-bottom: 4px solid #4974b9;
+    box-shadow: inset 0 0 0 0;
+    color: #4974b9;
+    text-decoration: none !important;
+}
+
+.navbar-brand,.navbar  { 
+    height: 40px;
+    min-height: 40px;
+}
+
+.gh-navbar-brand > img {
+    padding: 5px 10px !important;
+    max-width: 90% !important;
+}
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+      font-size: 13px;
+    letter-spacing: .15em;
+    font-weight: 300;
+line-height: 1.6;
+    -webkit-box-direction: normal;
+}
+
+
+.input-group-addon {
+    padding: 0px 10px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 12px;
+    color: #555;
+    text-align: center;
+    background-color: #3c65a6 !important;
+    color: white;
+    border: none !important;
+    border-radius: 4px;
+}
+.list-group-item {
+   
+    border: 0;
+}
+.list-group-item .input-group {
+    margin-bottom: 5px;
+}
+.list-group-item .input-group a {
+    
+    padding-top: 10px;
+}
+
+.table > caption {
+    
+      color: #777777;
+    padding: 10px 10px 10px;
+    background: #fff!important;
+}
+.table > caption input {
+   background: #e2e9fb !important;
+}
+
+.datepicker>div>table>thead {
+    border: 0px;
+}
+.datepicker .datepicker-switch:hover, .datepicker .prev:hover, .datepicker .next:hover, .datepicker tfoot tr th:hover {
+    background: #4974b9;
+}
+
+.panel-lateral .panel-heading .btn {
+    background: transparent;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+}
+.panel-lateral .panel-heading .btn:hover {
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+
+
+
+.bubble {
+    background:#f7f7f7;
+    border-radius: 10px;
+    padding: 10px;
+    color: #272323;
+    text-align: center;
+    width: 100%;
+}
+.bubble::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #f7f7f7;
+    top: 25px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 40%;
+    z-index: -1;
+}
+form .btn-toolbar {
+    margin: 10px -10px;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus { 
+    background-color: #3c65a7;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form { 
+    overflow: initial !important;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {     
+    background-color: #315590;
+}
+.navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:active {
+     background-color: #315590;
+    color:white !important;
+}
+
+.jca-menu li:hover {
+   background-color: rgb(245, 245, 245);
+    color: white !important;
+}
+
+
+
+.panel-lateral .panel-heading span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+ 
+.css-treeview li.active {
+     background: #ffffff !important;
+    width: 100%;
+    height: auto;
+    color: black;
+    border: 0px;
+    padding: 5px 10px;
+}
+.css-treeview li {
+    padding: 2px;
+    width: 100%;
+    height: auto;
+    border: 0px;
+    padding: 5px 10px;
+}
+
+.input-group-addon {
+    padding: 0px 10px;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 10px;
+    color: #555;
+    text-align: center;
+    background-color: #4974b9 !important;
+    color: white;
+    border: none !important;
+    border-radius: 0;
+}
+
+.gh-margin--10 {
+    margin-top: -10px;
+    overflow-x:hidden;
+}
+
+
+.gh-scroll-300 {
+    overflow: auto;
+    overflow-x: hidden;
+    height: 300px;
+}
+.gh-scroll-300 .panel-heading {
+  padding: 10px;
+    color: #ffffff !important;
+    background: transparent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom: 4px solid #7098d8;
+    margin-bottom: 10px;
+}
+
+
+ 
+input[type="radio"], input[type="checkbox"] {
+    margin: 4px 10px 0;     
+    line-height: normal;
+}
+.tree .dropdown label {
+    color: #969698 !important;
+}
+.modal {
+    top:40px;
+}
+.modal-content-default {     
+    border: 0px;
+    top: 0px;
+}
+.modal .tree {
+    padding: 0 10px;
+}
+.modal-backdrop
+{
+display:none;
+}
+.modal::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+    top: 0px;
+    opacity: 0.4;
+}
+.modal-content-default > .modal-header
+{  text-transform: uppercase;
+    padding: 10px;
+   background-color: #5d80b9
+}
+.modal-body form {
+    padding: 0px;
+    margin: 0px;
+}
+.modal-body {
+    padding: 0;
+    background-color: #fff !important;
+}
+.modal-content-default > .modal-header.close, .close {
+    background: transparent;
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+opacity:1 !important;
+background:transparent !important;
+}
+.modal-content-default > .modal-header .close:hover {-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);-o-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg);opacity: 1;background: transparent;}
+
+.modal-small {
+        width: 300px;
+    padding: 10px;
+}
+.gh-btn-graphic {
+     margin-bottom:10px;
+}
+ .gh-btn-graphic > .btn
+{
+     display: flex;
+     margin-right: 5px;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     cursor: pointer;
+     text-align: center;
+     background: white !important;
+     color: #3c65a7 !important;
+     border: 2px solid #3c65a7;
+     /* border: 0; */
+     border-radius: 15px;
+     box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.3);
+     outline: none !important;
+     width: 50px;
+     height: 50px;
+     padding: 10px 16px;
+     font-size: 24px !important;
+     line-height: 1.33;
+     -moz-border-radius:  50% !important;
+     -webkit-border-radius: 50% !important;
+     border-radius: 50% !important;
+     -webkit-transform: perspective(1px) translateZ(0);
+     transform: perspective(1px) translateZ(0);
+     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+     overflow: hidden;
+     -webkit-transition-duration: 0.5s;
+     transition-duration: 0.5s;
+     -webkit-transition-property: color, background-color;
+     transition-property: color, background-color;
+     border: 1px solid #3c65a7 !important;
+ }
+ 
+
+.gh-btn-graphic > .btn:hover, .gh-btn-graphic > .btn:focus, .gh-btn-graphic > .btn:active    {
+    -webkit-animation-name: btn-animation;
+    animation-name: btn-animation;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background: #3c65a7 !important;
+    /* background-color: #2980b9; */
+    color: white !important;
+} 
+.gh-btn-group, .gh-btn-group-vertical {
+    margin: 0px !important;
+}
+.contentPane button, .contentPane .recursos, .contentPane a {
+    cursor: pointer !important;
+    transition: all 0.6s ease 0s;
+    border: none;
+    overflow: visible !important;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    padding: 5px 20px;
+    background: #3c65a7;
+    color: white !important;
+    font-size: 11px;
+    margin-bottom: 1px;
+    text-decoration: none !important;
+    border-radius: 4px;
+}
+ 
+
+    .esriPopup .contentPane { 
+    word-wrap: break-word;
+}
+.esriPopup .close, .esriPopup .maximize, .esriPopup .zoomTo, .esriPopup .prev, .esriPopup .next  {
+    color: inherit !important;
+    font-size: inherit !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+    line-height: normal;
+}
+
+.esriPopup .titleButton.prev { 
+   
+    width: 11px;
+    height: 11px;
+    top: 5px;
+}
+.esriPopup .prev:before {
+    font-family: "Glyphicons Halflings";
+    content: "\e079";
+}
+.esriPopup .titleButton.next {
+    
+    width: 11px;
+    height: 11px;
+    top: 5px;
+    
+}
+.esriPopup .next:before {
+    font-family: "Glyphicons Halflings";
+    content: "\e080";
+}
+ .table-hover > tbody > tr:hover, .gh-selected {
+    color: white;
+    vertical-align: middle;
+    background: #4974b9 !important;
+}
+
+
+ .gh-button-home .btn-lg, .gh-button-home .btn-group-lg > .btn {
+   
+    margin: 10px;
+}
+
+ 
+.gh-button-home .btn {
+    margin: .4em;
+    padding: 1em;
+    cursor: pointer;
+    background: #e1e1e1;
+    text-decoration: none;
+    color: #fff;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #154082;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.gh-button-home .btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #3d66a8;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.gh-button-home .btn:hover, .gh-button-home .btn:focus, .gh-button-home .btn:active {
+    color: white;
+}
+
+.gh-button-home .btn:hover:before, .gh-button-home .btn:focus:before, .gh-button-home .btn:active:before {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+
+/**/
+ 
+.modal .panel-heading {
+    border: 0px;
+}
+
+.contentPane tr:nth-child(odd) 
+{background-color:#f2f2f2;}
+
+.contentPane tr:nth-child(even) {
+background-color:#fff; 
+}
+.esriPopup .contentPane td {
+    padding: 3px 0px;
+}
+
+.contentPane button, .contentPane .recursos, .contentPane a {   
+    padding: 3px 20px;
+    background: #d6d6d6;
+    color: #00040a !important;   
+    text-decoration: none !important;
+    border-radius: 4px;
+}
+
+.esriPopup
+{    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;}
+
+
+.esriPopup .actionsPane .action {
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    background: #4974b9;
+    color: white !important;
+    border-radius: 5px;
+    }
+.esriPopup .actionsPane .action span {
+    margin-left: 5px;
+}
+.esriPopup .actionsPane {
+    padding: 5px 10px 10px 10px;
+    background-color: #F7F7F7;
+    border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
+    position: relative;
+   
+}
+ .btn-group .tree
+{
+    padding: 10px !important;
+}
+
+.btn-group .tree label {
+      display: inline-block;
+    float: left;
+    margin: 4px 0 0 4px;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.btn-group .tree ul li {
+    padding-left: 18px !important;
+}
+
+.fixed-table-container tbody .selected td {
+    background: #4974b9;
+    color: white;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #d0cece !important;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #d0cece !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #d0cece !important;
+}
+
+.gh-btn-left .dropdown-menu-left {
+    left: 50px;
+    top: 80%;
+}
+.gh-btn-left .dropdown-menu-left li {
+    margin: 0;
+}
+
+.gh-btn-left .dropdown-menu-left li a {
+    margin: 0px;
+    padding: 0px;
+}
+.esriMapContainer .dropdown-menu  {
+   padding-bottom:10PX
+}
+.esriMapContainer .dropdown-menu > li  {
+    margin: 0; 
+}
+
+.esriMapContainer .dropdown-menu > li > a {
+    margin: -5px 0 0 0px;
+    padding: 0px;
+    line-height: 12px;  
+}
+.esriMapContainer .dropdown-menu > li > a > label {
+ 
+     font-weight: 400 !important;  
+}
+.fixed-table-toolbar .columns label {
+   margin: 0px;
+    padding: 0px;
+}
+.gh-scroll200 {
+    height: 200px;
+    width: 100%;
+}
+.panel-default > .panel-heading .navbar-toolbar {
+    margin: 0 !important;
+    padding: 0px;
+    height: 0;
+    min-height: 0px;
+    background: white;
+}
+
+
+body {
+}
+
+/*.ol-custom-overviewmap:not(.ol-collapsed) {
+    border: 1px solid black;
+}
+
+.ol-custom-overviewmap .ol-overviewmap-box {
+    border: 2px solid red;
+}*/
+

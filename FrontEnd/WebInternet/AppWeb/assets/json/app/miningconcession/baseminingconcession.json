@@ -1,0 +1,36 @@
+{
+  "defaultsoap": 32718,
+  "soaps": [    
+    {
+      "id": 32717,
+      "name": "WGS 84 Zona 17S",
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/services/WGS84_17/WEBGIS_CATASTRO_MINERO_WGS84_17/MapServer",
+      "layerId": 0,
+      "zone" :  "17"
+    },
+    {
+      "id": 32718,
+      "name": "WGS 84 Zona 18S",
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/services/WGS84_18/WEBGIS_CATASTRO_MINERO_WGS84_18/MapServer",
+      "layerId": 0,
+      "zone" :  "18"
+    },
+    {
+      "id": 32719,
+      "name": "WGS 84 Zona 19S",
+      "url": "http://geocatmin.ingemmet.gob.pe/arcgis/services/WGS84_19/WEBGIS_CATASTRO_MINERO_WGS84_19/MapServer",
+      "layerId": 0,
+      "zone" :  "19"
+    }
+  ],
+  "ingemmet": {
+    "urls": {
+      "base": "http://www.ingemmet.gob.pe/",
+      "sidemcat": "sidemcat?",
+      "summary": "igm-sidemcat-portlet/ver-resumen?pCodigo_DM={0}",
+      "pay": "igm-sidemcat-portlet/ver-penalidad?pCodigo_DM={0}",
+      "recordImage": "igm-sidemcat-portlet/image-pdf?cod_exp={0}&page={1}",
+      "recordRange": "igm-sidemcat-portlet/ver-documento?cod_exp={0}&pag_ini={1}&pag_fin={2}&paginado=10"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+﻿/*.esriPopup .contentPane, .esriOverviewMap .ovwContainer, .esriElevationProfile, .esriElevationProfileChartNode {
+    background-color: inherit !important;
+}*/
+
+.esriPopup a {
+    color: inherit !important;
+}

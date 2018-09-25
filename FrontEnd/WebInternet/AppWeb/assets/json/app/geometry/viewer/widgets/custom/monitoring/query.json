@@ -1,0 +1,17 @@
+{
+  "showAsTable": false,
+  "zoomLevel": 2,
+  "startExtraAttributes": false,
+  "service": {
+    "url": "http://192.168.1.200:6080/arcgis/rest/services/monitoreo/concesiones/MapServer",
+    "layerId": 0,
+    "joinField": "monitoringid",
+    "joinFieldExtra": "monitoringid",
+    "defaultFields": ["","NOMBRE","ID"],
+    "excludeFields": [""],
+    "fields": [ "*" ],
+    "report": true,
+    "extinct": true,
+    "useCustomInfoTemplate": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+	"title": "Reporte de análisis de superposición de Catastro Rural",
+	"defaultInformationSource": "Gobierno regional de Madre de Dios",
+	"tables": 
+	[
+		{
+			"name": "Catastro Minero",
+			"source": "miningcadaster",
+			"informationSource": "Gobierno regional de Madre de Dios"
+		},		
+		{
+			"name": "Lotes Petroleros",
+			"source": "lotepetrolero",
+			"informationSource": "Gobierno regional de Madre de Dios"
+		},
+		{
+			"name": "Áreas Naturales Protegidas",
+			"source": "anp",
+			"informationSource": "Gobierno regional de Madre de Dios"
+		},
+        {
+			"name": "Zona de Amortiguamiento",
+			"source": "za",
+			"informationSource": "Gobierno regional de Madre de Dios"
+		}
+	]
+}

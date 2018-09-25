@@ -1,0 +1,28 @@
+{
+  "minerals": [
+    {
+      "title": "Precio Oro 24 horas",
+      "description": "",
+      "url": "http://www.kitco.com/images/live/gold.gif?0.6656622657422763",
+      "source": "Fuente: KITCO"
+    },
+    {
+      "title": "Precio Plata 24 horas",
+      "description": "",
+      "url": "http://www.kitco.com/images/live/silver.gif?0.6656622657422763",
+      "source": "Fuente: KITCO"
+    },
+    {
+      "title": "Precio Platino 24 horas",
+      "description": "",
+      "url": "http://www.kitco.com/images/live/plati.gif?0.6656622657422763",
+      "source": "Fuente: KITCO"
+    },
+    {
+      "title": "Precio Paladio 24 horas",
+      "description": "",
+      "url": "http://www.kitco.com/images/live/plad.gif?0.6656622657422763",
+      "source": "Fuente: KITCO"
+    }
+  ]
+}

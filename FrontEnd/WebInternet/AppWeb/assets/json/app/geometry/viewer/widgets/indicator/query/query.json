@@ -1,0 +1,11 @@
+{
+  "descriptionLabel": {
+    "allServices": "[Todos]",
+    "allLayers": "[Todos]"
+  },
+  "zoomLevel": 2,
+  "service": {
+    "url": "http://190.236.233.241/arcgis/rest/services/SPIMCAM_Indicadores/MapServer"
+  },
+  "chartTypes": [ "column", "line", "area", "pie", "spline", "scatter", "bar" ]
+}

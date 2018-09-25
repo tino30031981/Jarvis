@@ -1,0 +1,8 @@
+{
+  "addToc": true,
+  "maxRecordCount": 1000,
+  "zoomLevel": 1.25,
+  "service": {
+    "url": "http://www.arcgis.com/sharing/rest/content/features/generate"
+  }
+}

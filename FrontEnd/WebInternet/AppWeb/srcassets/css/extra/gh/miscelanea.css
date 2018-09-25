@@ -1,0 +1,125 @@
+.gh-content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    -ms-flex: 1 0 0;
+    flex: 1% 0% 0%;
+    min-width: 0;
+}
+
+.gh-position {
+    position: inherit !important;
+}
+
+
+
+.gh-min-height-0 {
+    min-height: 0;
+}
+
+.gh-scrollable {
+    overflow-y: scroll !important;
+    -webkit-overflow-scrolling: touch !important;
+    overflow-scrolling: touch !important;
+}
+
+/* iOS specific fix, don't use it on Android devices */
+/* .gh-scrollable > * {
+        -webkit-transform: translateZ(0px);
+    }*/
+.gh-selected {
+    background-color: #F5F5F5 !important;
+    word-wrap: break-word !important;
+}
+
+.gh-dropdown-menu-xs {
+    font-size: 12px;
+}
+
+.gh-progress, .gh-progress-bar {
+    height: 28px;
+    line-height: 28px;
+    white-space: nowrap;
+}
+
+.gh-centerxy {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+}
+
+.gh-centerxy-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gh-well {
+    background-color: inherit !important;
+}
+
+.gh-legend {
+    width: inherit !important;
+    margin-bottom: 0 !important;
+    border-style: none !important;
+    font-size: inherit !important;
+}
+
+.gh-noresize {
+    resize: none;
+}
+
+.gh-vresize {
+    resize: vertical;
+}
+
+.gh-hresize {
+    resize: horizontal;
+}
+/***************************************************************+**/
+.gh-navbar-brand {
+    padding: 0;
+}
+
+    .gh-navbar-brand > img {
+        width: auto;
+    }
+
+.gh-overflow-hidden {
+    overflow: hidden;
+}
+
+.gh-panel-header {
+    position: relative;
+    top: 0;
+}
+
+@media (max-width: 767px) {
+    .gh-nav-menu a {
+        text-align: right !important;
+    }
+
+    .root:hover > .dropdown-menu {
+        width: 100%;
+    }
+}
+
+@media (max-width:480px) {
+    .gh-centerxy {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        -webkit-transform: translate(0%,0%);
+        -ms-transform: translate(0%,0%);
+        -moz-transform: translate(0%,0%);
+        -o-transform: translate(0%,0%);
+        transform: translate(0%, 0%);
+    }
+}

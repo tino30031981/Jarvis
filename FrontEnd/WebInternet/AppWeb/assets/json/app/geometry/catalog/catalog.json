@@ -1,0 +1,48 @@
+{
+  "isMenuButton": true,
+  "isWidgetPopup": false,
+  "embedded": true,
+  "style": {
+    "alpha": 0.8
+  },
+  "geometryService": {
+    "url": "http://geoservidor.minam.gob.pe/arcgis/rest/services/Utilities/Geometry/GeometryServer"
+  },
+
+  "withOverview": false,
+  "withSplash": false,
+  "splashPage": {
+    "label": "GORE - MAD",
+    "uri": "splash",
+    "config": "splash/splash.json"
+  },
+  "map": {
+    "wrapAround180": true,
+    "addArcgisBasemaps": false,
+    "portalUrl": "https://www.arcgis.com/",
+    "initialExtent": {
+      "xMinimum": -9109878.5,
+      "yMinimum": -2103124.144,
+      "xMaximum": -7593812.968,
+      "yMaximum": 24130.111
+    },
+    "projectionCode": 3857
+  },
+  "widgetContainer": {
+    "layout": "float",
+    "widgets": [
+      {
+        "label": "Básico",
+        "left": 20,
+        "top": 100,
+        "openInitial": false,
+        "disabled": false,
+        "icon": "gh gh-catalog",
+        "uri": "basic",
+        "config": "basic/basic.json"
+      }
+    ]
+  },
+  "corsServers": [ "services.arcgisonline.com", "static.arcgis.com", "geoservidor.minam.gob.pe", "geocatmin.ingemmet.gob.pe", "catastro.cofopri.gob.pe", "sigda.cultura.gob.pe" ],
+  "proxy": "proxy/index"
+}

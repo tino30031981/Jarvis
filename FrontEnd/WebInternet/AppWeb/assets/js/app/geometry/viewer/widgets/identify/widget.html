@@ -1,0 +1,43 @@
+<div class="btn-toolbar" >
+    <h6 class="color-1">Seleccione Módulo</h6>
+    </div>
+    <form>
+        
+        <div class="col-xs-6">
+            <input type="radio" name="serviceType" id="rdbServiceCoorporate" value="1" checked="checked">
+            <label for="rdbServiceCoorporate">Capas SIGEMIN</label>
+            <br />
+            <div class="bubble">
+                <small>Incluye capas concesiones, proyectos, uea, petitorio, predios y servicios externos como Ingemmet, Minam, etc...</small>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <input type="radio" name="serviceType" id="rdbServiceExternal" value="2">
+            <label for="rdbServiceExternal">Capas LOCALES</label>
+            <br />
+            <div class="bubble">
+                <small>Incluye capas locales.</small>
+                </div>
+            </div>
+        <fieldset class="form-group">
+            <div class="btn-toolbar">
+                <h6 class="color-1">
+                    Capas
+                </h6>
+            </div>
+            <select id="ddlLayer" class="form-control"></select>
+        </fieldset>
+        <div class="clearfix"></div>
+        <div id="divOptions" class="btn-group gh-btn-group gh-btn-graphic" role="group" aria-label="identify options">
+            <button type="button" id="btnPoint" class="btn" title="Punto"><i class="gh gh-point"></i></button>
+            <button type="button" id="btnPolyline" class="btn" title="Polilínea"><i class="gh gh-polyline"></i></button>
+            <!--<button type="button" id="btnPolylineFreeHand" class="btn" title="Polilínea libre"><i class="gh gh-polyline-freehand"></i></button>-->
+            <button type="button" id="btnPolygon" class="btn" title="Polígono"><i class="gh gh-polygon"></i></button>
+            <!--<button type="button" id="btnPolygonFreeHand" class="btn" title="Polígono libre"><i class="gh gh-polygon-freehand"></i></button>-->
+            <button type="button" id="btnRectangle" class="btn" title="Rectángulo"><i class="gh gh-rectangle"></i></button>
+            <!--<button type="button" id="btnCircle" class="btn" title="Círculo"><i class="gh gh-circle"></i></button>-->
+            <button type="button" id="btnEllipse" class="btn" title="Elipse"><i class="gh gh-ellipse"></i></button>
+        </div>
+    </form>
+    <div id="divFeatures" class="col-xs-12 col-sm-12 col-md-12 gh-padding-20 gh-scroll400"></div>
+    <div id="divFeatureDetail" class="col-xs-12 col-sm-12 col-md-12 gh-padding-20 gh-scroll250 hidden"></div>

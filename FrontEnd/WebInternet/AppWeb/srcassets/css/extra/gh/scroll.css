@@ -1,0 +1,86 @@
+﻿/******************************* overflows*********************/
+.gh-scroll20, .gh-scroll50, .gh-scroll70, .gh-scroll80, .gh-scroll100, .gh-scroll110, .gh-scroll130, .gh-scroll150, .gh-scroll180, .gh-scroll240, .gh-scroll200, .gh-scroll250, .gh-scroll300, .gh-scroll350, .gh-scroll360, .gh-scroll400, .gh-scroll450, .gh-scroll800, .gh-scroll850, .gh-scroll900, .gh-scrollPorcentaje100 {
+    /*clear: both;*/
+    overflow: auto;
+    -webkit-overflow-scrolling : touch;
+    overflow-scrolling         : touch;
+}
+
+.gh-scroll20 {
+    height: 20px;
+}
+
+.gh-scroll50 {
+    height: 50px;
+}
+
+.gh-scroll70 {
+    height: 70px;
+}
+
+.gh-scroll80 {
+    height: 80px;
+}
+
+.gh-scroll100 {
+    height: 100px;
+}
+
+.gh-scroll110 {
+    height: 110px;
+}
+
+.gh-scroll130 {
+    height: 130px;
+}
+
+.gh-scroll180 {
+    height: 150px;
+}
+.gh-scroll150 {
+    height: 180px;
+}
+.gh-scroll200 {
+    height: 200px;
+}
+
+.gh-scroll250 {
+    height: 250px;
+}
+
+.gh-scroll240 {
+    height: 240px;
+    width: 285px;
+}
+
+.gh-scroll300 {
+    height: 300px;
+}
+
+.gh-scroll350 {
+    height: 350px;
+}
+
+.gh-scroll360 {
+    height: 360px;
+}
+
+.gh-scroll400 {
+    height: 400px;
+}
+
+.gh-scroll450 {
+    height: 450px;
+}
+
+.gh-scroll800 {
+    height: 800px;
+}
+
+.gh-scroll850 {
+    height: 850px;
+}
+
+.gh-scroll900 {
+    height: 900px;
+}
