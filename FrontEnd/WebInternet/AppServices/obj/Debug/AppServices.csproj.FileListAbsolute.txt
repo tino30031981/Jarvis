@@ -1,0 +1,7 @@
+C:\projects\WebInternet\AppServices\bin\Debug\AppServices.dll
+C:\projects\WebInternet\AppServices\bin\Debug\AppServices.pdb
+C:\projects\WebInternet\AppServices\obj\Debug\AppServices.dll
+C:\projects\WebInternet\AppServices\obj\Debug\AppServices.pdb
+C:\projects\WebInternet\AppServices\bin\Debug\Newtonsoft.Json.dll
+C:\projects\WebInternet\AppServices\bin\Debug\Newtonsoft.Json.xml
+C:\projects\WebInternet\AppServices\obj\Debug\AppServices.csprojResolveAssemblyReference.cache
